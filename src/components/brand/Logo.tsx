@@ -1,18 +1,22 @@
 /**
- * Finaula logo. Symbol: a coin (circle) over a building block (square);
- * where they overlap, a deeper tone. Colors come from the logo tokens, so it
- * adapts to light and dark themes.
+ * Finaula logo. Symbol: a step built from two blocks with a rising coin
+ * (quarter disc) on top — learning step by step, money that grows.
+ * Colors come from the logo tokens, so it adapts to light and dark themes.
  */
 
-/** Overlap of the circle (12,19 r11) and the rounded square (12,2 18×18 r4.5). */
-export const LOGO_OVERLAP_PATH = "M12 8A11 11 0 0 1 22.954 20H16.5A4.5 4.5 0 0 1 12 15.5Z";
+/** Symbol geometry on a 32×32 grid (shared with src/app/icon.svg and scripts/icons.mjs). */
+export const LOGO_PATHS = {
+  coin: "M17 15V1A14 14 0 0 1 31 15Z",
+  blockLeft: "M4 17H15V31H4A3 3 0 0 1 1 28V20A3 3 0 0 1 4 17Z",
+  blockRight: "M17 17H28A3 3 0 0 1 31 20V28A3 3 0 0 1 28 31H17Z",
+} as const;
 
 export function LogoSymbol({ size = 28, className }: { size?: number; className?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" className={className}>
-      <rect x="12" y="2" width="18" height="18" rx="4.5" className="fill-logo-square" />
-      <circle cx="12" cy="19" r="11" className="fill-logo-circle" />
-      <path d={LOGO_OVERLAP_PATH} className="fill-logo-overlap" />
+      <path d={LOGO_PATHS.coin} className="fill-logo-square" />
+      <path d={LOGO_PATHS.blockLeft} className="fill-logo-circle" />
+      <path d={LOGO_PATHS.blockRight} className="fill-logo-overlap" />
     </svg>
   );
 }

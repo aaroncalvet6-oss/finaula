@@ -3,7 +3,7 @@
     .s{fill:#F2C14E}.c{fill:#B8441F}.o{fill:#7A2A0E}
     @media (prefers-color-scheme:dark){.s{fill:#E9B949}.c{fill:#F07A52}.o{fill:#B8441F}}
   </style>
-  <rect class="s" x="12" y="2" width="18" height="18" rx="4.5"/>
-  <circle class="c" cx="12" cy="19" r="11"/>
-  <path class="o" d="M12 8A11 11 0 0 1 22.954 20H16.5A4.5 4.5 0 0 1 12 15.5Z"/>
+  <path class="s" d="M17 15V1A14 14 0 0 1 31 15Z"/>
+  <path class="c" d="M4 17H15V31H4A3 3 0 0 1 1 28V20A3 3 0 0 1 4 17Z"/>
+  <path class="o" d="M17 17H28A3 3 0 0 1 31 20V28A3 3 0 0 1 28 31H17Z"/>
 </svg>

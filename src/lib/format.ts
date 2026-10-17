@@ -25,5 +25,6 @@ export function formatNumber(value: number, decimals: 1 | 2 = 1): string {
 }
 
 export function formatPercent(value: number): string {
-  return `${number1.format(value)} %`;
+  // Non-breaking space so "%" never wraps away from the number.
+  return `${number1.format(value)}\u00a0%`;
 }

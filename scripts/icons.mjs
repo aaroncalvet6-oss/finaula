@@ -3,13 +3,12 @@
 import { chromium } from "@playwright/test";
 
 const executablePath = process.env.CI ? undefined : "/opt/pw-browsers/chromium";
-const overlap = "M12 8A11 11 0 0 1 22.954 20H16.5A4.5 4.5 0 0 1 12 15.5Z";
 const html = `<!doctype html><html><body style="margin:0">
 <div style="width:180px;height:180px;background:#FFFCF7;display:grid;place-items:center">
-<svg width="116" height="116" viewBox="0 0 32 32">
-<rect x="12" y="2" width="18" height="18" rx="4.5" fill="#F2C14E"/>
-<circle cx="12" cy="19" r="11" fill="#B8441F"/>
-<path d="${overlap}" fill="#7A2A0E"/>
+<svg width="112" height="112" viewBox="0 0 32 32">
+<path d="M17 15V1A14 14 0 0 1 31 15Z" fill="#F2C14E"/>
+<path d="M4 17H15V31H4A3 3 0 0 1 1 28V20A3 3 0 0 1 4 17Z" fill="#B8441F"/>
+<path d="M17 17H28A3 3 0 0 1 31 20V28A3 3 0 0 1 28 31H17Z" fill="#7A2A0E"/>
 </svg></div></body></html>`;
 
 const browser = await chromium.launch(executablePath ? { executablePath } : {});

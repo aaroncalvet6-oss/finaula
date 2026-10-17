@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { LOGO_OVERLAP_PATH } from "@/components/brand/Logo";
+import { LOGO_PATHS } from "@/components/brand/Logo";
 import { colors } from "@/design/tokens";
 
 describe("favicon", () => {
@@ -15,7 +15,12 @@ describe("favicon", () => {
     }
   });
 
-  it("draws the same overlap as the Logo component", () => {
-    expect(svg).toContain(LOGO_OVERLAP_PATH);
+  it("draws the same shapes as the Logo component", () => {
+    for (const d of Object.values(LOGO_PATHS)) expect(svg).toContain(d);
+  });
+
+  it("apple icon script uses the same shapes", () => {
+    const script = readFileSync("scripts/icons.mjs", "utf8");
+    for (const d of Object.values(LOGO_PATHS)) expect(script).toContain(d);
   });
 });

@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import "@fontsource-variable/geist-mono";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { Providers } from "@/components/layout/Providers";
 import { site } from "@/config/site";
 import { colors, tokensCss } from "@/design/tokens";
 import "./globals.css";
@@ -33,7 +34,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <style dangerouslySetInnerHTML={{ __html: tokensCss() }} />
       </head>
-      <body className="min-h-dvh">{children}</body>
+      <body className="min-h-dvh">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

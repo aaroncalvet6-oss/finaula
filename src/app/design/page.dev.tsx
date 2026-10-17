@@ -108,8 +108,8 @@ export default function DesignPage() {
             ))}
           </div>
           <p className="mt-4 max-w-prose text-small text-muted">
-            Símbolo: una moneda sobre un bloque. El dinero (círculo) y el aprendizaje paso a paso (bloque); donde se
-            cruzan, un tono más profundo. Funciona solo, sin nombre, desde 16 px.
+            Símbolo: un escalón de dos bloques con una moneda que asoma encima. Aprender paso a paso y un dinero que
+            crece. Funciona solo, sin nombre, desde 16 px.
           </p>
         </Block>
 

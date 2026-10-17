@@ -15,8 +15,8 @@ merge to `main` (which triggers the Pages deploy once the workflow exists).
 | --- | --- | --- |
 | 1 | Content: `docs/temario.md`, `docs/fuentes.md` | Done; all facts used by courses 1 and 2 verified by the owner (17/10/2026) |
 | 2 | Project scaffold + 3 visual directions with mobile screenshots | Done; owner picked C, refined (Contraste · ajustada) |
-| 3 | Full design system, logo, dev-only `/design` page | Done; logo awaiting owner approval |
-| 4 | All pages, courses 1 and 2, tools, assessments, certificates | Pending |
+| 3 | Full design system, logo, dev-only `/design` page | Done; logo approved (symbol redrawn to avoid resembling Mastercard) |
+| 4 | All pages, courses 1 and 2, tools, assessments, certificates | Done |
 | 5 | SEO, Lighthouse, tests, README, deploy | Pending |
 
 ## Languages
@@ -37,6 +37,9 @@ merge to `main` (which triggers the Pages deploy once the workflow exists).
 docs/                 temario.md (content spec), fuentes.md (fact registry)
 src/config/site.ts    single source for basePath, site URL, contact email (null until given)
 src/app/              routes (App Router); dev-only pages use the `page.dev.tsx` extension
+  (site)/             pages with header and footer: home, cursos, ficha, certificado, herramientas,
+                      perfil, fuentes, legal
+  (focus)/            pages without site navigation: lesson reader, final assessment
 src/components/       UI components (ui/ primitives, lesson/, tools/, assessment/, certificate/)
 src/content/          typed content validated with Zod
   facts.ts            mirror of docs/fuentes.md: id, claim, url, checkedAt, status
@@ -100,7 +103,9 @@ npm run build        # static export to out/
 npm run lint
 npm run typecheck
 npm test             # Vitest
-npm run test:e2e     # Playwright (uses the preinstalled Chromium)
+npm run test:e2e     # Playwright journey tests against the static export (run `npm run build` first)
+npm run serve        # serve out/ under /finaula like GitHub Pages (port 4173)
+npm run screenshots  # mobile screenshots of the main pages into docs/screenshots (needs `npm run serve`)
 npm run lighthouse   # Lighthouse CI, mobile profile (phase 5)
 npm run icons        # regenerate src/app/apple-icon.png from the logo symbol
 npm run logo-shots   # logo review screenshots from /design (needs `npm run dev`)

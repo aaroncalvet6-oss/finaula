@@ -23,7 +23,7 @@ export const tokenNames = [
 export type TokenName = (typeof tokenNames)[number];
 export type Palette = Record<TokenName, string>;
 
-export type DirectionId = "a" | "b" | "c";
+export type DirectionId = "a" | "b" | "c" | "c2";
 
 export interface Direction {
   id: DirectionId;
@@ -162,6 +162,50 @@ export const directions: Record<DirectionId, Direction> = {
       onMark: "#1A1410",
       alt: "#3FA39C",
       onAlt: "#0F1A19",
+    },
+  },
+  /** Owner's pick (C) after the review of 17/10/2026: colour only in headers, progress and charts. */
+  c2: {
+    id: "c2",
+    name: "Contraste · ajustada",
+    summary:
+      "La C con medida: fondos neutros para leer, color solo en cabeceras, progreso y gráficos, titulares menos pesados y cifras monoespaciadas.",
+    fonts: {
+      display: '"Bricolage Grotesque Variable", system-ui, sans-serif',
+      body: '"Inter Variable", system-ui, sans-serif',
+      mono: '"Geist Mono Variable", ui-monospace, monospace',
+    },
+    light: {
+      bg: "#FFFCF7",
+      surface: "#FFFFFF",
+      ink: "#1A1612",
+      muted: "#62574D",
+      line: "#ECE4DA",
+      accent: "#B8441F",
+      onAccent: "#FFFFFF",
+      accentText: "#A63C19",
+      soft: "#FBEAE2",
+      onSoft: "#7A2A0E",
+      mark: "#F2C14E",
+      onMark: "#1A1410",
+      alt: "#1F5A55",
+      onAlt: "#FFFCF7",
+    },
+    dark: {
+      bg: "#141110",
+      surface: "#1D1916",
+      ink: "#F6EFE7",
+      muted: "#B3A79B",
+      line: "#352D27",
+      accent: "#F07A52",
+      onAccent: "#1A1410",
+      accentText: "#F28C69",
+      soft: "#33201A",
+      onSoft: "#FFD3C2",
+      mark: "#E9B949",
+      onMark: "#1A1410",
+      alt: "#24524E",
+      onAlt: "#F6EFE7",
     },
   },
 };

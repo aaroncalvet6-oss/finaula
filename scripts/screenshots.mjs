@@ -17,7 +17,9 @@ const pages = [
 
 await mkdir(outDir, { recursive: true });
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
-for (const id of ["a", "b", "c"]) {
+// Pass proposal ids as arguments to capture only those (default: all).
+const ids = process.argv.slice(2).length ? process.argv.slice(2) : ["a", "b", "c", "c2"];
+for (const id of ids) {
   for (const scheme of ["light", "dark"]) {
     const context = await browser.newContext({
       ...device,

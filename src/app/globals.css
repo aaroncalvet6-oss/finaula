@@ -1,71 +1,133 @@
 @import "tailwindcss";
 
 /*
- * Semantic tokens. Components only use these names; each theme sets the
- * underlying --t-* variables (light by default, dark via prefers-color-scheme).
+ * Tailwind utilities mapped to Finaula tokens (src/design/tokens.ts).
+ * Color, font, shadow and motion values come from CSS variables emitted by
+ * tokensCss() in the root layout. The type scale below must match
+ * `typeScale` in tokens.ts (checked by tests/tokens.test.ts).
  */
 @theme inline {
-  --color-bg: var(--t-bg);
-  --color-surface: var(--t-surface);
-  --color-ink: var(--t-ink);
-  --color-muted: var(--t-muted);
-  --color-line: var(--t-line);
-  --color-accent: var(--t-accent);
-  --color-on-accent: var(--t-onAccent);
-  --color-accent-text: var(--t-accentText);
-  --color-soft: var(--t-soft);
-  --color-on-soft: var(--t-onSoft);
-  --color-mark: var(--t-mark);
-  --color-on-mark: var(--t-onMark);
-  --color-alt: var(--t-alt);
-  --color-on-alt: var(--t-onAlt);
-  --font-display: var(--t-font-display);
-  --font-body: var(--t-font-body);
-  --font-mono: var(--t-font-mono);
+  --color-bg: var(--f-bg);
+  --color-surface: var(--f-surface);
+  --color-sunken: var(--f-sunken);
+  --color-ink: var(--f-ink);
+  --color-muted: var(--f-muted);
+  --color-line: var(--f-line);
+  --color-line-strong: var(--f-line-strong);
+  --color-accent: var(--f-accent);
+  --color-on-accent: var(--f-on-accent);
+  --color-accent-text: var(--f-accent-text);
+  --color-soft: var(--f-soft);
+  --color-on-soft: var(--f-on-soft);
+  --color-mark: var(--f-mark);
+  --color-on-mark: var(--f-on-mark);
+  --color-alt: var(--f-alt);
+  --color-on-alt: var(--f-on-alt);
+  --color-success: var(--f-success);
+  --color-success-soft: var(--f-success-soft);
+  --color-on-success-soft: var(--f-on-success-soft);
+  --color-danger: var(--f-danger);
+  --color-danger-soft: var(--f-danger-soft);
+  --color-on-danger-soft: var(--f-on-danger-soft);
+  --color-logo-square: var(--f-logo-square);
+  --color-logo-circle: var(--f-logo-circle);
+  --color-logo-overlap: var(--f-logo-overlap);
+
+  --font-display: var(--f-font-display);
+  --font-body: var(--f-font-body);
+  --font-mono: var(--f-font-mono);
+
+  --shadow-float: var(--f-shadow-float);
+  --shadow-overlay: var(--f-shadow-overlay);
+
+  --ease-out: var(--f-motion-ease);
 }
 
-:root {
-  --t-bg: #f7f6f2;
-  --t-surface: #ffffff;
-  --t-ink: #161613;
-  --t-muted: #5c5a54;
-  --t-line: #dddad2;
-  --t-font-body: system-ui, sans-serif;
-  --t-font-display: system-ui, sans-serif;
-  color-scheme: light dark;
+@theme {
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.4;
+  --text-small: 0.9375rem;
+  --text-small--line-height: 1.55;
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-reading: 1.125rem;
+  --text-reading--line-height: 1.7;
+  --text-lead: 1.0625rem;
+  --text-lead--line-height: 1.65;
+  --text-h4: 1.125rem;
+  --text-h4--line-height: 1.35;
+  --text-h3: 1.375rem;
+  --text-h3--line-height: 1.2;
+  --text-h2: 1.75rem;
+  --text-h2--line-height: 1.15;
+  --text-h1: 2.25rem;
+  --text-h1--line-height: 1.08;
+  --text-display: 2.5rem;
+  --text-display--line-height: 1.05;
+  --text-number: 3.5rem;
+  --text-number--line-height: 1;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --t-bg: #121210;
-    --t-surface: #1b1b18;
-    --t-ink: #eeede8;
-    --t-muted: #a3a199;
-    --t-line: #33322d;
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--f-bg);
+    color: var(--f-ink);
+    font-family: var(--f-font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--f-font-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--f-accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: var(--f-mark);
+    color: var(--f-on-mark);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  background: var(--t-bg);
-  color: var(--t-ink);
-  font-family: var(--t-font-body);
-  font-size: 1rem;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-:focus-visible {
-  outline: 3px solid var(--t-ink);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-
-.tabular {
+@utility tabular {
   font-variant-numeric: tabular-nums;
+}
+
+@utility eyebrow {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -75,6 +137,42 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
+}
+
+/* Range input styled with tokens; --fill is set inline (0–100%). */
+.slider {
+  appearance: none;
+  background: transparent;
+}
+.slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, var(--f-accent) var(--fill), var(--f-line) var(--fill));
+}
+.slider::-moz-range-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--f-line);
+}
+.slider::-moz-range-progress {
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--f-accent);
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: -10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: var(--f-surface);
+  border: 2px solid var(--f-accent);
+}
+.slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: var(--f-surface);
+  border: 2px solid var(--f-accent);
 }

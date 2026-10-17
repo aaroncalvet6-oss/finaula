@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { AA_TEXT, contrastRatio, parseHex } from "@/design/contrast";
-import { contrastPairs, directions } from "@/app/propuestas/_shared/palettes";
+import { AA_LARGE, AA_TEXT, contrastRatio, parseHex } from "@/design/contrast";
+import { colors, textPairs, uiPairs } from "@/design/tokens";
 
 describe("contrastRatio", () => {
   it("matches known WCAG values", () => {
@@ -10,7 +10,7 @@ describe("contrastRatio", () => {
   });
 
   it("is symmetric", () => {
-    expect(contrastRatio("#1F5C45", "#F6F3EC")).toBe(contrastRatio("#F6F3EC", "#1F5C45"));
+    expect(contrastRatio("#B8441F", "#FFFCF7")).toBe(contrastRatio("#FFFCF7", "#B8441F"));
   });
 
   it("rejects malformed colors", () => {
@@ -19,15 +19,18 @@ describe("contrastRatio", () => {
   });
 });
 
-describe("design proposals reach AA", () => {
-  for (const direction of Object.values(directions)) {
-    for (const mode of ["light", "dark"] as const) {
-      for (const [fg, bg] of contrastPairs) {
-        it(`${direction.name} · ${mode} · ${fg} on ${bg}`, () => {
-          const palette = direction[mode];
-          expect(contrastRatio(palette[fg], palette[bg])).toBeGreaterThanOrEqual(AA_TEXT);
-        });
-      }
+describe("design tokens reach WCAG AA", () => {
+  for (const mode of ["light", "dark"] as const) {
+    const palette = colors[mode];
+    for (const [fg, bg] of textPairs) {
+      it(`${mode}: text ${fg} on ${bg} ≥ 4.5`, () => {
+        expect(contrastRatio(palette[fg], palette[bg])).toBeGreaterThanOrEqual(AA_TEXT);
+      });
+    }
+    for (const [fg, bg] of uiPairs) {
+      it(`${mode}: UI ${fg} on ${bg} ≥ 3`, () => {
+        expect(contrastRatio(palette[fg], palette[bg])).toBeGreaterThanOrEqual(AA_LARGE);
+      });
     }
   }
 });

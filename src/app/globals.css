@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/*
+ * Semantic tokens. Components only use these names; each theme sets the
+ * underlying --t-* variables (light by default, dark via prefers-color-scheme).
+ */
+@theme inline {
+  --color-bg: var(--t-bg);
+  --color-surface: var(--t-surface);
+  --color-ink: var(--t-ink);
+  --color-muted: var(--t-muted);
+  --color-line: var(--t-line);
+  --color-accent: var(--t-accent);
+  --color-on-accent: var(--t-onAccent);
+  --color-accent-text: var(--t-accentText);
+  --color-soft: var(--t-soft);
+  --color-on-soft: var(--t-onSoft);
+  --color-mark: var(--t-mark);
+  --color-on-mark: var(--t-onMark);
+  --color-alt: var(--t-alt);
+  --color-on-alt: var(--t-onAlt);
+  --font-display: var(--t-font-display);
+  --font-body: var(--t-font-body);
+  --font-mono: var(--t-font-mono);
+}
+
+:root {
+  --t-bg: #f7f6f2;
+  --t-surface: #ffffff;
+  --t-ink: #161613;
+  --t-muted: #5c5a54;
+  --t-line: #dddad2;
+  --t-font-body: system-ui, sans-serif;
+  --t-font-display: system-ui, sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --t-bg: #121210;
+    --t-surface: #1b1b18;
+    --t-ink: #eeede8;
+    --t-muted: #a3a199;
+    --t-line: #33322d;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--t-bg);
+  color: var(--t-ink);
+  font-family: var(--t-font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--t-ink);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

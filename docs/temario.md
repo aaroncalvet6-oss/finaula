@@ -12,7 +12,7 @@ futuros cursos. Es la fuente de verdad para escribir las lecciones en la fase 4.
 - Las preguntas tienen 3 opciones. La correcta va marcada con **(correcta)**. La explicación sirve
   para el feedback después de responder.
 - `[F-xx]` remite a una fila de [`fuentes.md`](./fuentes.md). Solo se puede publicar una lección si
-  todos sus `[F-xx]` están «Verificado (oficial)».
+  todos sus `[F-xx]` están en un estado «Verificado».
 - Las cifras de salarios, tipos de interés, tramos y porcentajes de los ejemplos son **inventadas
   para practicar** y la lección lo dice así. Ninguna es una previsión ni un dato oficial.
 
@@ -21,7 +21,7 @@ futuros cursos. Es la fuente de verdad para escribir las lecciones en la fase 4.
 | Curso | Lecciones | Datos legales o fiscales | Estado |
 | --- | --- | --- | --- |
 | 1 · Fundamentos del dinero | 6 | Ninguno | Listo para escribir en la fase 4 y publicar |
-| 2 · Tu primer sueldo | 5 | F-01 a F-23 | Bloqueado: todos sus datos están «Pendiente». Va en «Próximos cursos» hasta que se verifiquen |
+| 2 · Tu primer sueldo | 5 | F-01 a F-23 | Bloqueado: solo la lección 2.3 tiene todos sus datos verificados. Va en «Próximos cursos» hasta que se verifiquen los pendientes |
 
 ---
 
@@ -484,10 +484,17 @@ diferencia y explica con tus palabras por qué ocurre.
 
 # Curso 2 · Tu primer sueldo
 
-> **Bloqueado para publicación.** Todo este curso depende de datos legales y fiscales que están
-> «Pendiente» en [`fuentes.md`](./fuentes.md). El texto está escrito, pero no se publicará hasta que
-> cada `[F-xx]` esté «Verificado (oficial)». Si una verificación cambia un dato, se reescribe la
-> parte afectada antes de publicar.
+> **Bloqueado para publicación.** El curso no se publica hasta que todos los `[F-xx]` de sus
+> lecciones estén en un estado «Verificado» en [`fuentes.md`](./fuentes.md). Si una verificación
+> cambia un dato, se reescribe la parte afectada antes de publicar.
+>
+> | Lección | Datos pendientes |
+> | --- | --- |
+> | 2.1 | F-03, F-05, F-08 |
+> | 2.2 | F-11 |
+> | 2.3 | Ninguno |
+> | 2.4 | F-11, F-15 |
+> | 2.5 | F-18, F-19, F-20, F-21, F-22, F-23 |
 
 Para quién: personas de 15 a 18 años que piensan en su primer trabajo, por ejemplo uno de verano.
 Duración total: unos 36 minutos. Al acabar, sabrás qué necesitas para trabajar, qué diferencia hay

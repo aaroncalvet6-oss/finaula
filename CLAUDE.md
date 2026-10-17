@@ -13,7 +13,7 @@ merge to `main` (which triggers the Pages deploy once the workflow exists).
 
 | Phase | Scope | Status |
 | --- | --- | --- |
-| 1 | Content: `docs/temario.md`, `docs/fuentes.md` | Done, waiting for source verification by the owner |
+| 1 | Content: `docs/temario.md`, `docs/fuentes.md` | Done; owner verified part of the facts on 17/10/2026 |
 | 2 | Project scaffold + 3 visual directions with mobile screenshots | Pending |
 | 3 | Full design system, logo, dev-only `/design` page | Pending |
 | 4 | All pages, courses 1 and 2, tools, assessments, certificates | Pending |
@@ -66,8 +66,9 @@ tests/                Vitest; e2e/ Playwright
 - Source of truth for lesson content: `docs/temario.md`. Source of truth for facts:
   `docs/fuentes.md`, mirrored in `src/content/facts.ts`.
 - Any legal or fiscal fact (ages, percentages, deadlines, obligations, what a law or body says)
-  must have a row in `docs/fuentes.md`. Only facts with status **Verificado (oficial)** can
-  appear in a lesson. A test enforces this.
+  must have a row in `docs/fuentes.md`. Only facts with a **Verificado** status (oficial, texto
+  legal or mutua colaboradora) can appear in a lesson, and the lesson always links the official
+  source. A test enforces this.
 - Facts that change every year (figures, brackets, deadlines) never appear in lessons: explain the
   concept and link the official source.
 - A course is shown only when every lesson has `status: "published"` and all of its cited facts

@@ -21,7 +21,7 @@ futuros cursos. Es la fuente de verdad para escribir las lecciones en la fase 4.
 | Curso | Lecciones | Datos legales o fiscales | Estado |
 | --- | --- | --- | --- |
 | 1 · Fundamentos del dinero | 6 | Ninguno | Listo para escribir en la fase 4 y publicar |
-| 2 · Tu primer sueldo | 5 | F-01 a F-23 | Bloqueado: solo la lección 2.3 tiene todos sus datos verificados. Va en «Próximos cursos» hasta que se verifiquen los pendientes |
+| 2 · Tu primer sueldo | 5 | F-01 a F-23, todos verificados | Listo para escribir en la fase 4 y publicar |
 
 ---
 
@@ -484,17 +484,8 @@ diferencia y explica con tus palabras por qué ocurre.
 
 # Curso 2 · Tu primer sueldo
 
-> **Bloqueado para publicación.** El curso no se publica hasta que todos los `[F-xx]` de sus
-> lecciones estén en un estado «Verificado» en [`fuentes.md`](./fuentes.md). Si una verificación
-> cambia un dato, se reescribe la parte afectada antes de publicar.
->
-> | Lección | Datos pendientes |
-> | --- | --- |
-> | 2.1 | F-03, F-05, F-08 |
-> | 2.2 | F-11 |
-> | 2.3 | Ninguno |
-> | 2.4 | F-11, F-15 |
-> | 2.5 | F-18, F-19, F-20, F-21, F-22, F-23 |
+> Todos los datos que cita este curso (F-01 a F-23) están verificados en [`fuentes.md`](./fuentes.md).
+> Si una verificación cambia un dato, se reescribe la parte afectada antes de publicar.
 
 Para quién: personas de 15 a 18 años que piensan en su primer trabajo, por ejemplo uno de verano.
 Duración total: unos 36 minutos. Al acabar, sabrás qué necesitas para trabajar, qué diferencia hay
@@ -696,7 +687,8 @@ es el impuesto final.
 
 1. Las **cotizaciones** son pagos a la Seguridad Social que hacéis tú y tu empresa, y la empresa
    pone más que tú [F-13]. Te dan derecho a prestaciones como la jubilación, la baja por enfermedad
-   o el paro [F-11]. Lo que llevas cotizado puedes verlo en tu **informe de vida laboral** [F-15].
+   o el paro [F-11]. Los periodos en que has estado de alta aparecen en tu **informe de vida laboral**, que puedes
+   pedir gratis por internet [F-15].
 2. El **IRPF** es el impuesto sobre lo que ganas en un año. Es **progresivo** y va por **tramos**:
    cada porcentaje se aplica solo a la parte de lo que ganas que cae en su tramo [F-16]. Por eso es
    falso que «subir de tramo» te haga cobrar menos.
@@ -763,14 +755,14 @@ un trabajo de verano suele recuperar lo que le retuvieron.
 
 1. La **declaración de la Renta** es un resumen anual de lo que ganaste el año anterior y de lo que
    ya adelantaste con las retenciones. El resultado sale a pagar o a devolver [F-17]. Se presenta
-   una vez al año, en primavera, y las fechas cambian cada año [F-18].
+   una vez al año, en una campaña con fechas que cambian cada año [F-18].
 2. No todo el mundo está **obligado** a presentarla: depende de cuánto ganes y de cuántos pagadores
    tengas [F-19]. Aunque no estés obligado, puedes presentarla, por ejemplo para que te devuelvan lo
    retenido [F-20].
 3. Con ingresos bajos, como un trabajo de verano, el impuesto suele quedar en 0 € y te devuelven
    toda la retención [F-21]. Pero tu declaración puede afectar a la de tus padres (el **mínimo por
-   descendientes**) [F-22]: decididlo juntos. Se hace en Renta Web a partir de un borrador, y para
-   entrar hay varias formas de identificarse [F-23].
+   descendientes**) [F-22]: decididlo juntos. Se hace en Renta Web, y para entrar
+   puedes identificarte con Cl@ve, con un número de referencia o con certificado digital [F-23].
 
 **Ejemplo principal**
 
@@ -818,7 +810,6 @@ de Renta de este año. Apunta cuándo empieza y cuándo termina.
 
 - Banco de 12 preguntas. Cada intento saca 8 al azar y baraja el orden de las respuestas.
 - Aprobado con 6 de 8. Se puede repetir. Al final se explica cada fallo.
-- Bloqueada, igual que el curso, hasta que estén verificados los datos citados.
 
 | ID | Lección | Datos | Pregunta | Correcta | Distractores | Explicación |
 | --- | --- | --- | --- | --- | --- | --- |

@@ -13,7 +13,7 @@ merge to `main` (which triggers the Pages deploy once the workflow exists).
 
 | Phase | Scope | Status |
 | --- | --- | --- |
-| 1 | Content: `docs/temario.md`, `docs/fuentes.md` | Done; owner verified part of the facts on 17/10/2026 |
+| 1 | Content: `docs/temario.md`, `docs/fuentes.md` | Done; all facts used by courses 1 and 2 verified by the owner (17/10/2026) |
 | 2 | Project scaffold + 3 visual directions with mobile screenshots | Pending |
 | 3 | Full design system, logo, dev-only `/design` page | Pending |
 | 4 | All pages, courses 1 and 2, tools, assessments, certificates | Pending |

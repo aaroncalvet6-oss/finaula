@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Assessment } from "@/components/assessment/Assessment";
@@ -15,11 +16,12 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const course = getCourse((await params).curso);
   return course
-    ? {
+    ? pageMetadata({
         title: `Evaluación final · ${course.title}`,
         description: `Evaluación final del curso ${course.title}: ${course.assessment.count} preguntas, se aprueba con ${course.assessment.passMark}.`,
-        alternates: { canonical: `/cursos/${course.slug}/evaluacion/` },
-      }
+        path: `/cursos/${course.slug}/evaluacion/`,
+        image: course.slug,
+      })
     : {};
 }
 

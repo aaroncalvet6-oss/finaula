@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
 import { ToolBySlug } from "@/components/tools";
@@ -27,7 +28,7 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const tool = getTool((await params).herramienta);
   return tool
-    ? { title: tool.title, description: tool.summary, alternates: { canonical: `/herramientas/${tool.slug}/` } }
+    ? pageMetadata({ title: tool.title, description: tool.summary, path: `/herramientas/${tool.slug}/`, image: "herramientas" })
     : {};
 }
 

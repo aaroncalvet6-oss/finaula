@@ -17,7 +17,7 @@ merge to `main` (which triggers the Pages deploy once the workflow exists).
 | 2 | Project scaffold + 3 visual directions with mobile screenshots | Done; owner picked C, refined (Contraste · ajustada) |
 | 3 | Full design system, logo, dev-only `/design` page | Done; logo approved (symbol redrawn to avoid resembling Mastercard) |
 | 4 | All pages, courses 1 and 2, tools, assessments, certificates | Done |
-| 5 | SEO, Lighthouse, tests, README, deploy | Pending |
+| 5 | SEO, Lighthouse, tests, README, deploy | Done |
 
 ## Languages
 
@@ -106,10 +106,18 @@ npm test             # Vitest
 npm run test:e2e     # Playwright journey tests against the static export (run `npm run build` first)
 npm run serve        # serve out/ under /finaula like GitHub Pages (port 4173)
 npm run screenshots  # mobile screenshots of the main pages into docs/screenshots (needs `npm run serve`)
-npm run lighthouse   # Lighthouse CI, mobile profile (phase 5)
+npm run lighthouse   # Lighthouse mobile, median of 3 runs, 4 pages; target ≥ 95 (needs `npm run serve`)
+npm run og           # social images into public/og/
 npm run icons        # regenerate src/app/apple-icon.png from the logo symbol
 npm run logo-shots   # logo review screenshots from /design (needs `npm run dev`)
 ```
+
+Fonts are self-hosted from `public/fonts` (latin subset) with metric-matched fallbacks and
+preloads (`src/design/fonts.ts`); do not reintroduce `@fontsource` CSS imports in the app.
+Heavy client code loads on demand: lesson widgets, lesson questions, Recharts (only when the chart
+scrolls into view), jsPDF (on download). Keep it that way to hold Lighthouse ≥ 95.
+SEO: every page uses `pageMetadata()` from `src/lib/seo.ts`; course pages emit schema.org Course.
+CI: `.github/workflows/deploy.yml` runs lint, typecheck, unit tests, build and e2e before deploying.
 
 Design: tokens in `src/design/tokens.ts` (single source; emitted as `--f-*` CSS variables by the
 root layout, mapped to Tailwind utilities in `globals.css`). Dark mode follows the system setting.

@@ -1,15 +1,17 @@
 import { ArrowRight, ChartPie, Clock, Target, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Typography";
 import { tools } from "@/content/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Herramientas",
   description: "Calculadoras para practicar con tus cifras: horas de trabajo, presupuesto, meta de ahorro e interés compuesto.",
-  alternates: { canonical: "/herramientas/" },
-};
+  path: "/herramientas/",
+  image: "herramientas",
+});
 
 const icons = { "horas-de-trabajo": Clock, presupuesto: ChartPie, "meta-de-ahorro": Target, "interes-compuesto": TrendingUp };
 

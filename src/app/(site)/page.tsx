@@ -1,5 +1,6 @@
 import { ArrowRight, BookOpenCheck, ChartPie, Clock, Lock, Scale, Target, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { CourseCard } from "@/components/course/CourseCard";
 import { HeroButton, ResumeCard } from "@/components/course/ProgressIslands";
@@ -9,9 +10,11 @@ import { Eyebrow, SectionHeading } from "@/components/ui/Typography";
 import { courses, upcomingCourses } from "@/content/courses";
 import { tools } from "@/content/tools";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-};
+export const metadata: Metadata = pageMetadata({
+  description:
+    "Cursos cortos de formación financiera para jóvenes de 14 a 18 años en España: el dinero, el presupuesto, el ahorro, tu primer sueldo y la Renta. Gratis, sin registro y con fuentes oficiales.",
+  path: "/",
+});
 
 const toolIcons = { "horas-de-trabajo": Clock, presupuesto: ChartPie, "meta-de-ahorro": Target, "interes-compuesto": TrendingUp };
 

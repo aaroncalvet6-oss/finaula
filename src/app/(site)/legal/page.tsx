@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import type { ReactNode } from "react";
 import { Container } from "@/components/layout/Container";
 import { TextLink } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Typography";
 import { site } from "@/config/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Privacidad y uso educativo",
   description: "Finaula no tiene cuentas, ni analítica, ni cookies de terceros. Es formación, no asesoramiento financiero.",
-  alternates: { canonical: "/legal/" },
-};
+  path: "/legal/",
+});
 
 function Block({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (

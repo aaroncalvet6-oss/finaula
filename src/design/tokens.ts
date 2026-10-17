@@ -125,9 +125,9 @@ export const uiPairs: ReadonlyArray<[ColorName, ColorName]> = [
 ];
 
 export const fonts = {
-  display: '"Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif',
-  body: '"Inter Variable", ui-sans-serif, system-ui, sans-serif',
-  mono: '"Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace',
+  display: '"Bricolage Grotesque Variable", "Bricolage Grotesque Fallback", ui-sans-serif, system-ui, sans-serif',
+  body: '"Inter Variable", "Inter Fallback", ui-sans-serif, system-ui, sans-serif',
+  mono: '"Geist Mono Variable", "Geist Mono Fallback", ui-monospace, SFMono-Regular, Menlo, monospace',
 } as const;
 
 /** Type scale (rem). Reading text never goes below 1rem (16px). */

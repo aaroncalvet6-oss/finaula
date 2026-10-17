@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { CourseCard } from "@/components/course/CourseCard";
 import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Typography";
 import { courses, upcomingCourses } from "@/content/courses";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Cursos",
-  description: "Cursos cortos de formación financiera para jóvenes: fundamentos del dinero y tu primer sueldo.",
-  alternates: { canonical: "/cursos/" },
-};
+  description: "Cursos cortos de formación financiera para jóvenes: Fundamentos del dinero y Tu primer sueldo. Con evaluación y certificado.",
+  path: "/cursos/",
+});
 
 export default function CoursesPage() {
   return (

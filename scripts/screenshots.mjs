@@ -43,6 +43,7 @@ const shots = [
   { name: "08-herramienta-meta-de-ahorro", path: "/herramientas/meta-de-ahorro/" },
   { name: "09-herramienta-interes-compuesto", path: "/herramientas/interes-compuesto/" },
   { name: "10-fuentes-y-metodologia", path: "/fuentes/" },
+  { name: "13-pagina-404", path: "/esta-pagina-no-existe/" },
   { name: "11-portada-oscuro", path: "/", state: midProgress, scheme: "dark" },
   { name: "12-leccion-oscuro", path: `/cursos/${C1}/coste-de-oportunidad/`, state: midProgress, scheme: "dark" },
 ];

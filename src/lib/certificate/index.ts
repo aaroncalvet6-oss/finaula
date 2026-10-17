@@ -66,15 +66,16 @@ export function drawCertificate(ctx: CanvasRenderingContext2D, d: CertificateDat
   ctx.fillRect(0, 0, W, 210);
 
   // Decorative geometry inside the band.
+  // A quarter disc rising over the band edge, as in the logo symbol.
   ctx.fillStyle = c.mark;
   ctx.beginPath();
-  ctx.arc(W - 250, 210, 120, Math.PI, 0);
+  ctx.moveTo(W - 300, 210);
+  ctx.arc(W - 300, 210, 150, -Math.PI / 2, 0);
+  ctx.closePath();
   ctx.fill();
   ctx.globalAlpha = 0.18;
   ctx.fillStyle = c.onAlt;
-  ctx.beginPath();
-  ctx.arc(W - 110, 110, 70, 0, Math.PI * 2);
-  ctx.fill();
+  ctx.fillRect(W - 470, 120, 90, 90);
   ctx.globalAlpha = 1;
 
   // Logo on the dark band: the dark-theme logo colours.

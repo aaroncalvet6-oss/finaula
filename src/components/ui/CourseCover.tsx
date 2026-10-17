@@ -4,8 +4,9 @@ export function CourseCover({ motif, className }: { motif: "coins" | "bars" | "b
     <svg width="96" height="56" viewBox="0 0 96 56" aria-hidden="true" className={className}>
       {motif === "coins" ? (
         <>
-          <circle cx="62" cy="36" r="20" className="fill-mark" />
-          <circle cx="82" cy="20" r="14" fill="currentColor" opacity="0.18" />
+          <rect x="40" y="30" width="24" height="24" rx="5" fill="currentColor" opacity="0.18" />
+          <path d="M68 28V2A26 26 0 0 1 94 28Z" className="fill-mark" />
+          <rect x="68" y="32" width="22" height="22" rx="5" fill="currentColor" opacity="0.18" />
         </>
       ) : motif === "bars" ? (
         <>

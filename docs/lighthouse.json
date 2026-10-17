@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17T19:01:33.473Z",
+  "mobile": true,
+  "runs": 5,
+  "results": {
+    "Portada": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "Curso": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "Lección": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "Herramienta": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    }
+  }
+}

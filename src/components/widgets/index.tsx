@@ -1,15 +1,8 @@
 "use client";
 
-import { ToolBySlug } from "@/components/tools";
+import dynamic from "next/dynamic";
+import type { ComponentType } from "react";
 import type { WidgetId } from "@/content/schema";
-import { Brackets } from "./Brackets";
-import { CanOrCannot } from "./CanOrCannot";
-import { GameCurrency } from "./GameCurrency";
-import { OfferCompare } from "./OfferCompare";
-import { Payslip } from "./Payslip";
-import { ScamOrNot } from "./ScamOrNot";
-import { TaxReturn } from "./TaxReturn";
-import { UnitPrice } from "./UnitPrice";
 
 export const widgetTitles: Record<WidgetId, string> = {
   unitPrice: "Comparador de precio por unidad",
@@ -26,31 +19,35 @@ export const widgetTitles: Record<WidgetId, string> = {
   taxReturn: "¿A pagar o a devolver?",
 };
 
-export function Widget({ id }: { id: WidgetId }) {
-  switch (id) {
-    case "unitPrice":
-      return <UnitPrice />;
-    case "workHours":
-      return <ToolBySlug slug="horas-de-trabajo" compact />;
-    case "budget":
-      return <ToolBySlug slug="presupuesto" compact />;
-    case "savingsGoal":
-      return <ToolBySlug slug="meta-de-ahorro" compact />;
-    case "compound":
-      return <ToolBySlug slug="interes-compuesto" compact />;
-    case "gameCurrency":
-      return <GameCurrency />;
-    case "scamOrNot":
-      return <ScamOrNot />;
-    case "canOrCannot":
-      return <CanOrCannot />;
-    case "offerCompare":
-      return <OfferCompare />;
-    case "payslip":
-      return <Payslip />;
-    case "brackets":
-      return <Brackets />;
-    case "taxReturn":
-      return <TaxReturn />;
+const loading = () => <div className="h-48 rounded-md bg-sunken" aria-hidden="true" />;
+
+// Lesson versions of the tools (compact layout).
+const compact = <P extends { compact?: boolean }>(Tool: ComponentType<P>) => {
+  function CompactTool() {
+    return <Tool {...({ compact: true } as P)} />;
   }
+  return CompactTool;
+};
+
+// Each lesson only downloads the widgets it shows, when the practice section appears.
+const widgets: Record<WidgetId, ComponentType> = {
+  unitPrice: dynamic(() => import("./UnitPrice").then((m) => m.UnitPrice), { loading }),
+  workHours: dynamic(() => import("@/components/tools/WorkHoursTool").then((m) => compact(m.WorkHoursTool)), { loading }),
+  budget: dynamic(() => import("@/components/tools/BudgetTool").then((m) => compact(m.BudgetTool)), { loading }),
+  savingsGoal: dynamic(() => import("@/components/tools/SavingsGoalTool").then((m) => compact(m.SavingsGoalTool)), {
+    loading,
+  }),
+  compound: dynamic(() => import("@/components/tools/CompoundTool").then((m) => compact(m.CompoundTool)), { loading }),
+  gameCurrency: dynamic(() => import("./GameCurrency").then((m) => m.GameCurrency), { loading }),
+  scamOrNot: dynamic(() => import("./ScamOrNot").then((m) => m.ScamOrNot), { loading }),
+  canOrCannot: dynamic(() => import("./CanOrCannot").then((m) => m.CanOrCannot), { loading }),
+  offerCompare: dynamic(() => import("./OfferCompare").then((m) => m.OfferCompare), { loading }),
+  payslip: dynamic(() => import("./Payslip").then((m) => m.Payslip), { loading }),
+  brackets: dynamic(() => import("./Brackets").then((m) => m.Brackets), { loading }),
+  taxReturn: dynamic(() => import("./TaxReturn").then((m) => m.TaxReturn), { loading }),
+};
+
+export function Widget({ id }: { id: WidgetId }) {
+  const Component = widgets[id];
+  return <Component />;
 }

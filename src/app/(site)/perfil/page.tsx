@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { Container } from "@/components/layout/Container";
 import { ProfileView } from "@/components/profile/ProfileView";
 import { Eyebrow } from "@/components/ui/Typography";
 import { courses } from "@/content/courses";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Tu perfil",
   description: "Tu progreso y tus certificados, guardados solo en este navegador.",
-  robots: { index: false },
-  alternates: { canonical: "/perfil/" },
-};
+  path: "/perfil/",
+  noindex: true,
+});
 
 export default function ProfilePage() {
   return (

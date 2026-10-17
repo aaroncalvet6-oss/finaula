@@ -1,7 +1,8 @@
 "use client";
 
 import { Lightbulb } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence } from "motion/react";
+import * as m from "motion/react-m";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Option, type OptionState } from "@/components/ui/Option";
@@ -76,7 +77,7 @@ export function QuestionCard({
 
       <AnimatePresence initial={false}>
         {!checked && hint ? (
-          <motion.p
+          <m.p
             key="hint"
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,10 +86,10 @@ export function QuestionCard({
           >
             <Lightbulb size={18} className="mt-0.5 shrink-0 text-accent-text" aria-hidden="true" />
             {hint}
-          </motion.p>
+          </m.p>
         ) : null}
         {checked ? (
-          <motion.div
+          <m.div
             key="feedback"
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,7 +98,7 @@ export function QuestionCard({
           >
             <p className="font-semibold">{correct ? "Correcto." : "No es esa."}</p>
             <p className="mt-1">{correct ? question.explanation : (explanation ?? question.explanation).replace(/^No es esa\. /, "")}</p>
-          </motion.div>
+          </m.div>
         ) : null}
       </AnimatePresence>
 

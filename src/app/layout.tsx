@@ -1,10 +1,9 @@
-import "@fontsource-variable/bricolage-grotesque";
-import "@fontsource-variable/inter";
-import "@fontsource-variable/geist-mono";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { preload } from "react-dom";
 import { Providers } from "@/components/layout/Providers";
-import { site } from "@/config/site";
+import { assetPath, site } from "@/config/site";
+import { fontFaceCss, fontFiles } from "@/design/fonts";
 import { colors, tokensCss } from "@/design/tokens";
 import "./globals.css";
 
@@ -17,6 +16,7 @@ export const metadata: Metadata = {
   description:
     "Cursos cortos de formación financiera para jóvenes de 14 a 18 años en España, con herramientas, evaluaciones y certificados.",
   applicationName: site.name,
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
@@ -29,10 +29,13 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  for (const f of fontFiles) {
+    if (f.preload) preload(assetPath(f.file), { as: "font", type: "font/woff2", crossOrigin: "anonymous" });
+  }
   return (
     <html lang="es">
       <head>
-        <style dangerouslySetInnerHTML={{ __html: tokensCss() }} />
+        <style dangerouslySetInnerHTML={{ __html: fontFaceCss() + tokensCss() }} />
       </head>
       <body className="min-h-dvh">
         <Providers>{children}</Providers>

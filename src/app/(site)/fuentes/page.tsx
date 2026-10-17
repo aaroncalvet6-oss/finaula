@@ -1,16 +1,17 @@
 import { ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Typography";
 import { courses, factsFor, lessonFacts } from "@/content/courses";
 import type { Fact } from "@/content/schema";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Fuentes y metodología",
-  description: "Cómo verificamos cada dato legal o fiscal de las lecciones y qué fuentes oficiales usamos.",
-  alternates: { canonical: "/fuentes/" },
-};
+  description: "Cómo verificamos cada dato legal o fiscal de las lecciones y qué fuentes oficiales usamos: BOE, Agencia Tributaria y Seguridad Social.",
+  path: "/fuentes/",
+});
 
 const statusText: Record<Fact["status"], string> = {
   oficial: "Comprobado en la página oficial.",

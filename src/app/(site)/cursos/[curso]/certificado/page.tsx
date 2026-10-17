@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Certificate } from "@/components/certificate/Certificate";
 import { Container } from "@/components/layout/Container";
@@ -15,7 +16,13 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const course = getCourse((await params).curso);
   return course
-    ? { title: `Certificado · ${course.title}`, robots: { index: false }, alternates: { canonical: `/cursos/${course.slug}/certificado/` } }
+    ? pageMetadata({
+        title: `Certificado · ${course.title}`,
+        description: `Descarga tu certificado de finalización del curso ${course.title}.`,
+        path: `/cursos/${course.slug}/certificado/`,
+        image: course.slug,
+        noindex: true,
+      })
     : {};
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowLeft, ArrowRight, Check, X } from "lucide-react";
-import { motion } from "motion/react";
+import * as m from "motion/react-m";
 import Link from "next/link";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Widget, widgetTitles } from "@/components/widgets";
@@ -13,7 +13,12 @@ import type { ToolInfo } from "@/content/tools";
 import { lessonKey } from "@/lib/progress/reducers";
 import { useHydratedProgress } from "@/lib/progress/useHydratedProgress";
 import { Blocks } from "./Blocks";
-import { QuestionCard } from "./QuestionCard";
+import dynamic from "next/dynamic";
+
+// Questions appear after a few sections: load them on demand.
+const QuestionCard = dynamic(() => import("./QuestionCard").then((m) => m.QuestionCard), {
+  loading: () => <div className="h-72 rounded-md bg-sunken" aria-hidden="true" />,
+});
 
 interface Props {
   course: { slug: string; title: string; lessonCount: number };
@@ -35,24 +40,25 @@ const sectionTitles: Record<SectionId, string> = {
   reto: "Reto práctico",
 };
 
-function Section({ id, title, children }: { id: SectionId; title: string; children: ReactNode }) {
+/** Sections already visible on load render statically (fast first paint); new ones fade in. */
+function Section({ id, title, children, animateIn = false }: { id: SectionId; title: string; children: ReactNode; animateIn?: boolean }) {
   return (
-    <motion.section
+    <m.section
       id={id}
       aria-labelledby={`${id}-title`}
-      initial={{ opacity: 0, y: 12 }}
+      initial={animateIn ? { opacity: 0, y: 12 } : false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.28, ease: [0.2, 0, 0, 1] }}
       className="scroll-mt-6 pt-10"
     >
-      <p className="eyebrow flex gap-2 text-muted">
+      <h2 className="eyebrow flex gap-2 font-body text-muted">
         <span className="mt-[0.4em] size-2 shrink-0 rounded-[2px] bg-accent" aria-hidden="true" />
         <span id={`${id}-title`} tabIndex={-1} className="outline-none">
           {title}
         </span>
-      </p>
+      </h2>
       <div className="mt-4">{children}</div>
-    </motion.section>
+    </m.section>
   );
 }
 
@@ -148,13 +154,13 @@ export function LessonReader({ course, lesson, index, next, facts, tool }: Props
           <p className="mt-1 text-reading font-medium">{lesson.objective}</p>
         </div>
 
-        <Section id="explicacion" title={sectionTitles.explicacion}>
+        <Section id="explicacion" title={sectionTitles.explicacion} animateIn={scrollTarget === "explicacion"}>
           <Blocks blocks={lesson.explanation} />
         </Section>
 
         {visible("ejemplo") ? (
-          <Section id="ejemplo" title={sectionTitles.ejemplo}>
-            <h2 className="mb-4 text-h3 font-semibold tracking-[-0.015em]">{lesson.example.title}</h2>
+          <Section id="ejemplo" title={sectionTitles.ejemplo} animateIn={scrollTarget === "ejemplo"}>
+            <h3 className="mb-4 text-h3 font-semibold tracking-[-0.015em]">{lesson.example.title}</h3>
             <Blocks blocks={lesson.example.blocks} />
             <div className="mt-8">
               <KeyFact>{lesson.keyFact}</KeyFact>
@@ -163,12 +169,12 @@ export function LessonReader({ course, lesson, index, next, facts, tool }: Props
         ) : null}
 
         {lesson.practice && visible("practica") ? (
-          <Section id="practica" title={sectionTitles.practica}>
+          <Section id="practica" title={sectionTitles.practica} animateIn={scrollTarget === "practica"}>
             <p className="text-reading">{lesson.practice.intro}</p>
             <div className="mt-6 space-y-10">
               {lesson.practice.widgets.map((w) => (
                 <div key={w}>
-                  <h2 className="mb-4 text-h4 font-semibold">{widgetTitles[w]}</h2>
+                  <h3 className="mb-4 text-h4 font-semibold">{widgetTitles[w]}</h3>
                   <Widget id={w} />
                 </div>
               ))}
@@ -182,7 +188,7 @@ export function LessonReader({ course, lesson, index, next, facts, tool }: Props
         ) : null}
 
         {visible("ideas") ? (
-          <Section id="ideas" title={sectionTitles.ideas}>
+          <Section id="ideas" title={sectionTitles.ideas} animateIn={scrollTarget === "ideas"}>
             <ol className="space-y-4">
               {lesson.keyIdeas.map((idea, i) => (
                 <li key={idea} className="flex gap-4 border-b border-line pb-4 last:border-0">
@@ -195,7 +201,7 @@ export function LessonReader({ course, lesson, index, next, facts, tool }: Props
         ) : null}
 
         {visible("preguntas") ? (
-          <Section id="preguntas" title={sectionTitles.preguntas}>
+          <Section id="preguntas" title={sectionTitles.preguntas} animateIn={scrollTarget === "preguntas"}>
             <div className="space-y-12">
               {lesson.questions.map((q, i) => {
                 const prevAnswered = i === 0 || answers[lesson.questions[i - 1].id] !== undefined;
@@ -216,7 +222,7 @@ export function LessonReader({ course, lesson, index, next, facts, tool }: Props
         ) : null}
 
         {visible("reto") ? (
-          <Section id="reto" title={sectionTitles.reto}>
+          <Section id="reto" title={sectionTitles.reto} animateIn={scrollTarget === "reto"}>
             <p className="text-reading">{lesson.challenge}</p>
           </Section>
         ) : null}

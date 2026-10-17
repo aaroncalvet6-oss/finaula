@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { LessonReader } from "@/components/lesson/LessonReader";
 import { courses, factsFor, getLesson, lessonFacts } from "@/content/courses";
@@ -14,11 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { curso, leccion } = await params;
   const found = getLesson(curso, leccion);
   if (!found) return {};
-  return {
+  return pageMetadata({
     title: `${found.lesson.number} · ${found.lesson.title}`,
     description: found.lesson.objective,
-    alternates: { canonical: `/cursos/${curso}/${leccion}/` },
-  };
+    path: `/cursos/${curso}/${leccion}/`,
+    image: curso,
+  });
 }
 
 export default async function LessonPage({ params }: { params: Promise<Params> }) {

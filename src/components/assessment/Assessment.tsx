@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
-import { motion } from "motion/react";
+import * as m from "motion/react-m";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Button, ButtonLink } from "@/components/ui/Button";
@@ -98,7 +98,7 @@ export function Assessment({ course, bank, count, passMark, lessonSlugs }: Props
             {current + 1}/{count}
           </span>
         </div>
-        <motion.div key={d.question.id} initial={{ opacity: 0, x: 12 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2 }}>
+        <m.div key={d.question.id} initial={{ opacity: 0, x: 12 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2 }}>
           <h2 className="font-body text-reading font-semibold">{d.question.prompt}</h2>
           <fieldset className="mt-5 space-y-3">
             <legend className="sr-only">Elige una respuesta</legend>
@@ -115,7 +115,7 @@ export function Assessment({ course, bank, count, passMark, lessonSlugs }: Props
               </Option>
             ))}
           </fieldset>
-        </motion.div>
+        </m.div>
         <div className="flex flex-wrap justify-between gap-3">
           <Button variant="secondary" onClick={() => setCurrent((c) => c - 1)} disabled={current === 0}>
             Anterior

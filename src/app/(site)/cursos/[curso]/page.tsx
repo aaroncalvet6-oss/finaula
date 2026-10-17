@@ -1,5 +1,7 @@
 import { Award, ClipboardCheck } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { courseJsonLd, jsonLdScript } from "@/lib/structuredData";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CourseProgress, CourseStartButton, LessonStatus } from "@/components/course/ProgressIslands";
@@ -17,11 +19,7 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const course = getCourse((await params).curso);
   if (!course) return {};
-  return {
-    title: course.title,
-    description: course.summary,
-    alternates: { canonical: `/cursos/${course.slug}/` },
-  };
+  return pageMetadata({ title: course.title, description: course.summary, path: `/cursos/${course.slug}/`, image: course.slug });
 }
 
 export default async function CoursePage({ params }: { params: Promise<Params> }) {
@@ -33,6 +31,7 @@ export default async function CoursePage({ params }: { params: Promise<Params> }
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(courseJsonLd(course)) }} />
       <div className={toneClass}>
         <Container className="pt-6 pb-8">
           <Link href="/cursos/" className="inline-flex min-h-11 items-center text-small font-medium underline-offset-4 hover:underline">

@@ -68,7 +68,7 @@ const raw: Fact[] = [
     claim: "Un contrato de trabajo puede ser indefinido (sin fecha de fin) o temporal (con fecha de fin).",
     status: "oficial",
     annual: false,
-    checkedAt: null,
+    checkedAt: "17/10/2026",
     source: { label: "BOE · Estatuto de los Trabajadores", url: ET },
   },
   {

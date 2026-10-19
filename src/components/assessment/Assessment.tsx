@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Check, RotateCcw, X } from "lucide-react";
+import { ArrowRight, Check, Lock, RotateCcw, X } from "lucide-react";
 import * as m from "motion/react-m";
 import Link from "next/link";
 import { useMemo, useState } from "react";
@@ -9,6 +9,7 @@ import { Option } from "@/components/ui/Option";
 import { ProgressSegments } from "@/components/ui/Progress";
 import type { BankQuestion } from "@/content/schema";
 import { drawAttempt, score as scoreOf } from "@/lib/assessment";
+import { completedCount } from "@/lib/progress/reducers";
 import { useHydratedProgress } from "@/lib/progress/useHydratedProgress";
 
 interface Props {
@@ -30,6 +31,9 @@ export function Assessment({ course, bank, count, passMark, lessonSlugs }: Props
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [current, setCurrent] = useState(0);
   const record = progress.assessments[course.slug];
+  const lessonList = Object.values(lessonSlugs);
+  const done = completedCount(progress, course.slug, lessonList);
+  const locked = done < lessonList.length;
 
   function start() {
     setSeed(Math.floor(Math.random() * 2 ** 31) + 1);
@@ -43,6 +47,24 @@ export function Assessment({ course, bank, count, passMark, lessonSlugs }: Props
     recordAssessment(course.slug, scoreOf(drawn, answers), count, passMark);
     setPhase("done");
     window.scrollTo({ top: 0 });
+  }
+
+  if (!hydrated) return <div className="h-64 rounded-md bg-sunken" aria-hidden="true" />;
+
+  if (locked && !record?.passed) {
+    return (
+      <div className="space-y-5">
+        <p className="flex items-center gap-2 font-semibold">
+          <Lock size={20} className="text-muted" aria-hidden="true" /> Se desbloquea al terminar las lecciones
+        </p>
+        <p className="text-reading">
+          Llevas {done} de {lessonList.length} lecciones. Termínalas todas y vuelve aquí para hacer la evaluación final.
+        </p>
+        <ButtonLink href={`/cursos/${course.slug}/`}>
+          Volver al curso <ArrowRight size={18} aria-hidden="true" />
+        </ButtonLink>
+      </div>
+    );
   }
 
   if (phase === "intro") {

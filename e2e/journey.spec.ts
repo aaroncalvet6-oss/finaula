@@ -3,6 +3,19 @@ import { fundamentosDelDinero as course } from "../src/content/courses/fundament
 
 const lesson = course.lessons[0];
 
+/** Marks every lesson of the course as completed (keeps what is already stored). */
+async function completeAllLessons(page: Page) {
+  await page.evaluate((slugs) => {
+    const key = "finaula:progress";
+    const p = JSON.parse(localStorage.getItem(key) ?? '{"version":1,"lessons":{},"assessments":{}}');
+    for (const s of slugs) {
+      const k = `fundamentos-del-dinero/${s}`;
+      p.lessons[k] = { step: 9, answers: {}, ...(p.lessons[k] ?? {}), completed: true, updatedAt: new Date().toISOString() };
+    }
+    localStorage.setItem(key, JSON.stringify(p));
+  }, course.lessons.map((l) => l.slug));
+}
+
 async function answerLessonQuestions(page: Page) {
   for (const q of lesson.questions) {
     await page.locator("label", { hasText: q.options[q.correct] }).click();
@@ -31,8 +44,19 @@ test("home → lesson → assessment → certificate", async ({ page }) => {
   await page.goto("./");
   await expect(page.getByRole("link", { name: /^Continuar/ }).first()).toBeVisible();
 
-  // Assessment: answer everything correctly.
+  // The assessment stays locked until every lesson is done.
+  await page.goto(`cursos/${course.slug}/`);
+  await expect(page.getByText("Se desbloquea al terminar las lecciones")).toBeVisible();
+  await expect(page.getByRole("link", { name: /Continuar con la 1\.2/ })).toBeVisible();
   await page.goto(`cursos/${course.slug}/evaluacion/`);
+  await expect(page.getByText("Se desbloquea al terminar las lecciones")).toBeVisible();
+  await completeAllLessons(page);
+
+  // Course page now offers the assessment as the single main action.
+  await page.goto(`cursos/${course.slug}/`);
+  await page.getByRole("link", { name: "Hacer la evaluación final" }).click();
+
+  // Assessment: answer everything correctly.
   await page.getByRole("button", { name: /Empezar la evaluación/ }).click();
   for (let i = 0; i < course.assessment.count; i++) {
     const prompt = (await page.getByRole("heading", { level: 2 }).textContent())?.trim();
@@ -62,6 +86,8 @@ test("home → lesson → assessment → certificate", async ({ page }) => {
 });
 
 test("a failed assessment explains every mistake", async ({ page }) => {
+  await page.goto("./");
+  await completeAllLessons(page);
   await page.goto(`cursos/${course.slug}/evaluacion/`);
   await page.getByRole("button", { name: /Empezar la evaluación/ }).click();
   for (let i = 0; i < course.assessment.count; i++) {
@@ -74,6 +100,21 @@ test("a failed assessment explains every mistake", async ({ page }) => {
   await expect(page.getByRole("heading", { name: `Tus ${course.assessment.count} fallos, explicados` })).toBeVisible();
   await expect(page.getByRole("link", { name: /Repasar la lección/ })).toHaveCount(course.assessment.count);
   await expect(page.getByRole("link", { name: /Ver tu certificado/ })).toHaveCount(0);
+});
+
+test("the certificate only appears in the syllabus after passing", async ({ page }) => {
+  await page.goto("./");
+  await completeAllLessons(page);
+  await page.goto(`cursos/${course.slug}/`);
+  await expect(page.getByText("Tu certificado", { exact: true })).toHaveCount(0);
+  await page.evaluate(() => {
+    const p = JSON.parse(localStorage.getItem("finaula:progress")!);
+    p.assessments["fundamentos-del-dinero"] = { attempts: 1, bestScore: 9, total: 10, passed: true, passedAt: new Date().toISOString(), passedScore: 9, certificateId: "FIN-TEST0001" };
+    localStorage.setItem("finaula:progress", JSON.stringify(p));
+  });
+  await page.reload();
+  await expect(page.getByText("Tu certificado", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Ver tu certificado" })).toBeVisible();
 });
 
 test("a lesson cannot be finished with unanswered questions", async ({ page }) => {

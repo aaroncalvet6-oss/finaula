@@ -7,6 +7,7 @@ export const fundamentosDelDinero: Course = {
   area: "Tu dinero hoy",
   summary:
     "Para qué sirve el dinero, cómo decidir en qué gastarlo, hacer un presupuesto, ahorrar con una meta, pagar en digital sin caer en trampas y por qué el tiempo cambia lo que vale tu dinero.",
+  tagline: "Aprenderás a decidir en qué gastar, a hacer un presupuesto, a ahorrar con una meta y a no caer en trampas.",
   audience: "Para cualquier persona de 14 a 18 años. No necesitas saber nada antes.",
   objectives: [
     "Entender para qué sirve el dinero y por qué tiene valor.",

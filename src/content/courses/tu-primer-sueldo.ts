@@ -7,6 +7,7 @@ export const tuPrimerSueldo: Course = {
   area: "Trabajo e ingresos",
   summary:
     "Qué necesitas para trabajar, la diferencia entre sueldo bruto y neto, cómo leer una nómina, adónde van tus descuentos y por qué te pueden devolver dinero en la Renta.",
+  tagline: "Aprenderás qué necesitas para trabajar, a leer una nómina y por qué te pueden devolver dinero en la Renta.",
   audience: "Para personas de 15 a 18 años que piensan en su primer trabajo, por ejemplo uno de verano.",
   objectives: [
     "Saber desde qué edad puedes trabajar y qué te protege si eres menor.",

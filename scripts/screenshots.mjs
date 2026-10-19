@@ -34,11 +34,24 @@ const passed = {
 
 const profile = { version: 1, certificateName: "Lucía García Martín" };
 
+const c1Lessons = ["que-es-el-dinero", "coste-de-oportunidad", "tu-presupuesto", "ahorrar-con-una-meta", "dinero-digital", "inflacion-e-interes-compuesto"];
+const allDone = {
+  version: 1,
+  lessons: Object.fromEntries(c1Lessons.map((l) => [`${C1}/${l}`, lesson(5, true)])),
+  assessments: {},
+  last: { course: C1, lesson: c1Lessons[5] },
+};
+const allPassed = { ...allDone, assessments: passed.assessments };
+
 const shots = [
   { name: "01-portada", path: "/" },
   { name: "02-ficha-curso", path: `/cursos/${C1}/`, state: midProgress },
+  { name: "02b-ficha-curso-sin-empezar", path: `/cursos/${C1}/` },
+  { name: "02c-ficha-curso-evaluacion-desbloqueada", path: `/cursos/${C1}/`, state: allDone },
+  { name: "02d-ficha-curso-aprobado", path: `/cursos/${C1}/`, state: allPassed },
+  { name: "02e-ficha-curso-oscuro", path: `/cursos/${C1}/`, state: midProgress, scheme: "dark" },
   { name: "03-leccion-completa", path: `/cursos/${C1}/coste-de-oportunidad/`, state: midProgress },
-  { name: "04-evaluacion", path: `/cursos/${C1}/evaluacion/`, state: midProgress, run: "assessment" },
+  { name: "04-evaluacion", path: `/cursos/${C1}/evaluacion/`, state: allDone, run: "assessment" },
   { name: "05-certificado", path: `/cursos/${C1}/certificado/`, state: passed, profile },
   { name: "06-herramienta-horas-de-trabajo", path: "/herramientas/horas-de-trabajo/" },
   { name: "07-herramienta-presupuesto", path: "/herramientas/presupuesto/" },

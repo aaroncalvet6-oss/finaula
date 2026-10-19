@@ -113,6 +113,8 @@ export const courseSchema = z.object({
   /** Learning route (area of the roadmap) the course belongs to. */
   area: z.enum(["Tu dinero hoy", "Trabajo e ingresos", "Hacer crecer tu dinero", "Protégete y entiende el mundo"]),
   summary: z.string(),
+  /** One sentence: what you will learn (course page header). */
+  tagline: z.string().max(160),
   audience: z.string(),
   objectives: z.array(z.string()).min(3),
   motif: z.enum(["coins", "bars", "blocks"]),

@@ -4,6 +4,7 @@ import { Logo } from "@/components/brand/Logo";
 const links = [
   { href: "/cursos/", label: "Cursos" },
   { href: "/herramientas/", label: "Herramientas" },
+  { href: "/familias/", label: "Para familias y centros" },
   { href: "/fuentes/", label: "Fuentes y metodología" },
   { href: "/legal/", label: "Privacidad y uso educativo" },
 ] as const;

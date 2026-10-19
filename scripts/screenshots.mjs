@@ -5,6 +5,8 @@ import { mkdir } from "node:fs/promises";
 
 const base = process.env.BASE_URL ?? "http://localhost:4173/finaula";
 const outDir = process.argv[2] ?? "docs/screenshots";
+// Optional filters after the output dir: only shots whose name contains one of them.
+const only = process.argv.slice(3);
 const executablePath = process.env.CI ? undefined : "/opt/pw-browsers/chromium";
 const C1 = "fundamentos-del-dinero";
 const now = "2026-10-17T10:00:00.000Z";
@@ -33,7 +35,7 @@ const passed = {
 const profile = { version: 1, certificateName: "Lucía García Martín" };
 
 const shots = [
-  { name: "01-portada", path: "/", state: midProgress },
+  { name: "01-portada", path: "/" },
   { name: "02-ficha-curso", path: `/cursos/${C1}/`, state: midProgress },
   { name: "03-leccion-completa", path: `/cursos/${C1}/coste-de-oportunidad/`, state: midProgress },
   { name: "04-evaluacion", path: `/cursos/${C1}/evaluacion/`, state: midProgress, run: "assessment" },
@@ -44,7 +46,8 @@ const shots = [
   { name: "09-herramienta-interes-compuesto", path: "/herramientas/interes-compuesto/" },
   { name: "10-fuentes-y-metodologia", path: "/fuentes/" },
   { name: "13-pagina-404", path: "/esta-pagina-no-existe/" },
-  { name: "11-portada-oscuro", path: "/", state: midProgress, scheme: "dark" },
+  { name: "14-familias-y-centros", path: "/familias/" },
+  { name: "11-portada-oscuro", path: "/", scheme: "dark" },
   { name: "12-leccion-oscuro", path: `/cursos/${C1}/coste-de-oportunidad/`, state: midProgress, scheme: "dark" },
 ];
 
@@ -52,7 +55,7 @@ await mkdir(outDir, { recursive: true });
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
 const device = devices["iPhone 13"];
 
-for (const shot of shots) {
+for (const shot of shots.filter((s) => only.length === 0 || only.some((o) => s.name.includes(o)))) {
   const context = await browser.newContext({ ...device, colorScheme: shot.scheme ?? "light", reducedMotion: "reduce" });
   await context.addInitScript(
     ([state, prof]) => {

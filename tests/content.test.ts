@@ -30,6 +30,7 @@ const officialHosts = [
   "sede.agenciatributaria.gob.es",
   "www.seg-social.es",
   "www.lamoncloa.gob.es",
+  "www.educacionfpydeportes.gob.es",
 ];
 
 describe("fact registry", () => {
@@ -158,5 +159,17 @@ describe("content style", () => {
       const lesson = allCourses.find((c) => c.slug === t.lesson.course)?.lessons.find((l) => l.slug === t.lesson.slug);
       expect(lesson?.tool, t.slug).toBe(t.slug);
     }
+  });
+});
+
+describe("home page content", () => {
+  it("only shows verified facts", async () => {
+    const { homeFactIds } = await import("@/content/home");
+    for (const id of homeFactIds) expect(factById.get(id)?.status ?? "pendiente", id).not.toBe("pendiente");
+  });
+
+  it("signs the founder story without a name", async () => {
+    const { founderStory } = await import("@/content/home");
+    expect(founderStory.signature).toBe("El fundador");
   });
 });

@@ -12,10 +12,10 @@ async function answerLessonQuestions(page: Page) {
 }
 
 test("home → lesson → assessment → certificate", async ({ page }) => {
-  // Home: first visit, no "continue" card.
+  // Home: first visit shows «Empezar».
   await page.goto("./");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Entiende tu dinero");
-  await expect(page.getByText("Continúa donde lo dejaste")).toHaveCount(0);
+  await expect(page.getByText("Por qué existe Finaula").first()).toBeVisible();
   await page.getByRole("link", { name: /Empezar el primer curso/ }).click();
 
   // Lesson 1.1: go through every section, answer, finish.
@@ -27,9 +27,8 @@ test("home → lesson → assessment → certificate", async ({ page }) => {
   while (await next.isVisible()) await next.click();
   await expect(page.getByText("Lección completada")).toBeVisible();
 
-  // Progress survives a reload and shows on the home page.
+  // Progress survives a reload: the home button now says «Continuar».
   await page.goto("./");
-  await expect(page.getByText("Continúa donde lo dejaste")).toBeVisible();
   await expect(page.getByRole("link", { name: /^Continuar/ }).first()).toBeVisible();
 
   // Assessment: answer everything correctly.

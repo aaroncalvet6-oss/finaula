@@ -46,7 +46,7 @@ y las fechas el 17/10/2026 (la de F-06, el 19/10/2026).
 
 | Estado | Datos |
 | --- | --- |
-| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23 |
+| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-40 |
 | Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11 |
 | Verificado (mutua colaboradora) | F-13 |
 | Pendiente (no se usan) | F-30 a F-35 |
@@ -90,6 +90,12 @@ En la columna «Dónde comprobarlo», los datos verificados llevan la fuente usa
 | F-21 | 2.5 | Con ingresos de trabajo bajos (como un trabajo de verano), el impuesto suele quedar en 0 € gracias a la reducción por obtención de rendimientos del trabajo y al mínimo del contribuyente, y se devuelve toda la retención (la lección no da cifras) | sí | AEAT, reducción por obtención de rendimientos del trabajo: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_1-rendimientos-trabajo-personal/7_1_6-reduccion-obtencion-rendimientos-trabajo.html · AEAT, mínimo del contribuyente: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-contribuyente.html | 11/10/2026 | Verificado (oficial) |
 | F-22 | 2.5 | Tus padres pueden aplicar en su declaración un mínimo por descendientes por ti, que pueden perder si tú ganas por encima de cierto límite o presentas tu propia declaración por encima de otro (la lección no da límites) | sí | AEAT, mínimo por descendientes, concepto y requisitos: https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-descendientes/concepto-requisitos-descendientes.html | 11/10/2026 | Verificado (oficial) |
 | F-23 | 2.5 | La declaración se hace en Renta Web, y para entrar puedes identificarte con Cl@ve, con un número de referencia o con certificado digital. Por indicación del propietario, las lecciones no usan la palabra «borrador» | no | Agencia Tributaria, nota de prensa de inicio de la campaña de Renta 2025: https://sede.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/NP_Inicio_Campana_renta_2025.pdf | 11/10/2026 | Verificado (oficial) |
+
+## Datos de la portada
+
+| ID | Dónde | Dato | Anual | Dónde comprobarlo (enlace exacto) | Fecha de consulta | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| F-40 | Portada | PISA 2022, competencia financiera, alumnos de 15 años: en España el 17,1 % no alcanza el nivel básico (nivel 2) y solo el 4,7 % llega al nivel más alto, frente al 10,6 % de media de la OCDE | no | INEE (Ministerio de Educación, Formación Profesional y Deportes), informe PISA 2022 de competencia financiera: https://www.educacionfpydeportes.gob.es/inee/gl/dam/jcr:e66d3044-4c8b-42a5-9504-0a79975aa4c3/r2-1.pdf | 19/10/2026 | Verificado (oficial) |
 
 ## Datos que enriquecerían el curso 1 (no se usan)
 

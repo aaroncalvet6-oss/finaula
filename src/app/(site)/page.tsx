@@ -1,50 +1,38 @@
-import { ArrowRight, BookOpenCheck, ChartPie, Clock, Lock, Scale, Target, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeEuro, BookOpenCheck, Megaphone, ShoppingBag, UserRoundX } from "lucide-react";
 import type { Metadata } from "next";
-import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-import { CourseCard } from "@/components/course/CourseCard";
-import { HeroButton, ResumeCard } from "@/components/course/ProgressIslands";
+import { HeroButton } from "@/components/course/ProgressIslands";
+import { LogoSymbol } from "@/components/brand/Logo";
 import { Container } from "@/components/layout/Container";
 import { TextLink } from "@/components/ui/Button";
 import { Eyebrow, SectionHeading } from "@/components/ui/Typography";
-import { courses, upcomingCourses } from "@/content/courses";
-import { tools } from "@/content/tools";
+import { courses } from "@/content/courses";
+import { founderStory, pisa, pisaSource } from "@/content/home";
+import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   description:
-    "Cursos cortos de formación financiera para jóvenes de 14 a 18 años en España: el dinero, el presupuesto, el ahorro, tu primer sueldo y la Renta. Gratis, sin registro y con fuentes oficiales.",
+    "Formación financiera para jóvenes de 14 a 18 años en España: cursos cortos, con datos comprobados en fuentes oficiales. Gratis, sin registro, sin anuncios y sin venderte nada.",
   path: "/",
 });
 
-const toolIcons = { "horas-de-trabajo": Clock, presupuesto: ChartPie, "meta-de-ahorro": Target, "interes-compuesto": TrendingUp };
-
-const trust = [
-  {
-    Icon: BookOpenCheck,
-    text: "Cada dato legal o fiscal está comprobado en fuentes oficiales, como el BOE, la Agencia Tributaria o la Seguridad Social, con su enlace y la fecha de consulta.",
-  },
-  { Icon: Scale, text: "Es formación, no asesoramiento. Nunca te recomendamos productos, bancos ni inversiones." },
-  { Icon: Lock, text: "Tu progreso se guarda solo en tu navegador. No hay cuentas, ni anuncios, ni recogemos datos." },
-];
-
-const steps = [
-  { title: "Aprende en 5 a 8 minutos", text: "Cada lección explica una idea con un ejemplo de tu vida y cifras claras." },
-  { title: "Practica con tus cifras", text: "Preguntas con explicación y herramientas para probar con tu paga o tu sueldo." },
-  { title: "Demuestra lo que sabes", text: "Aprueba la evaluación final de cada curso y descarga tu certificado de finalización." },
+const principles = [
+  { Icon: BookOpenCheck, title: "Datos comprobados", text: "Cada dato legal o fiscal sale de una fuente oficial, con su enlace y su fecha de consulta." },
+  { Icon: BadgeEuro, title: "Gratis", text: "Todos los cursos, herramientas y certificados." },
+  { Icon: UserRoundX, title: "Sin registro", text: "No hay cuentas. Tu progreso se guarda solo en tu navegador." },
+  { Icon: Megaphone, title: "Sin anuncios", text: "Nada compite con lo que estás aprendiendo." },
+  { Icon: ShoppingBag, title: "Sin venderte nada", text: "Es formación, no asesoramiento: no recomendamos productos, bancos ni inversiones." },
 ];
 
 export default function HomePage() {
   const first = courses[0];
-  const resumeCourses = courses.map((c) => ({
-    slug: c.slug,
-    title: c.title,
-    lessons: c.lessons.map((l) => ({ slug: l.slug, number: l.number, title: l.title, minutes: l.minutes })),
-  }));
+  const source = pisaSource();
+  const [opening, school, questions, ...rest] = founderStory.paragraphs;
 
   return (
     <main>
       <Container>
-        <section className="relative pt-12 pb-10 sm:pt-20">
+        <section className="relative pt-12 pb-12 sm:pt-20">
           <svg className="absolute top-11 right-0 sm:top-[4.75rem]" width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
             <path d="M17 15V1A14 14 0 0 1 31 15Z" className="fill-mark" />
             <rect x="1" y="17" width="14" height="14" rx="3" className="fill-accent" />
@@ -61,21 +49,82 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
             <HeroButton firstLessonHref={`/cursos/${first.slug}/${first.lessons[0].slug}/`} />
-            <TextLink href="#cursos" className="text-ink underline">
+            <TextLink href="/cursos/" className="text-ink underline">
               Ver los cursos
             </TextLink>
           </div>
         </section>
+      </Container>
 
-        <ResumeCard courses={resumeCourses} />
+      <section aria-labelledby="historia" className="border-y border-line bg-surface">
+        <Container width="reading" className="py-14">
+          <Eyebrow>{founderStory.title}</Eyebrow>
+          <h2 id="historia" className="sr-only">
+            {founderStory.title}
+          </h2>
+          <div className="mt-6 space-y-5 text-reading">
+            <p className="font-display text-h3 leading-snug font-medium tracking-[-0.015em]">{opening}</p>
+            <p>{school}</p>
+            <p className="border-l-[3px] border-accent pl-5 font-medium">{questions}</p>
+            {rest.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </div>
+          <p className="mt-8 flex items-center gap-3 text-small font-semibold">
+            <LogoSymbol size={22} />— {founderStory.signature}
+          </p>
+        </Container>
+      </section>
 
-        <section aria-labelledby="confianza" className="mt-12 border-y border-line py-8">
-          <SectionHeading id="confianza">Por qué puedes fiarte</SectionHeading>
-          <ul className="grid gap-5 sm:grid-cols-3">
-            {trust.map(({ Icon, text }) => (
-              <li key={text} className="flex gap-4 sm:flex-col sm:gap-3">
+      <Container>
+        <section aria-labelledby="datos" className="pt-14">
+          <SectionHeading id="datos" description={`Informe PISA ${pisa.year}, competencia financiera de los alumnos de 15 años.`}>
+            Lo que dicen los datos
+          </SectionHeading>
+          <dl className="grid gap-6 sm:grid-cols-2">
+            {pisa.stats.map((s) => (
+              <div key={s.value} className="border-t-[3px] border-accent pt-4">
+                <dt className="tabular font-mono text-[2.75rem] leading-none font-medium">{s.value}</dt>
+                <dd className="mt-3">{s.text}</dd>
+              </div>
+            ))}
+          </dl>
+          <figure className="mt-8" aria-label="Alumnos en el nivel más alto de competencia financiera">
+            <figcaption className="text-caption font-semibold text-muted">Alumnos en el nivel más alto</figcaption>
+            <div className="mt-3 space-y-3">
+              {[
+                { label: "España", value: 4.7, text: "4,7 %", bar: "bg-accent" },
+                { label: "Media OCDE", value: 10.6, text: "10,6 %", bar: "bg-mark" },
+              ].map((row) => (
+                <div key={row.label} className="grid grid-cols-[6.5rem_1fr_3.75rem] items-center gap-3">
+                  <span className="text-small">{row.label}</span>
+                  <span className="h-3 rounded-full bg-line" aria-hidden="true">
+                    <span className={`block h-full rounded-full ${row.bar}`} style={{ width: `${(row.value / 12) * 100}%` }} />
+                  </span>
+                  <span className="tabular text-right font-mono text-small">{row.text}</span>
+                </div>
+              ))}
+            </div>
+          </figure>
+          <p className="mt-6 text-caption text-muted">
+            Fuente:{" "}
+            <a href={source.url} rel="noopener" className="underline underline-offset-2">
+              {source.label}
+            </a>
+            . Consultado el 19/10/2026.
+          </p>
+        </section>
+
+        <section aria-labelledby="como" className="mt-14 border-t border-line pt-10">
+          <SectionHeading id="como">Cómo lo hacemos</SectionHeading>
+          <ul className="grid gap-x-8 gap-y-5 sm:grid-cols-2">
+            {principles.map(({ Icon, title, text }) => (
+              <li key={title} className="flex gap-4">
                 <Icon className="mt-0.5 shrink-0 text-accent-text" size={22} strokeWidth={1.8} aria-hidden="true" />
-                <span>{text}</span>
+                <span>
+                  <span className="block font-semibold">{title}</span>
+                  <span className="block text-small text-muted">{text}</span>
+                </span>
               </li>
             ))}
           </ul>
@@ -84,86 +133,23 @@ export default function HomePage() {
           </TextLink>
         </section>
 
-        <section id="cursos" aria-labelledby="cursos-title" className="mt-14 scroll-mt-6">
-          <SectionHeading id="cursos-title" description="Cada curso pertenece a una ruta. Empieza por el que quieras.">
-            Rutas y cursos
-          </SectionHeading>
-          <ul className="grid gap-4 sm:grid-cols-2">
-            {courses.map((c) => (
-              <li key={c.slug}>
-                <CourseCard course={c} />
-              </li>
-            ))}
-          </ul>
-          <div className="mt-6">
-            <h3 className="font-body text-small font-semibold">Próximos cursos</h3>
-            <ul className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-small text-muted">
-              {upcomingCourses.map((u) => (
-                <li key={u.title}>
-                  {u.title} <span className="text-caption">· {u.area}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        <section aria-labelledby="herramientas-title" className="mt-14">
-          <SectionHeading id="herramientas-title" description="Practica con tus propias cifras. Cada herramienta va unida a su lección.">
-            Herramientas
-          </SectionHeading>
-          <ul className="grid sm:grid-cols-2 sm:gap-x-8">
-            {tools.map((t) => {
-              const Icon = toolIcons[t.slug];
-              return (
-                <li key={t.slug} className="border-b border-line">
-                  <Link href={`/herramientas/${t.slug}/`} className="group flex gap-4 py-4">
-                    <span className="grid size-11 shrink-0 place-items-center rounded-full bg-soft text-on-soft">
-                      <Icon size={20} strokeWidth={1.9} aria-hidden="true" />
-                    </span>
-                    <span className="flex-1">
-                      <span className="block font-semibold group-hover:underline">{t.title}</span>
-                      <span className="block text-small text-muted">{t.summary}</span>
-                      <span className="tabular mt-1.5 block font-mono text-caption text-ink">{t.sample}</span>
-                      {t.slug === "interes-compuesto" ? (
-                        <span className="mt-1 block text-caption text-muted">Ninguna rentabilidad está garantizada.</span>
-                      ) : null}
-                    </span>
-                    <ArrowRight size={18} className="mt-3 shrink-0 text-muted" aria-hidden="true" />
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-          <p className="mt-3 text-caption text-muted">Las cifras son ejemplos.</p>
-        </section>
-
-        <section aria-labelledby="como-title" className="mt-14">
-          <SectionHeading id="como-title">Cómo funciona</SectionHeading>
-          <ol className="grid gap-6 sm:grid-cols-3">
-            {steps.map((s, i) => (
-              <li key={s.title} className="grid grid-cols-[2.25rem_1fr] gap-2 sm:block">
-                <span className="tabular font-display text-h2 leading-none font-semibold text-accent-text">{i + 1}</span>
-                <div className="sm:mt-3">
-                  <h3 className="font-body text-body font-semibold">{s.title}</h3>
-                  <p className="text-muted">{s.text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        <section aria-labelledby="familias-title" className="mt-14 border-l-[3px] border-alt pl-5">
-          <SectionHeading id="familias-title">Para familias y centros educativos</SectionHeading>
-          <p className="max-w-prose">
-            Lecciones cortas que caben en una tutoría, con un temario publicado, fuentes oficiales y preguntas que comprueban si
-            se ha entendido. No hace falta registro y no se recoge ningún dato personal, así que se puede usar en clase sin
-            trámites.
+        <section aria-labelledby="empieza" className="mt-14 rounded-lg bg-alt px-5 py-8 text-on-alt sm:px-8">
+          <h2 id="empieza" className="max-w-[20ch] text-h2 font-semibold tracking-[-0.02em]">
+            {first.lessons.length} lecciones cortas para entender tu dinero.
+          </h2>
+          <p className="mt-2 max-w-prose">
+            Curso 1 · {first.title}. Empieza cuando quieras: tu progreso se guarda en este navegador.
           </p>
-          <div className="mt-3 flex flex-wrap gap-x-6">
-            <TextLink href="/cursos/">
-              Ver el temario de los cursos <ArrowRight size={16} aria-hidden="true" />
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <Link
+              href={`/cursos/${first.slug}/`}
+              className="inline-flex h-12 items-center gap-2 rounded-full bg-surface px-6 font-semibold text-ink hover:bg-bg"
+            >
+              Empieza por el curso 1 <ArrowRight size={18} aria-hidden="true" />
+            </Link>
+            <TextLink href="/cursos/" className="text-on-alt underline">
+              Ver todos los cursos
             </TextLink>
-            <TextLink href="/legal/">Privacidad y uso educativo</TextLink>
           </div>
         </section>
       </Container>

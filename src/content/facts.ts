@@ -236,6 +236,18 @@ const raw: Fact[] = [
     checkedAt: "11/10/2026",
     source: { label: "Agencia Tributaria · Nota de inicio de la campaña de Renta", url: NOTA_RENTA },
   },
+  {
+    id: "F-40",
+    claim:
+      "PISA 2022, competencia financiera, alumnos de 15 años: en España el 17,1 % no alcanza el nivel básico (nivel 2) y solo el 4,7 % llega al nivel más alto, frente al 10,6 % de media de la OCDE.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "19/10/2026",
+    source: {
+      label: "INEE · Ministerio de Educación, PISA 2022 competencia financiera",
+      url: "https://www.educacionfpydeportes.gob.es/inee/gl/dam/jcr:e66d3044-4c8b-42a5-9504-0a79975aa4c3/r2-1.pdf",
+    },
+  },
 ];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Eyebrow } from "@/components/ui/Typography";
 import { courses, factsFor, lessonFacts } from "@/content/courses";
+import { homeFactIds } from "@/content/home";
 import type { Fact } from "@/content/schema";
 
 export const metadata: Metadata = pageMetadata({
@@ -72,7 +73,7 @@ export default function SourcesPage() {
 
         <section aria-labelledby="datos" className="mt-14">
           <h2 id="datos" className="text-h2 font-semibold tracking-[-0.02em]">
-            Datos que usan las lecciones publicadas
+            Datos que usa la web
           </h2>
           {courses.map((course) => {
             const ids = [...new Set(course.lessons.flatMap(lessonFacts))];
@@ -126,6 +127,30 @@ export default function SourcesPage() {
               </section>
             );
           })}
+        </section>
+
+        <section aria-labelledby="f-portada" className="mt-8">
+          <h3 id="f-portada" className="text-h4 font-semibold">
+            Portada
+          </h3>
+          <ul className="mt-3 divide-y divide-line border-y border-line">
+            {factsFor(homeFactIds).map((f) => (
+              <li key={f.id} className="py-4">
+                <p>{f.claim}</p>
+                <a
+                  href={f.source.url}
+                  rel="noopener"
+                  className="mt-1 inline-flex min-h-11 items-center gap-1.5 text-small font-semibold text-accent-text underline underline-offset-4"
+                >
+                  {f.source.label}
+                  <ExternalLink size={14} aria-hidden="true" />
+                </a>
+                <p className="text-caption text-muted">
+                  <span className="tabular font-mono">{f.id}</span> · Consultado: {formatDate(f.checkedAt)} · {statusText[f.status]}
+                </p>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <p className="mt-10 text-small text-muted">

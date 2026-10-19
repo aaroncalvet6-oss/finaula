@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
     "/herramientas/",
     ...tools.map((t) => `/herramientas/${t.slug}/`),
+    "/familias/",
     "/fuentes/",
     "/legal/",
   ];

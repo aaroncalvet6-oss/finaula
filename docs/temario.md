@@ -828,40 +828,646 @@ de Renta de este año. Apunta cuándo empieza y cuándo termina.
 
 ---
 
-# Hoja de ruta de futuros cursos
+# Cursos 3 a 10 · temario propuesto
 
-Ninguno de estos cursos está escrito. Antes de escribir cada uno hay que verificar sus datos en la
-fuente oficial y añadirlos a `fuentes.md`. En la web solo pueden aparecer en «Próximos cursos».
+> Estado: **en revisión**. Ninguno de estos cursos se publica hasta que todas sus lecciones estén escritas
+> y todos sus datos verificados en la fuente oficial. Mientras tanto aparecen en «Próximos cursos».
+> Las lecciones se escribirán en este orden de tandas: 1) cursos 3 y 4; 2) cursos 5 y 6; 3) cursos 7 y 8;
+> 4) cursos 9 y 10. Cada lección tendrá la misma estructura que las de los cursos 1 y 2 (ejemplo con cifras,
+> dato clave, interactivo si aporta, preguntas con explicación y reto práctico) y su evaluación final.
 
-## Tu dinero hoy
+## Catálogo por áreas
 
-| Curso | Qué aprenderás | Datos que habrá que verificar |
-| --- | --- | --- |
-| Tu primera cuenta y tu primera tarjeta | Qué es una cuenta, el IBAN, débito frente a prepago, comisiones y cómo leer un extracto | Cómo puede abrir una cuenta un menor; cuenta de pago básica; garantía de depósitos (Banco de España, BOE, FGD) |
-| Comprar con cabeza | Rebajas, precio por unidad, devoluciones, garantía y compras por internet | Derecho de desistimiento; garantía legal (BOE, Ministerio de Consumo) |
-| Dinero, redes e influencers | Publicidad encubierta, «compra ahora, paga después», suscripciones que se renuevan solas | Identificación de la publicidad; crédito al consumo (BOE, CNMC) |
+| Área | Cursos |
+| --- | --- |
+| Tu dinero hoy | 1 · Fundamentos del dinero · 3 · Bancos, tarjetas y pagos digitales · 5 · Consumo inteligente |
+| Trabajo e ingresos | 2 · Tu primer sueldo · 10 · Emprender y ganar dinero por tu cuenta |
+| Hacer crecer tu dinero | 7 · Ahorro e inversión: lo básico |
+| Protégete y entiende el mundo | 4 · Que no te estafen · 6 · Deudas y créditos · 8 · Cómo funciona la economía · 9 · Impuestos y Estado |
 
-## Trabajo e ingresos
+## Curso 3 · Bancos, tarjetas y pagos digitales
 
-| Curso | Qué aprenderás | Datos que habrá que verificar |
-| --- | --- | --- |
-| Ganar dinero por tu cuenta | Vender cosas usadas, dar clases, crear contenido: cuándo es un trabajo y qué implica | Alta como autónomo; cómo tributan estas actividades (Seguridad Social, AEAT) |
-| Estudiar y pagar los estudios | Becas, coste real de estudiar, FP y universidad | Becas del Ministerio; precios públicos de matrícula (Ministerio de Educación, BOE) |
-| Independizarte | Alquiler, fianza, gastos de una casa y presupuesto de vida independiente | Ley de Arrendamientos Urbanos; ayudas al alquiler (BOE, Ministerio de Vivienda) |
+**Área:** Tu dinero hoy · **Tanda:** 1 · **Lecciones:** 5 · **Duración:** unos 33 min
 
-## Hacer crecer tu dinero
+Qué es una cuenta, cómo funcionan las tarjetas y los pagos con el móvil, y qué te protege si algo sale mal.
 
-| Curso | Qué aprenderás | Datos que habrá que verificar |
-| --- | --- | --- |
-| Qué es invertir | Riesgo, plazo y diversificación, y por qué nadie puede garantizar rentabilidades. Sin productos concretos | Protección del inversor; advertencias sobre entidades no autorizadas (CNMV) |
-| Ahorro a largo plazo y pensiones | Cómo funciona el sistema de pensiones y por qué importa el tiempo | Sistema de reparto (Seguridad Social) |
-| Cripto y falsos gurús | Qué es un criptoactivo, sus riesgos y cómo reconocer promesas falsas | Reglamento europeo MiCA; publicidad de criptoactivos (CNMV) |
+### 3.1 · Qué es un banco y qué es una cuenta
 
-## Protégete y entiende el mundo
+**Duración:** 6 min · **Datos:** ninguno
 
-| Curso | Qué aprenderás | Datos que habrá que verificar |
-| --- | --- | --- |
-| Deudas y préstamos | Interés, TAE, cuotas, ficheros de morosos y cómo evitar la bola de nieve | TAE; crédito al consumo; ficheros de morosos (Banco de España, BOE, AEPD) |
-| Que no te estafen | Estafas digitales, mulas de dinero y dónde pedir ayuda | Pagos no autorizados; Código Penal; líneas de ayuda (BOE, INCIBE, Policía Nacional, Guardia Civil) |
-| Impuestos y Estado | Para qué sirven los impuestos, IVA y servicios públicos | Tipos de IVA (AEAT, BOE) |
-| La economía en las noticias | Inflación, tipos de interés, BCE y paro explicados con ejemplos | Objetivo de inflación del BCE; IPC (BCE, Banco de España, INE) |
+**Objetivo:** Entender para qué sirve un banco, qué es una cuenta y cómo se identifica (IBAN).
+
+**Ideas clave**
+
+1. Un banco guarda tu dinero y presta parte de él a otros; por eso puede pagarte intereses o cobrarte comisiones.
+2. Una cuenta es el «lugar» donde está tu dinero en el banco. Se identifica con un IBAN, que empieza por ES en España.
+3. Titular es el dueño de la cuenta; autorizado es quien puede usarla sin ser el dueño.
+
+### 3.2 · Tu primera cuenta: cómo se abre y qué cuesta
+
+**Duración:** 7 min · **Datos:** F-41, F-42, F-43
+
+**Objetivo:** Saber cómo se abre una cuenta siendo menor y leer sus comisiones antes de firmar.
+
+**Ideas clave**
+
+1. Siendo menor, tu cuenta la abren y la gestionan tus padres o tutores. Cada banco pone sus condiciones.
+2. Antes de contratar, el banco tiene que informarte de las comisiones: mantenimiento, tarjeta, transferencias…
+3. Existe una cuenta de pago básica, con comisiones limitadas, para que nadie se quede sin cuenta.
+
+### 3.3 · Tarjetas: débito, prepago y crédito
+
+**Duración:** 7 min · **Datos:** F-48, F-30, F-44
+
+**Objetivo:** Distinguir los tipos de tarjeta y saber qué hacer si la pierdes.
+
+**Ideas clave**
+
+1. Débito: pagas con el dinero que tienes en la cuenta. Prepago: solo lo que hayas cargado. Crédito: el banco te presta y luego lo devuelves.
+2. Una tarjeta de crédito es un préstamo, y un menor no puede contratarla por sí solo.
+3. Si la pierdes o ves un pago que no reconoces, avisa al banco y bloquéala cuanto antes: cuanto antes avises, más protegido estás.
+
+### 3.4 · Pagar con el móvil, Bizum y transferencias
+
+**Duración:** 7 min · **Datos:** F-46, F-45
+
+**Objetivo:** Usar los pagos digitales sabiendo qué se puede deshacer y qué no.
+
+**Ideas clave**
+
+1. Una transferencia mueve dinero de una cuenta a otra. Las inmediatas llegan en segundos y casi nunca se pueden deshacer.
+2. Antes de enviar, comprueba a quién. El banco ya debe comprobar que el nombre coincide con el IBAN, pero tú decides si envías.
+3. En las compras por internet te pedirán confirmar con un código o en la app: es una protección, nunca se lo des a nadie.
+
+### 3.5 · Si algo sale mal: tu dinero protegido y cómo reclamar
+
+**Duración:** 6 min · **Datos:** F-34, F-47
+
+**Objetivo:** Saber qué protege tu dinero en el banco y dónde reclamar.
+
+**Ideas clave**
+
+1. El Fondo de Garantía de Depósitos protege tu dinero en el banco hasta un límite, aunque el banco quiebre.
+2. Si tienes un problema con el banco, reclama primero en su servicio de atención al cliente.
+3. Si no te responde o no te da la razón, puedes acudir al Banco de España.
+
+## Curso 4 · Que no te estafen
+
+**Área:** Protégete y entiende el mundo · **Tanda:** 1 · **Lecciones:** 5 · **Duración:** unos 34 min
+
+Cómo piensan los estafadores, las estafas más comunes entre jóvenes y qué hacer si te pasa.
+
+### 4.1 · Cómo piensa un estafador
+
+**Duración:** 6 min · **Datos:** ninguno
+
+**Objetivo:** Reconocer los trucos psicológicos que se repiten en casi todas las estafas.
+
+**Ideas clave**
+
+1. Casi todas las estafas usan prisa, miedo, autoridad o un premio para que no pienses.
+2. El estafador quiere que actúes ya y por un canal que controla él.
+3. La mejor defensa es parar: si algo te mete prisa, tómate tiempo y compruébalo por otro canal.
+
+### 4.2 · Phishing, smishing y llamadas falsas
+
+**Duración:** 7 min · **Datos:** F-49, F-50
+
+**Objetivo:** Detectar mensajes y llamadas que se hacen pasar por tu banco, una empresa o un organismo.
+
+**Ideas clave**
+
+1. Phishing (correo), smishing (SMS) y vishing (llamada) buscan tus claves o que pagues.
+2. El número o el nombre que ves en una llamada o un SMS se puede falsificar.
+3. Tu banco nunca te pedirá tus claves completas ni los códigos de confirmación. Si te los piden, es una estafa.
+
+### 4.3 · Estafas al comprar y vender
+
+**Duración:** 7 min · **Datos:** F-51
+
+**Objetivo:** Comprar y vender entre particulares sin caer en las trampas más comunes.
+
+**Ideas clave**
+
+1. Tiendas falsas: precios imposibles, sin datos de contacto y pago solo por transferencia.
+2. En segunda mano, no salgas de la plataforma ni pagues por adelantado a desconocidos.
+3. Una «solicitud de dinero» en una app de pagos no es un ingreso: si la aceptas, pagas tú.
+
+### 4.4 · Inversiones milagro, chiringuitos y pirámides
+
+**Duración:** 7 min · **Datos:** F-35, F-52
+
+**Objetivo:** Reconocer promesas de inversión falsas y comprobar si una entidad está autorizada.
+
+**Ideas clave**
+
+1. Ganancias altas, rápidas y seguras no existen. Es la promesa típica de un fraude.
+2. Un «chiringuito» ofrece inversiones sin autorización. La CNMV publica advertencias y registros para comprobarlo.
+3. Si ganas sobre todo por traer a más gente, es una pirámide: los últimos en entrar lo pierden todo.
+
+### 4.5 · Mulas de dinero y qué hacer si te estafan
+
+**Duración:** 7 min · **Datos:** F-32, F-31
+
+**Objetivo:** Evitar que te usen para mover dinero ajeno y saber cómo actuar tras una estafa.
+
+**Ideas clave**
+
+1. Si te ofrecen dinero por prestar tu cuenta o recibir y reenviar transferencias, te están usando como «mula». Puede ser delito.
+2. Si te han estafado: avisa a tu banco enseguida, guarda las pruebas y denuncia.
+3. Puedes pedir ayuda gratis y confidencial en el 017 de INCIBE.
+
+## Curso 5 · Consumo inteligente
+
+**Área:** Tu dinero hoy · **Tanda:** 2 · **Lecciones:** 5 · **Duración:** unos 33 min
+
+Comprar con cabeza: comparar, conocer tus derechos, controlar suscripciones y detectar la publicidad.
+
+### 5.1 · Comparar antes de comprar
+
+**Duración:** 6 min · **Datos:** F-53
+
+**Objetivo:** Comparar precios de verdad y no caer en falsas rebajas.
+
+**Ideas clave**
+
+1. Compara el precio por unidad y el coste total, con envío y extras.
+2. En una rebaja, el precio «de antes» tiene que ser el más bajo de los últimos 30 días.
+3. Una oferta solo es buena si ibas a comprarlo igualmente.
+
+### 5.2 · Comprar por internet: tus derechos
+
+**Duración:** 7 min · **Datos:** F-28, F-54
+
+**Objetivo:** Saber cuándo puedes devolver una compra online y cuándo no.
+
+**Ideas clave**
+
+1. En una compra a distancia tienes 14 días naturales para desistir sin explicaciones.
+2. Hay excepciones, como los productos personalizados o el contenido digital ya descargado.
+3. Antes de comprar, mira quién vende, cómo se devuelve y quién paga el envío de vuelta.
+
+### 5.3 · Garantías y devoluciones en tienda
+
+**Duración:** 6 min · **Datos:** F-29, F-55
+
+**Objetivo:** Distinguir garantía de devolución y saber qué exigir si algo falla.
+
+**Ideas clave**
+
+1. Los productos nuevos tienen 3 años de garantía legal si salen defectuosos.
+2. Devolver algo que no tiene defectos en una tienda física depende de la política de la tienda: pregunta antes.
+3. Guarda el tique: es tu prueba de compra.
+
+### 5.4 · Suscripciones, compras en apps y «paga después»
+
+**Duración:** 7 min · **Datos:** F-56, F-57
+
+**Objetivo:** Controlar los pagos que se repiten y entender el «compra ahora, paga después».
+
+**Ideas clave**
+
+1. Las suscripciones se renuevan solas: apunta cuánto pagas al mes por todas juntas.
+2. Darte de baja debe ser tan fácil como darte de alta.
+3. «Compra ahora, paga después» es una forma de crédito: sigue siendo dinero que debes.
+
+### 5.5 · Publicidad, influencers y cómo reclamar
+
+**Duración:** 7 min · **Datos:** F-58, F-59
+
+**Objetivo:** Reconocer la publicidad en redes y saber dónde reclamar.
+
+**Ideas clave**
+
+1. La publicidad, también la de influencers, debe identificarse como tal. Si no lo dice, desconfía.
+2. Que alguien lo use no significa que sea bueno para ti: le pueden estar pagando.
+3. Puedes reclamar con una hoja de reclamaciones, ante consumo de tu comunidad o en el arbitraje de consumo.
+
+## Curso 6 · Deudas y créditos
+
+**Área:** Protégete y entiende el mundo · **Tanda:** 2 · **Lecciones:** 5 · **Duración:** unos 33 min
+
+Qué cuesta de verdad pedir prestado, cómo comparar créditos y cómo evitar que una deuda crezca.
+
+### 6.1 · Qué es una deuda y cuándo tiene sentido
+
+**Duración:** 6 min · **Datos:** ninguno
+
+**Objetivo:** Entender qué significa deber dinero y distinguir una deuda razonable de una peligrosa.
+
+**Ideas clave**
+
+1. Una deuda es dinero que usas hoy y devuelves mañana, normalmente con intereses.
+2. Puede tener sentido para algo que dura y te ayuda (estudiar); casi nunca para caprichos.
+3. Antes de pedir prestado, pregúntate si podrías pagar la cuota cada mes sin problemas.
+
+### 6.2 · Intereses, TIN y TAE
+
+**Duración:** 7 min · **Datos:** F-60
+
+**Objetivo:** Calcular cuánto cuesta un préstamo y comparar ofertas con la TAE.
+
+**Ideas clave**
+
+1. El interés es el precio de que te presten dinero.
+2. La TAE incluye el interés y los gastos y comisiones: es la cifra para comparar.
+3. Un plazo más largo baja la cuota, pero casi siempre sube lo que pagas en total.
+
+### 6.3 · Tarjetas de crédito y deudas que crecen
+
+**Duración:** 7 min · **Datos:** F-61
+
+**Objetivo:** Entender por qué pagar solo el mínimo hace que una deuda pequeña dure años.
+
+**Ideas clave**
+
+1. Con una tarjeta revolving, pagar la cuota mínima puede hacer que la deuda casi no baje.
+2. El banco debe explicarte cuánto tardarías en pagarla con el pago mínimo.
+3. Si usas crédito, págalo entero cada mes.
+
+### 6.4 · Préstamos rápidos y pagos a plazos
+
+**Duración:** 7 min · **Datos:** F-62, F-63, F-57
+
+**Objetivo:** Detectar el coste real de los préstamos rápidos y los pagos a plazos.
+
+**Ideas clave**
+
+1. Los préstamos rápidos y los «paga después» parecen pequeños, pero pueden tener costes muy altos.
+2. En un crédito al consumo tienes 14 días para echarte atrás.
+3. Siendo menor no puedes pedir un préstamo a tu nombre.
+
+### 6.5 · Si no puedes pagar
+
+**Duración:** 6 min · **Datos:** F-64
+
+**Objetivo:** Saber qué pasa si no pagas una deuda y qué hacer antes de que sea tarde.
+
+**Ideas clave**
+
+1. No pagar tiene consecuencias: intereses de demora, comisiones y aparecer en un fichero de morosos.
+2. Para incluirte en un fichero de morosos deben cumplirse requisitos y avisarte antes.
+3. Si ves que no llegas, habla pronto con quien te prestó: hay más opciones antes del impago.
+
+## Curso 7 · Ahorro e inversión: lo básico
+
+**Área:** Hacer crecer tu dinero · **Tanda:** 3 · **Lecciones:** 5 · **Duración:** unos 34 min
+
+Ahorrar no es invertir. Riesgo, plazo y diversificación, y por qué desconfiar de los falsos gurús y las cripto. Sin recomendar nada.
+
+### 7.1 · Ahorrar no es invertir
+
+**Duración:** 6 min · **Datos:** F-34
+
+**Objetivo:** Distinguir ahorrar de invertir y saber qué dinero no debe arriesgarse nunca.
+
+**Ideas clave**
+
+1. Ahorrar es apartar dinero; invertir es ponerlo a trabajar asumiendo que puede bajar.
+2. Primero, un colchón para imprevistos que puedas sacar en cualquier momento.
+3. Los depósitos en el banco están protegidos hasta un límite; las inversiones no están protegidas frente a pérdidas.
+
+### 7.2 · Riesgo, rentabilidad y plazo
+
+**Duración:** 7 min · **Datos:** ninguno
+
+**Objetivo:** Entender que más rentabilidad posible significa más riesgo, y el papel del tiempo.
+
+**Ideas clave**
+
+1. No hay rentabilidad alta sin riesgo. Ninguna rentabilidad está garantizada y las inversiones pueden bajar.
+2. El dinero que vas a necesitar pronto no debería estar en algo que puede bajar.
+3. Con más tiempo hay más margen para recuperarse de las caídas, pero nunca es seguro.
+
+### 7.3 · Diversificar y vigilar los costes
+
+**Duración:** 7 min · **Datos:** F-65, F-66
+
+**Objetivo:** Entender por qué no poner todo en un solo sitio y cómo las comisiones restan.
+
+**Ideas clave**
+
+1. Diversificar es repartir: si algo cae, no lo pierdes todo.
+2. Las comisiones se comen parte de lo que ganes, cada año: el interés compuesto también juega en contra.
+3. Antes de invertir te tienen que dar un documento con los costes y el riesgo, y evaluar si el producto es adecuado para ti.
+
+### 7.4 · Acciones, bonos y fondos, sin tecnicismos
+
+**Duración:** 7 min · **Datos:** ninguno
+
+**Objetivo:** Saber qué es cada producto básico, sin recomendar ninguno.
+
+**Ideas clave**
+
+1. Una acción es una parte de una empresa: su valor sube y baja.
+2. Un bono es un préstamo que haces a una empresa o a un Estado a cambio de intereses.
+3. Un fondo junta el dinero de muchas personas y lo invierte en muchas cosas a la vez.
+
+### 7.5 · Falsos gurús, cripto y promesas en redes
+
+**Duración:** 7 min · **Datos:** F-67, F-68, F-35
+
+**Objetivo:** Reconocer por qué desconfiar de quien promete hacerte rico y conocer los riesgos de las cripto.
+
+**Ideas clave**
+
+1. Quien promete ganancias rápidas y seguras te está vendiendo algo, aunque sea su curso o su enlace.
+2. Las criptomonedas pueden perder gran parte de su valor en poco tiempo. Sus proveedores necesitan autorización y su publicidad debe advertir del riesgo.
+3. Antes de nada, comprueba en la CNMV si quien te ofrece invertir está autorizado.
+
+## Curso 8 · Cómo funciona la economía
+
+**Área:** Protégete y entiende el mundo · **Tanda:** 3 · **Lecciones:** 5 · **Duración:** unos 33 min
+
+Precios, inflación, tipos de interés, empleo y PIB explicados con ejemplos, para entender las noticias.
+
+### 8.1 · Oferta, demanda y precios
+
+**Duración:** 6 min · **Datos:** ninguno
+
+**Objetivo:** Entender por qué los precios suben y bajan.
+
+**Ideas clave**
+
+1. Si mucha gente quiere algo y hay poco, el precio sube; si sobra, baja.
+2. Los precios dan información: indican qué escasea y qué abunda.
+3. Por eso las entradas de un concierto famoso se agotan o se revenden caras.
+
+### 8.2 · Inflación y el IPC
+
+**Duración:** 7 min · **Datos:** F-33
+
+**Objetivo:** Entender cómo se mide la inflación y por qué importa.
+
+**Ideas clave**
+
+1. La inflación es la subida general de los precios; en España se mide con el IPC del INE.
+2. El IPC sigue una cesta de productos que compra un hogar medio.
+3. Si tu paga o tu sueldo suben menos que la inflación, en realidad puedes comprar menos.
+
+### 8.3 · Tipos de interés y el Banco Central Europeo
+
+**Duración:** 7 min · **Datos:** F-69
+
+**Objetivo:** Entender quién decide los tipos de interés y cómo te afectan.
+
+**Ideas clave**
+
+1. El Banco Central Europeo fija los tipos de interés oficiales de la zona del euro.
+2. Su objetivo es una inflación del 2 % a medio plazo: sube los tipos para frenarla y los baja para animar la economía.
+3. Cuando suben los tipos, los préstamos cuestan más y el ahorro suele dar algo más.
+
+### 8.4 · Empleo y paro
+
+**Duración:** 6 min · **Datos:** F-70
+
+**Objetivo:** Entender cómo se mide el paro y por qué afecta a los jóvenes.
+
+**Ideas clave**
+
+1. Estar en paro no es solo no tener trabajo: es no tenerlo, buscarlo y estar disponible.
+2. En España el paro se mide con la Encuesta de Población Activa del INE.
+3. Formarte y tener experiencia aumenta tus opciones de encontrar trabajo.
+
+### 8.5 · El PIB y cómo leer una noticia económica
+
+**Duración:** 7 min · **Datos:** F-71
+
+**Objetivo:** Entender qué es el PIB y leer una noticia económica sin perderse.
+
+**Ideas clave**
+
+1. El PIB mide todo lo que produce un país en un periodo.
+2. Crecer no significa que a todo el mundo le vaya mejor: importa cómo se reparte.
+3. En una noticia, busca qué se mide, comparado con qué y quién lo dice.
+
+## Curso 9 · Impuestos y Estado
+
+**Área:** Protégete y entiende el mundo · **Tanda:** 4 · **Lecciones:** 5 · **Duración:** unos 32 min
+
+Para qué sirven los impuestos, cuáles pagas sin darte cuenta y cómo se financian las pensiones.
+
+### 9.1 · Para qué sirven los impuestos
+
+**Duración:** 6 min · **Datos:** F-72
+
+**Objetivo:** Entender qué se paga con los impuestos y por qué contribuye cada uno según lo que tiene.
+
+**Ideas clave**
+
+1. Con los impuestos se pagan servicios de todos: sanidad, educación, carreteras, becas…
+2. Cada persona contribuye según su capacidad económica.
+3. Los presupuestos del Estado deciden cuánto se recauda y en qué se gasta.
+
+### 9.2 · El IVA: el impuesto que pagas al comprar
+
+**Duración:** 7 min · **Datos:** F-73
+
+**Objetivo:** Entender el IVA y encontrarlo en un tique.
+
+**Ideas clave**
+
+1. Cuando compras algo, parte del precio es IVA, que la tienda ingresa a Hacienda.
+2. Hay un tipo general y tipos reducidos para productos básicos (los porcentajes cambian: consulta la fuente).
+3. En el tique o la factura puedes ver la base y el IVA por separado.
+
+### 9.3 · IRPF y otros impuestos
+
+**Duración:** 6 min · **Datos:** F-74
+
+**Objetivo:** Conocer los principales impuestos y quién los paga.
+
+**Ideas clave**
+
+1. El IRPF grava lo que ganas en el año (lo viste en «Tu primer sueldo»).
+2. Hay otros: el IBI por tener una vivienda, o los impuestos especiales del alcohol, el tabaco o los carburantes.
+3. Unos los pagas directamente; otros van incluidos en el precio.
+
+### 9.4 · Cotizaciones y pensiones
+
+**Duración:** 7 min · **Datos:** F-75
+
+**Objetivo:** Entender cómo se pagan las pensiones y qué papel tienen las cotizaciones.
+
+**Ideas clave**
+
+1. Las pensiones de hoy se pagan sobre todo con las cotizaciones de quienes trabajan hoy: es un sistema de reparto.
+2. Por eso importa cuántas personas trabajan y cuántas cobran pensión.
+3. Lo que cotizas te da derecho a prestaciones en el futuro.
+
+### 9.5 · Economía sumergida: por qué te perjudica
+
+**Duración:** 6 min · **Datos:** F-76
+
+**Objetivo:** Entender qué pierdes cuando algo se paga «en negro».
+
+**Ideas clave**
+
+1. Trabajar sin contrato te deja sin cotizar y sin protección.
+2. Comprar sin factura te deja sin garantías si algo sale mal.
+3. Lo que unos no pagan lo pagamos entre todos.
+
+## Curso 10 · Emprender y ganar dinero por tu cuenta
+
+**Área:** Trabajo e ingresos · **Tanda:** 4 · **Lecciones:** 5 · **Duración:** unos 33 min
+
+Vender cosas, ofrecer un servicio o crear contenido: costes, precio, impuestos básicos y cuándo es un trabajo.
+
+### 10.1 · De una idea a ganar dinero
+
+**Duración:** 7 min · **Datos:** ninguno
+
+**Objetivo:** Calcular si una idea da dinero: costes, precio y margen.
+
+**Ideas clave**
+
+1. Ingresar no es ganar: hay que restar lo que cuesta producir y vender.
+2. El margen es lo que te queda por cada venta.
+3. Pon un precio que cubra tus costes y tu tiempo.
+
+### 10.2 · Vender cosas usadas y en plataformas
+
+**Duración:** 6 min · **Datos:** F-77, F-78
+
+**Objetivo:** Saber qué implica vender en plataformas de segunda mano.
+
+**Ideas clave**
+
+1. Vender algo por menos de lo que te costó no genera impuesto; si ganas dinero con la venta, puede tributar.
+2. Las plataformas informan a Hacienda de quienes venden mucho a través de ellas.
+3. Si compras para revender, ya es una actividad económica.
+
+### 10.3 · Trabajar por tu cuenta: alta y obligaciones
+
+**Duración:** 7 min · **Datos:** F-79, F-80
+
+**Objetivo:** Saber cuándo una actividad por tu cuenta es un trabajo con obligaciones.
+
+**Ideas clave**
+
+1. Si trabajas por tu cuenta de forma habitual, tienes que darte de alta como autónomo.
+2. Antes de empezar, también hay que darse de alta en el censo de Hacienda.
+3. Siendo menor, consulta antes con tus padres: hay requisitos de edad y permisos.
+
+### 10.4 · Creadores de contenido
+
+**Duración:** 7 min · **Datos:** F-81, F-58
+
+**Objetivo:** Entender cómo se gana dinero en redes y qué obligaciones tiene.
+
+**Ideas clave**
+
+1. Publicidad, colaboraciones y regalos de marcas son ingresos y tributan.
+2. La publicidad tiene que identificarse como publicidad.
+3. Ganar seguidores no es lo mismo que ganar dinero: la mayoría de creadores gana poco.
+
+### 10.5 · Tu primer plan
+
+**Duración:** 6 min · **Datos:** ninguno
+
+**Objetivo:** Hacer un plan sencillo para una idea: cuánto inviertes, cuánto puedes perder, cuándo paras.
+
+**Ideas clave**
+
+1. Empieza pequeño: arriesga solo lo que puedes permitirte perder.
+2. Separa el dinero del proyecto del tuyo.
+3. Decide de antemano qué resultado te haría seguir o parar.
+
+## Datos a verificar · cursos 3 a 10
+
+Agrupados por curso y ordenados por tandas. Todos están **Pendiente** en [`fuentes.md`](./fuentes.md): ninguno
+se usará hasta que esté verificado en la fuente oficial. Los enlaces son el sitio donde hay que comprobarlo; no
+se han podido abrir desde el entorno de desarrollo. Cuando un enlace lleva solo el dominio, hay que localizar la
+página exacta. Los datos que ya estaban registrados (F-30 a F-35) conservan su número.
+
+### Tanda 1 · Curso 3 · Bancos, tarjetas y pagos digitales
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-41 | 3.2 | Un menor puede tener una cuenta a su nombre, pero la abren y la gestionan sus padres o tutores hasta que tenga capacidad para contratar (en la práctica, cada banco fija sus condiciones) | no | Banco de España · Portal del Cliente Bancario: https://clientebancario.bde.es/ · BOE · Código Civil (capacidad del menor, arts. 162 y 322): https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 |
+| F-42 | 3.2 | Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite (la lección no da la cifra) | sí | BOE · Real Decreto-ley 19/2017 de cuentas de pago básicas (buscar en https://www.boe.es/) · Banco de España: https://clientebancario.bde.es/ |
+| F-43 | 3.2 | El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia | no | BOE · Orden EHA/2899/2011 de transparencia bancaria: https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804 · Banco de España: https://clientebancario.bde.es/ |
+| F-48 | 3.3 | Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 · Banco de España: https://clientebancario.bde.es/ |
+| F-30 (ya registrado) | 3.3 | Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora | no | BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España: https://clientebancario.bde.es/ |
+| F-44 | 3.3 | Tienes un plazo máximo para comunicar al banco una operación que no autorizaste (la lección explica que hay que hacerlo cuanto antes y enlaza el plazo) | no | BOE · Real Decreto-ley 19/2018, art. 43: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 |
+| F-45 | 3.4 | En los pagos por internet el banco debe aplicar una autenticación reforzada (por ejemplo, un código en el móvil además de la tarjeta) | no | BOE · Real Decreto-ley 19/2018, art. 68: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España: https://clientebancario.bde.es/ |
+| F-46 | 3.4 | Las transferencias inmediatas en euros deben ofrecerse en la UE y el banco debe comprobar que el nombre del beneficiario coincide con el IBAN antes de enviarla | no | EUR-Lex · Reglamento (UE) 2024/886: https://eur-lex.europa.eu/eli/reg/2024/886/oj · Banco de España: https://clientebancario.bde.es/ |
+| F-34 (ya registrado) | 3.5 | El Fondo de Garantía de Depósitos protege el dinero depositado en los bancos hasta un importe máximo por titular y entidad | no | BOE · RD 2606/1996: https://www.boe.es/buscar/act.php?id=BOE-A-1996-27971 · FGD: https://www.fgd.es/ |
+| F-47 | 3.5 | Para reclamar a un banco, primero hay que dirigirse a su servicio de atención al cliente; si no responde o no estás de acuerdo, puedes acudir al Banco de España | no | Banco de España · Portal del Cliente Bancario, reclamaciones: https://clientebancario.bde.es/ |
+
+### Tanda 1 · Curso 4 · Que no te estafen
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-49 | 4.2 | Tu banco nunca te pedirá por SMS, correo o teléfono tus claves completas ni los códigos que te envía para confirmar operaciones | no | INCIBE · Oficina de Seguridad del Internauta: https://www.osi.es/ · Banco de España: https://clientebancario.bde.es/ |
+| F-50 | 4.2 | Las llamadas y los SMS pueden mostrar un número o un nombre falsos, aunque parezcan los de tu banco («spoofing») | no | INCIBE · Oficina de Seguridad del Internauta: https://www.osi.es/ |
+| F-51 | 4.3 | En los pagos entre particulares con el móvil, una «solicitud de dinero» no es un ingreso: si la aceptas, eres tú quien paga | no | INCIBE · Oficina de Seguridad del Internauta: https://www.osi.es/ · Banco de España: https://clientebancario.bde.es/ |
+| F-35 (ya registrado) | 4.4 | La CNMV publica advertencias sobre entidades que ofrecen inversiones sin estar autorizadas, y registros para comprobar si una entidad lo está | no | CNMV · advertencias y registros oficiales: https://www.cnmv.es/ |
+| F-52 | 4.4 | Las ventas piramidales (ganar dinero sobre todo por captar a otras personas) están prohibidas como práctica desleal | no | BOE · Ley 3/1991 de Competencia Desleal, art. 24: https://www.boe.es/buscar/act.php?id=BOE-A-1991-628 |
+| F-32 (ya registrado) | 4.5 | Prestar tu cuenta para mover dinero de otra persona («mula de dinero») puede ser delito | no | BOE · Código Penal (blanqueo de capitales): https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444 · Policía Nacional: https://www.policia.es/ |
+| F-31 (ya registrado) | 4.5 | INCIBE tiene una línea de ayuda gratuita y confidencial en ciberseguridad (017), y las estafas se denuncian ante la Policía Nacional o la Guardia Civil | no | INCIBE: https://www.incibe.es/ · Policía Nacional: https://www.policia.es/ · Guardia Civil: https://www.guardiacivil.es/ |
+
+### Tanda 2 · Curso 5 · Consumo inteligente
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-53 | 5.1 | Cuando una tienda anuncia una rebaja, el precio anterior que muestra debe ser el más bajo que aplicó en los 30 días previos | no | BOE · Ley 7/1996 de Ordenación del Comercio Minorista, art. 20: https://www.boe.es/buscar/act.php?id=BOE-A-1996-1072 · Ministerio de Consumo: https://www.consumo.gob.es/ |
+| F-28 | 5.2 | En las compras a distancia (internet, teléfono) tienes 14 días naturales para desistir sin dar explicaciones | no | BOE · Ley General de Consumidores (RDLeg 1/2007), arts. 102 a 104: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 |
+| F-54 | 5.2 | Hay excepciones al desistimiento: por ejemplo, productos personalizados o contenido digital que ya has empezado a descargar con tu consentimiento | no | BOE · Ley General de Consumidores, art. 103: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 |
+| F-29 | 5.3 | Los productos nuevos tienen una garantía legal de 3 años desde la entrega | no | BOE · Ley General de Consumidores, art. 120 y siguientes: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 · Ministerio de Consumo: https://www.consumo.gob.es/ |
+| F-55 | 5.3 | Una tienda física no está obligada a devolverte el dinero si el producto no tiene defectos, salvo que lo ofrezca en su política | no | Ministerio de Consumo: https://www.consumo.gob.es/ · BOE · Ley General de Consumidores: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 |
+| F-56 | 5.4 | Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio | no | BOE · Ley General de Consumidores, art. 62.3: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 |
+| F-57 | 5.4 | «Compra ahora, paga después» y pagar a plazos son formas de crédito (la lección explica cuándo se aplican las normas de crédito al consumo) | no | Banco de España: https://clientebancario.bde.es/ · BOE · Ley 16/2011 de contratos de crédito al consumo: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 |
+| F-58 | 5.5 | La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad | no | BOE · Ley 13/2022 General de Comunicación Audiovisual y su desarrollo para usuarios de especial relevancia: https://www.boe.es/ · CNMC: https://www.cnmc.es/ |
+| F-59 | 5.5 | Puedes reclamar con una hoja de reclamaciones en la tienda, ante los servicios de consumo de tu comunidad autónoma y, si la empresa está adherida, en el arbitraje de consumo | no | Ministerio de Consumo · reclamaciones y arbitraje de consumo: https://www.consumo.gob.es/ |
+
+### Tanda 2 · Curso 6 · Deudas y créditos
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-60 | 6.2 | La TAE incluye el tipo de interés y los gastos y comisiones del préstamo, y sirve para comparar ofertas | no | Banco de España · Portal del Cliente Bancario: https://clientebancario.bde.es/ · BOE · Ley 16/2011, art. 32: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 |
+| F-61 | 6.3 | Las tarjetas revolving tienen obligaciones de información reforzadas: el banco debe explicar cuánto tardarías en pagar la deuda con el pago mínimo | no | BOE · Orden ETD/699/2020 de crédito revolvente: https://www.boe.es/ · Banco de España: https://clientebancario.bde.es/ |
+| F-62 | 6.4 | En un crédito al consumo tienes 14 días naturales para desistir sin dar explicaciones | no | BOE · Ley 16/2011 de contratos de crédito al consumo, art. 28: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 |
+| F-63 | 6.4 | Un menor no emancipado no puede pedir un préstamo a su nombre | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 |
+| F-64 | 6.5 | Para incluirte en un fichero de morosos la deuda debe ser cierta, vencida y exigible, y antes deben avisarte; hay un importe mínimo y un plazo máximo de permanencia | no | BOE · Ley Orgánica 3/2018 de Protección de Datos, art. 20: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673 · AEPD: https://www.aepd.es/ |
+
+### Tanda 3 · Curso 7 · Ahorro e inversión: lo básico
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-34 (ya registrado) | 7.1 | El Fondo de Garantía de Depósitos protege los depósitos hasta un importe máximo por titular y entidad; no protege frente a las pérdidas de una inversión | no | FGD: https://www.fgd.es/ · BOE · RD 2606/1996: https://www.boe.es/buscar/act.php?id=BOE-A-1996-27971 |
+| F-65 | 7.3 | Antes de invertir en un fondo tienen que darte un documento con sus datos fundamentales, que incluye los costes y el nivel de riesgo | no | CNMV · guías del inversor: https://www.cnmv.es/ |
+| F-66 | 7.3 | Antes de venderte algunos productos de inversión, la entidad debe evaluar si son adecuados para ti (test de conveniencia o de idoneidad) | no | CNMV · guías del inversor: https://www.cnmv.es/ · BOE · Ley 6/2023 de los Mercados de Valores: https://www.boe.es/ |
+| F-67 | 7.5 | Los proveedores de servicios de criptoactivos en la UE necesitan autorización según el Reglamento MiCA | no | EUR-Lex · Reglamento (UE) 2023/1114 (MiCA): https://eur-lex.europa.eu/eli/reg/2023/1114/oj · CNMV: https://www.cnmv.es/ |
+| F-68 | 7.5 | La publicidad de criptoactivos en España debe incluir advertencias sobre sus riesgos | no | CNMV · Circular 1/2022 sobre publicidad de criptoactivos: https://www.cnmv.es/ |
+| F-35 (ya registrado) | 7.5 | La CNMV publica advertencias sobre entidades que ofrecen inversiones sin estar autorizadas | no | CNMV · advertencias sobre entidades no autorizadas: https://www.cnmv.es/ |
+
+### Tanda 3 · Curso 8 · Cómo funciona la economía
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-33 (ya registrado) | 8.2 | En España, la inflación se mide con el IPC, que elabora el INE | no | INE · Índice de Precios de Consumo: https://www.ine.es/ |
+| F-69 | 8.3 | El Banco Central Europeo decide los tipos de interés oficiales de la zona del euro y su objetivo es una inflación del 2 % a medio plazo | no | BCE: https://www.ecb.europa.eu/ · Banco de España: https://www.bde.es/ |
+| F-70 | 8.4 | El paro se mide con la Encuesta de Población Activa (EPA) del INE; una persona parada es la que no tiene trabajo, lo busca y está disponible para trabajar | no | INE · Encuesta de Población Activa: https://www.ine.es/ |
+| F-71 | 8.5 | El PIB mide el valor de todo lo que produce un país en un periodo, y en España lo calcula el INE | no | INE · Contabilidad Nacional: https://www.ine.es/ |
+
+### Tanda 4 · Curso 9 · Impuestos y Estado
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-72 | 9.1 | La Constitución establece que todos contribuyen a sostener el gasto público según su capacidad económica, con un sistema tributario justo y progresivo | no | BOE · Constitución Española, art. 31: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229 |
+| F-73 | 9.2 | El IVA se paga al comprar bienes y servicios y tiene un tipo general y tipos reducidos (la lección no da los porcentajes) | sí | BOE · Ley 37/1992 del IVA: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 · Agencia Tributaria: https://sede.agenciatributaria.gob.es/ |
+| F-74 | 9.3 | Además del IRPF y el IVA hay otros impuestos, como el IBI (sobre los inmuebles, municipal) o los impuestos especiales (alcohol, tabaco, carburantes) | no | Agencia Tributaria: https://sede.agenciatributaria.gob.es/ · BOE · Ley Reguladora de las Haciendas Locales: https://www.boe.es/ |
+| F-75 | 9.4 | Las pensiones contributivas se financian sobre todo con las cotizaciones de quienes trabajan hoy (sistema de reparto) | no | Seguridad Social: https://www.seg-social.es/ · BOE · Ley General de la Seguridad Social: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724 |
+| F-76 | 9.5 | Pagar o cobrar «en negro» deja sin contrato ni cotización a quien trabaja y sin garantías a quien compra | no | Agencia Tributaria: https://sede.agenciatributaria.gob.es/ · Seguridad Social: https://www.seg-social.es/ |
+
+### Tanda 4 · Curso 10 · Emprender y ganar dinero por tu cuenta
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo |
+| --- | --- | --- | --- | --- |
+| F-77 | 10.2 | Vender objetos usados por menos de lo que te costaron no genera impuesto a pagar; si ganas dinero con la venta, puede tributar (la lección no da cifras) | sí | Agencia Tributaria · ganancias y pérdidas patrimoniales: https://sede.agenciatributaria.gob.es/ · BOE · Ley del IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| F-78 | 10.2 | Las plataformas digitales de venta informan a Hacienda de quienes venden a través de ellas por encima de ciertos umbrales (DAC7) | no | Agencia Tributaria · obligaciones de información de plataformas: https://sede.agenciatributaria.gob.es/ |
+| F-79 | 10.3 | Cuándo hay que darse de alta como autónomo (trabajo por cuenta propia habitual) y qué edad hace falta | no | Seguridad Social · Régimen Especial de Trabajadores Autónomos: https://www.seg-social.es/ · BOE · Estatuto de los Trabajadores, art. 7: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430 |
+| F-80 | 10.3 | Antes de empezar una actividad económica hay que darse de alta en el censo de Hacienda | no | Agencia Tributaria · censo de empresarios, profesionales y retenedores: https://sede.agenciatributaria.gob.es/ |
+| F-81 | 10.4 | Los ingresos de los creadores de contenido (publicidad, colaboraciones, regalos de marcas) tributan como rendimientos de una actividad económica | sí | Agencia Tributaria: https://sede.agenciatributaria.gob.es/ |
+| F-58 (ya registrado) | 10.4 | La publicidad en redes tiene que identificarse claramente como publicidad | no | BOE · Ley 13/2022 General de Comunicación Audiovisual: https://www.boe.es/ · CNMC: https://www.cnmc.es/ |

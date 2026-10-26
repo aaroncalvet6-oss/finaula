@@ -413,7 +413,32 @@ const raw: Fact[] = [
  * Pending facts cited by draft courses (src/content/drafts/). Kept out of `facts`, so nothing
  * published can cite them. Once the owner verifies one, it moves to `raw` with its real status.
  */
-const pending: Fact[] = [];
+const LGDCU = "https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555";
+const CREDITO_CONSUMO = "https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032";
+const pendingFact = (id: string, claim: string, label: string, url: string): Fact => ({
+  id,
+  claim,
+  status: "pendiente",
+  annual: false,
+  checkedAt: null,
+  source: { label, url },
+});
+
+const pending: Fact[] = [
+  pendingFact("F-53", "Cuando una tienda anuncia una rebaja, el precio anterior que muestra debe ser el más bajo que aplicó en los 30 días previos.", "BOE · Ley 7/1996 de Ordenación del Comercio Minorista, art. 20", "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1072"),
+  pendingFact("F-28", "En las compras a distancia (internet, teléfono) tienes 14 días naturales para desistir sin dar explicaciones.", "BOE · Ley General para la Defensa de los Consumidores, arts. 102 a 104", LGDCU),
+  pendingFact("F-54", "Hay excepciones al desistimiento, como los productos personalizados o el contenido digital que ya has empezado a descargar con tu consentimiento.", "BOE · Ley General para la Defensa de los Consumidores, art. 103", LGDCU),
+  pendingFact("F-29", "Los productos nuevos tienen una garantía legal de 3 años desde la entrega: si salen defectuosos, puedes pedir que los reparen o los sustituyan.", "BOE · Ley General para la Defensa de los Consumidores, art. 120 y siguientes", LGDCU),
+  pendingFact("F-55", "Una tienda física no está obligada a devolverte el dinero si el producto no tiene defectos, salvo que lo ofrezca en su política.", "Ministerio de Consumo", "https://www.consumo.gob.es/"),
+  pendingFact("F-56", "Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio.", "BOE · Ley General para la Defensa de los Consumidores, art. 62.3", LGDCU),
+  pendingFact("F-57", "«Compra ahora, paga después» y pagar a plazos son formas de crédito.", "BOE · Ley 16/2011 de contratos de crédito al consumo", CREDITO_CONSUMO),
+  pendingFact("F-58", "La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad.", "BOE · Ley 13/2022 General de Comunicación Audiovisual", "https://www.boe.es/"),
+  pendingFact("F-59", "Puedes reclamar con una hoja de reclamaciones en la tienda, ante los servicios de consumo de tu comunidad autónoma y, si la empresa está adherida, en el arbitraje de consumo.", "Ministerio de Consumo · reclamaciones y arbitraje de consumo", "https://www.consumo.gob.es/"),
+  pendingFact("F-60", "La TAE incluye el tipo de interés y los gastos y comisiones del préstamo, y sirve para comparar ofertas.", "BOE · Ley 16/2011, art. 32", CREDITO_CONSUMO),
+  pendingFact("F-61", "Las tarjetas revolving tienen obligaciones de información reforzadas: el banco debe explicar cuánto tardarías en pagar la deuda con el pago mínimo.", "BOE · Orden ETD/699/2020 de crédito revolvente", "https://www.boe.es/"),
+  pendingFact("F-62", "En un crédito al consumo tienes 14 días naturales para desistir sin dar explicaciones.", "BOE · Ley 16/2011, art. 28", CREDITO_CONSUMO),
+  pendingFact("F-64", "Para incluirte en un fichero de morosos la deuda debe ser cierta, vencida y exigible, y antes deben avisarte; hay un importe mínimo y un plazo máximo de permanencia.", "BOE · Ley Orgánica 3/2018 de Protección de Datos, art. 20", "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"),
+];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));
 

@@ -1015,7 +1015,7 @@ Comprar con cabeza: comparar, conocer tus derechos, controlar suscripciones y de
 
 **Ideas clave**
 
-1. Los productos nuevos tienen 3 años de garantía legal si salen defectuosos.
+1. Los productos nuevos tienen 3 años de garantía legal si salen defectuosos: puedes pedir que los reparen o los sustituyan.
 2. Devolver algo que no tiene defectos en una tienda física depende de la política de la tienda: pregunta antes.
 3. Guarda el tique: es tu prueba de compra.
 
@@ -1087,7 +1087,7 @@ Qué cuesta de verdad pedir prestado, cómo comparar créditos y cómo evitar qu
 
 ### 6.4 · Préstamos rápidos y pagos a plazos
 
-**Duración:** 7 min · **Datos:** F-62, F-63, F-57
+**Duración:** 7 min · **Datos:** F-62, F-57
 
 **Objetivo:** Detectar el coste real de los préstamos rápidos y los pagos a plazos.
 
@@ -1095,7 +1095,7 @@ Qué cuesta de verdad pedir prestado, cómo comparar créditos y cómo evitar qu
 
 1. Los préstamos rápidos y los «paga después» parecen pequeños, pero pueden tener costes muy altos.
 2. En un crédito al consumo tienes 14 días para echarte atrás.
-3. Siendo menor no puedes pedir un préstamo a tu nombre.
+3. Antes de aceptar, mira el total a devolver, no la cuota. (F-63 no se usa: mismo caso que F-48.)
 
 ### 6.5 · Si no puedes pagar
 

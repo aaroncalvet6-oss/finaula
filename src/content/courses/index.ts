@@ -20,13 +20,28 @@ export function isPublishable(course: Course): boolean {
 
 export const courses: ReadonlyArray<Course> = allCourses.filter(isPublishable);
 
-/** Shown in the small «Próximos cursos» section: title and route only (nothing else is exposed). */
-export const upcomingCourses: ReadonlyArray<{ title: string; area: Course["area"] }> = [
-  ...allCourses.filter((c) => !isPublishable(c)).map((c) => ({ title: c.title, area: c.area })),
-  { title: "Tu primera cuenta y tu primera tarjeta", area: "Tu dinero hoy" },
-  { title: "Qué es invertir", area: "Hacer crecer tu dinero" },
-  { title: "Que no te estafen", area: "Protégete y entiende el mundo" },
+export type Area = Course["area"];
+
+/** Catalogue order of the learning areas. */
+export const areas: ReadonlyArray<Area> = ["Tu dinero hoy", "Trabajo e ingresos", "Hacer crecer tu dinero", "Protégete y entiende el mundo"];
+
+/** Courses of the approved syllabus not in the catalogue yet: drafts and unwritten (docs/temario.md). */
+const plannedCourses: ReadonlyArray<{ number: number; title: string; area: Area }> = [
+  { number: 3, title: "Bancos, tarjetas y pagos digitales", area: "Tu dinero hoy" },
+  { number: 4, title: "Que no te estafen", area: "Protégete y entiende el mundo" },
+  { number: 5, title: "Consumo inteligente", area: "Tu dinero hoy" },
+  { number: 6, title: "Deudas y créditos", area: "Protégete y entiende el mundo" },
+  { number: 7, title: "Ahorro e inversión: lo básico", area: "Hacer crecer tu dinero" },
+  { number: 8, title: "Cómo funciona la economía", area: "Protégete y entiende el mundo" },
+  { number: 9, title: "Impuestos y Estado", area: "Protégete y entiende el mundo" },
+  { number: 10, title: "Emprender y ganar dinero por tu cuenta", area: "Trabajo e ingresos" },
 ];
+
+/** Shown in the small «Próximos cursos» section: number, title and area only (nothing else is exposed). */
+export const upcomingCourses: ReadonlyArray<{ number: number; title: string; area: Area }> = [
+  ...allCourses.filter((c) => !isPublishable(c)).map((c) => ({ number: c.number, title: c.title, area: c.area })),
+  ...plannedCourses.filter((p) => !allCourses.some((c) => c.number === p.number)),
+].sort((a, b) => a.number - b.number);
 
 export function getCourse(slug: string): Course | undefined {
   return courses.find((c) => c.slug === slug);

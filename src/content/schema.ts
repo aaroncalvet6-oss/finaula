@@ -35,6 +35,8 @@ const tableBlock = z.object({
 });
 const calcBlock = z.object({ type: z.literal("calc"), label: z.string(), value: z.string(), note: z.string().optional() });
 const noteBlock = z.object({ type: z.literal("note"), text: z.string() });
+/** A message the reader receives (SMS, chat, call), shown as a quotation. */
+const quoteBlock = z.object({ type: z.literal("quote"), text: z.string() });
 
 export const blockSchema = z.discriminatedUnion("type", [
   textBlock,
@@ -45,6 +47,7 @@ export const blockSchema = z.discriminatedUnion("type", [
   tableBlock,
   calcBlock,
   noteBlock,
+  quoteBlock,
 ]);
 
 export const widgetIds = [
@@ -85,6 +88,8 @@ export const lessonSchema = z.object({
   /** Every fact cited anywhere in the lesson. */
   facts: z.array(z.string()).default([]),
   tool: z.enum(toolSlugs).optional(),
+  /** Course 1 lesson this one goes deeper into ("course-slug/lesson-slug"). */
+  extends: z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+$/).optional(),
   explanation: z.array(blockSchema).min(1),
   example: z.object({ title: z.string(), blocks: z.array(blockSchema).min(1) }),
   keyFact: z.string(),

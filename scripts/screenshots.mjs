@@ -60,6 +60,7 @@ const shots = [
   { name: "10-fuentes-y-metodologia", path: "/fuentes/" },
   { name: "13-pagina-404", path: "/esta-pagina-no-existe/" },
   { name: "14-familias-y-centros", path: "/familias/" },
+  { name: "15-cursos-por-areas", path: "/cursos/" },
   { name: "11-portada-oscuro", path: "/", scheme: "dark" },
   { name: "12-leccion-oscuro", path: `/cursos/${C1}/coste-de-oportunidad/`, state: midProgress, scheme: "dark" },
 ];

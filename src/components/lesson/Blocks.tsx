@@ -93,6 +93,12 @@ export function Blocks({ blocks }: { blocks: ReadonlyArray<Block> }) {
             );
           case "note":
             return <Notice key={i}>{b.text}</Notice>;
+          case "quote":
+            return (
+              <blockquote key={i} className="rounded-md border-l-[3px] border-mark bg-sunken px-4 py-3 text-reading italic">
+                «{b.text}»
+              </blockquote>
+            );
         }
       })}
     </div>

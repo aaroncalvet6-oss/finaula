@@ -250,7 +250,46 @@ const raw: Fact[] = [
   },
 ];
 
+/**
+ * Pending facts cited by draft courses (src/content/drafts/). Kept out of `facts`, so nothing
+ * published can cite them. Once the owner verifies one, it moves to `raw` with its real status.
+ */
+const BDE = "https://clientebancario.bde.es/";
+const OSI = "https://www.osi.es/";
+const PAGOS = "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036";
+const CC = "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763";
+const pendingFact = (id: string, claim: string, label: string, url: string, annual = false): Fact => ({
+  id,
+  claim,
+  status: "pendiente",
+  annual,
+  checkedAt: null,
+  source: { label, url },
+});
+
+const pending: Fact[] = [
+  pendingFact("F-30", "Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora.", "BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46", PAGOS),
+  pendingFact("F-31", "INCIBE tiene una línea de ayuda gratuita y confidencial en ciberseguridad (017), y las estafas se denuncian ante la Policía Nacional o la Guardia Civil.", "INCIBE · Línea de ayuda en ciberseguridad 017", "https://www.incibe.es/"),
+  pendingFact("F-32", "Prestar tu cuenta para mover dinero de otra persona («mula de dinero») puede ser delito.", "BOE · Código Penal", "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"),
+  pendingFact("F-34", "El Fondo de Garantía de Depósitos protege el dinero depositado en los bancos hasta un importe máximo por titular y entidad.", "Fondo de Garantía de Depósitos", "https://www.fgd.es/"),
+  pendingFact("F-35", "La CNMV publica advertencias sobre entidades que ofrecen inversiones sin estar autorizadas, y registros para comprobar si una entidad lo está.", "CNMV · advertencias y registros oficiales", "https://www.cnmv.es/"),
+  pendingFact("F-41", "Un menor puede tener una cuenta a su nombre, pero la abren y la gestionan sus padres o tutores; cada banco fija sus condiciones.", "Banco de España · Portal del Cliente Bancario", BDE),
+  pendingFact("F-42", "Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite.", "Banco de España · Portal del Cliente Bancario", BDE, true),
+  pendingFact("F-43", "El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia.", "BOE · Orden EHA/2899/2011 de transparencia bancaria", "https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804"),
+  pendingFact("F-44", "Hay un plazo máximo para comunicar al banco una operación que no autorizaste.", "BOE · Real Decreto-ley 19/2018, art. 43", PAGOS),
+  pendingFact("F-45", "En los pagos por internet el banco debe aplicar una autenticación reforzada, por ejemplo un código en el móvil además de la tarjeta.", "BOE · Real Decreto-ley 19/2018, art. 68", PAGOS),
+  pendingFact("F-46", "Las transferencias inmediatas en euros deben ofrecerse en la UE y el banco debe comprobar que el nombre del beneficiario coincide con el IBAN antes de enviarla.", "EUR-Lex · Reglamento (UE) 2024/886", "https://eur-lex.europa.eu/eli/reg/2024/886/oj"),
+  pendingFact("F-47", "Para reclamar a un banco, primero hay que dirigirse a su servicio de atención al cliente; si no responde o no estás de acuerdo, puedes acudir al Banco de España.", "Banco de España · Portal del Cliente Bancario, reclamaciones", BDE),
+  pendingFact("F-48", "Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo.", "BOE · Código Civil, arts. 322 y 1263", CC),
+  pendingFact("F-49", "Tu banco nunca te pedirá por SMS, correo o teléfono tus claves completas ni los códigos que te envía para confirmar operaciones.", "INCIBE · Oficina de Seguridad del Internauta", OSI),
+  pendingFact("F-50", "Las llamadas y los SMS pueden mostrar un número o un nombre falsos, aunque parezcan los de tu banco («spoofing»).", "INCIBE · Oficina de Seguridad del Internauta", OSI),
+  pendingFact("F-51", "En los pagos entre particulares con el móvil, una «solicitud de dinero» no es un ingreso: si la aceptas, eres tú quien paga.", "INCIBE · Oficina de Seguridad del Internauta", OSI),
+  pendingFact("F-52", "Las ventas piramidales (ganar dinero sobre todo por captar a otras personas) están prohibidas como práctica desleal.", "BOE · Ley 3/1991 de Competencia Desleal, art. 24", "https://www.boe.es/buscar/act.php?id=BOE-A-1991-628"),
+];
+
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));
+
+export const pendingFacts: ReadonlyArray<Fact> = pending.map((f) => factSchema.parse(f));
 
 export const factById = new Map(facts.map((f) => [f.id, f]));
 

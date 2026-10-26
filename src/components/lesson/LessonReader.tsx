@@ -27,6 +27,8 @@ interface Props {
   next: { slug: string; number: string; title: string } | null;
   facts: ReadonlyArray<Fact>;
   tool: ToolInfo | null;
+  /** Earlier lesson this one builds on (course 1), shown under the objective. */
+  builds?: { href: string; number: string; title: string } | null;
 }
 
 type SectionId = "explicacion" | "ejemplo" | "practica" | "ideas" | "preguntas" | "reto";
@@ -62,7 +64,7 @@ function Section({ id, title, children, animateIn = false }: { id: SectionId; ti
   );
 }
 
-export function LessonReader({ course, lesson, index, next, facts, tool }: Props) {
+export function LessonReader({ course, lesson, index, next, facts, tool, builds }: Props) {
   const { hydrated, progress, reachStep, answer, completeLesson } = useHydratedProgress();
   const key = lessonKey(course.slug, lesson.slug);
   const stored = progress.lessons[key];
@@ -152,6 +154,14 @@ export function LessonReader({ course, lesson, index, next, facts, tool }: Props
         <div className="pt-8">
           <p className="eyebrow text-muted">Objetivo</p>
           <p className="mt-1 text-reading font-medium">{lesson.objective}</p>
+          {builds ? (
+            <p className="mt-3 text-small text-muted">
+              Amplía la lección{" "}
+              <Link href={builds.href} className="font-medium text-ink underline underline-offset-2">
+                {builds.number} · {builds.title}
+              </Link>
+            </p>
+          ) : null}
         </div>
 
         <Section id="explicacion" title={sectionTitles.explicacion} animateIn={scrollTarget === "explicacion"}>

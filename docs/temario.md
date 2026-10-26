@@ -1337,17 +1337,17 @@ Vender cosas, ofrecer un servicio o crear contenido: costes, precio, impuestos b
 2. Las plataformas informan a Hacienda de quienes venden mucho a través de ellas.
 3. Si compras para revender, ya es una actividad económica.
 
-### 10.3 · Trabajar por tu cuenta: alta y obligaciones
+### 10.3 · Trabajar por tu cuenta: antes de empezar
 
-**Duración:** 7 min · **Datos:** F-79, F-80
+**Duración:** 6 min · **Datos:** ninguno
 
-**Objetivo:** Saber cuándo una actividad por tu cuenta es un trabajo con obligaciones.
+**Objetivo:** Saber que cobrar por tu propio trabajo puede tener obligaciones y a quién preguntar antes de empezar.
 
 **Ideas clave**
 
-1. Si trabajas por tu cuenta de forma habitual, tienes que darte de alta como autónomo.
-2. Antes de empezar, también hay que darse de alta en el censo de Hacienda.
-3. Siendo menor, consulta antes con tus padres: hay requisitos de edad y permisos.
+1. Cobrar de forma habitual por un trabajo propio (clases, diseño, arreglos) no es lo mismo que un favor puntual: puede tener obligaciones.
+2. Antes de facturar o de darte de alta como autónomo, consúltalo con tus padres y con la Seguridad Social o un gestor.
+3. Desde el primer día, apunta lo que cobras y lo que gastas: lo necesitarás para cualquier trámite.
 
 ### 10.4 · Creadores de contenido
 
@@ -1467,7 +1467,5 @@ página exacta. Los datos que ya estaban registrados (F-30 a F-35) conservan su 
 | --- | --- | --- | --- | --- |
 | F-77 | 10.2 | Vender objetos usados por menos de lo que te costaron no genera impuesto a pagar; si ganas dinero con la venta, puede tributar (la lección no da cifras) | sí | Agencia Tributaria · ganancias y pérdidas patrimoniales: https://sede.agenciatributaria.gob.es/ · BOE · Ley del IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
 | F-78 | 10.2 | Las plataformas digitales de venta informan a Hacienda de quienes venden a través de ellas por encima de ciertos umbrales (DAC7) | no | Agencia Tributaria · obligaciones de información de plataformas: https://sede.agenciatributaria.gob.es/ |
-| F-79 | 10.3 | Cuándo hay que darse de alta como autónomo (trabajo por cuenta propia habitual) y qué edad hace falta | no | Seguridad Social · Régimen Especial de Trabajadores Autónomos: https://www.seg-social.es/ · BOE · Estatuto de los Trabajadores, art. 7: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430 |
-| F-80 | 10.3 | Antes de empezar una actividad económica hay que darse de alta en el censo de Hacienda | no | Agencia Tributaria · censo de empresarios, profesionales y retenedores: https://sede.agenciatributaria.gob.es/ |
 | F-81 | 10.4 | Los ingresos de los creadores de contenido (publicidad, colaboraciones, regalos de marcas) tributan como rendimientos de una actividad económica | sí | Agencia Tributaria: https://sede.agenciatributaria.gob.es/ |
 | F-58 (ya registrado) | 10.4 | La publicidad en redes tiene que identificarse claramente como publicidad | no | BOE · Ley 13/2022 General de Comunicación Audiovisual: https://www.boe.es/ · CNMC: https://www.cnmc.es/ |

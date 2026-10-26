@@ -28,6 +28,8 @@ export default async function LessonPage({ params }: { params: Promise<Params> }
   const found = getLesson(curso, leccion);
   if (!found) notFound();
   const { course, lesson, index, next } = found;
+  const [baseCourse, baseLesson] = lesson.extends?.split("/") ?? [];
+  const base = baseCourse ? getLesson(baseCourse, baseLesson)?.lesson : undefined;
   return (
     <LessonReader
       course={{ slug: course.slug, title: course.title, lessonCount: course.lessons.length }}
@@ -36,6 +38,7 @@ export default async function LessonPage({ params }: { params: Promise<Params> }
       next={next ? { slug: next.slug, number: next.number, title: next.title } : null}
       facts={factsFor(lessonFacts(lesson))}
       tool={lesson.tool ? (getTool(lesson.tool) ?? null) : null}
+      builds={base ? { href: `/cursos/${lesson.extends}/`, number: base.number, title: base.title } : null}
     />
   );
 }

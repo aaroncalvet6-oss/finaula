@@ -45,6 +45,7 @@ src/content/          typed content validated with Zod
   facts.ts            mirror of docs/fuentes.md: id, claim, url, checkedAt, status
   courses/            course + lesson definitions; lessons cite facts by id
   assessments/        question banks per course
+  drafts/             written courses whose facts are still pending; never imported by the site
 src/lib/finance/      pure financial functions (work hours, compound interest, budget, goal)
 src/lib/progress/     ProgressRepository interface + LocalProgressRepository
 src/lib/tutor/        TutorProvider interface + StaticTutorProvider
@@ -76,6 +77,10 @@ tests/                Vitest; e2e/ Playwright
   concept and link the official source.
 - A course is shown only when every lesson has `status: "published"` and all of its cited facts
   are verified. Unfinished courses can appear only in a small "Próximos cursos" section.
+- Courses written before their facts are verified live in `src/content/drafts/`, citing pending
+  facts from `pendingFacts` in `facts.ts`. `tests/drafts.test.ts` checks they only cite registered
+  facts and that nothing on the site imports them. Once every fact is verified, the course moves
+  to `src/content/courses/` and the strict `tests/content.test.ts` checks it. Never relax that test.
 - Any mention of returns states that they are not guaranteed and investments can lose value.
 - Never recommend specific products, banks, apps, brokers or investments. Brand names may appear
   only as everyday context (e.g. Bizum) and never as a recommendation.

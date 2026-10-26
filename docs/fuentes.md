@@ -34,7 +34,7 @@ cita [`temario.md`](./temario.md) y, desde la fase 4, `src/content/facts.ts`.
   Seguridad Social. Sus cifras son solo referencia interna y no aparecen en las lecciones.
 - **Pendiente**: no se ha podido abrir la fuente oficial. El enlace es el sitio donde hay que
   comprobarlo. No se usa.
-- **Descartado**: se comprobó y el dato no era correcto o no se puede afirmar así.
+- **Descartado**: se comprobó y el dato no era correcto o no se puede afirmar así, o se decidió no usarlo.
 
 ## Estado de la verificación (17/10/2026)
 
@@ -49,7 +49,8 @@ y las fechas el 17/10/2026 (la de F-06, el 19/10/2026).
 | Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-40 |
 | Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11 |
 | Verificado (mutua colaboradora) | F-13 |
-| Pendiente (no se usan) | F-28 a F-35 y F-41 a F-81 (cursos 3 a 10) |
+| Pendiente (no se usan) | F-28 a F-35 y F-41 a F-81 (cursos 3 a 10), salvo F-79 y F-80 |
+| Descartado | F-79, F-80 |
 
 Consecuencias:
 
@@ -156,8 +157,8 @@ Se listan por tandas en [`temario.md`](./temario.md). F-30 a F-35 ya estaban reg
 | F-76 | 9.5 | Pagar o cobrar «en negro» deja sin contrato ni cotización a quien trabaja y sin garantías a quien compra | no | Agencia Tributaria: https://sede.agenciatributaria.gob.es/ · Seguridad Social: https://www.seg-social.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-77 | 10.2 | Vender objetos usados por menos de lo que te costaron no genera impuesto a pagar; si ganas dinero con la venta, puede tributar (la lección no da cifras) | sí | Agencia Tributaria · ganancias y pérdidas patrimoniales: https://sede.agenciatributaria.gob.es/ · BOE · Ley del IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-78 | 10.2 | Las plataformas digitales de venta informan a Hacienda de quienes venden a través de ellas por encima de ciertos umbrales (DAC7) | no | Agencia Tributaria · obligaciones de información de plataformas: https://sede.agenciatributaria.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-79 | 10.3 | Cuándo hay que darse de alta como autónomo (trabajo por cuenta propia habitual) y qué edad hace falta | no | Seguridad Social · Régimen Especial de Trabajadores Autónomos: https://www.seg-social.es/ · BOE · Estatuto de los Trabajadores, art. 7: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-80 | 10.3 | Antes de empezar una actividad económica hay que darse de alta en el censo de Hacienda | no | Agencia Tributaria · censo de empresarios, profesionales y retenedores: https://sede.agenciatributaria.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-79 | 10.3 | Cuándo hay que darse de alta como autónomo (trabajo por cuenta propia habitual) y qué edad hace falta | no | Seguridad Social · Régimen Especial de Trabajadores Autónomos: https://www.seg-social.es/ · BOE · Estatuto de los Trabajadores, art. 7: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430 | 20/10/2026 (no se pudo abrir) | Descartado (la lección 10.3 solo remite a consultar con la familia, la Seguridad Social o un gestor) |
+| F-80 | 10.3 | Antes de empezar una actividad económica hay que darse de alta en el censo de Hacienda | no | Agencia Tributaria · censo de empresarios, profesionales y retenedores: https://sede.agenciatributaria.gob.es/ | 20/10/2026 (no se pudo abrir) | Descartado (la lección 10.3 solo remite a consultar con la familia, la Seguridad Social o un gestor) |
 | F-81 | 10.4 | Los ingresos de los creadores de contenido (publicidad, colaboraciones, regalos de marcas) tributan como rendimientos de una actividad económica | sí | Agencia Tributaria: https://sede.agenciatributaria.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 
 ## Cómo verificar un dato (para quien lo compruebe)

@@ -133,17 +133,17 @@ export const bancosTarjetasYPagos: Course = {
         { type: "h", text: "Si eres menor" },
         {
           type: "p",
-          text: "Siendo menor, tu cuenta la abren y la gestionan tus padres o tutores. Cada banco pone sus propias condiciones, así que conviene preguntar.",
+          text: "Siendo menor puedes tener una cuenta a tu nombre, y el dinero que hay en ella es tuyo. Tus representantes legales, normalmente tus padres, tienen que estar presentes al abrirla y pueden operar en ella. Algunos bancos permiten usar tarjeta a partir de cierta edad. Las condiciones dependen de cada banco, así que conviene preguntar.",
         },
         { type: "h", text: "Las comisiones, antes de firmar" },
         {
           type: "p",
-          text: "Antes de contratar, el banco tiene que informarte de las comisiones, y si las cambia después, debe avisarte con antelación. Las más habituales son el mantenimiento, la tarjeta, las transferencias y sacar dinero en cajeros de otras entidades.",
+          text: "Pide siempre la lista de comisiones antes de contratar. Las más habituales son el mantenimiento, la tarjeta, las transferencias y sacar dinero en cajeros de otras entidades. Y si después el banco quiere cambiar las condiciones en tu contra, por ejemplo subir una comisión, tiene que avisarte con al menos dos meses de antelación.",
         },
         {
           type: "concept",
           term: "Cuenta de pago básica",
-          text: "Una cuenta con los servicios esenciales y comisiones limitadas, a la que tiene derecho cualquier persona que resida legalmente en la UE.",
+          text: "Una cuenta con los servicios esenciales, para cualquier persona que resida legalmente en la UE, con una comisión máxima limitada.",
         },
         { type: "h", text: "Compara por lo que pagas en un año" },
         {
@@ -172,8 +172,8 @@ export const bancosTarjetasYPagos: Course = {
       },
       keyFact: "Compara cuentas por lo que te costarían en un año con tu uso real, no por una sola comisión.",
       keyIdeas: [
-        "Siendo menor, tu cuenta la abren y gestionan tus padres o tutores.",
-        "El banco debe informarte de las comisiones antes de contratar.",
+        "Siendo menor puedes tener una cuenta a tu nombre; tus padres o tutores la abren contigo y pueden operar en ella.",
+        "Pide la lista de comisiones antes de contratar. Si suben en tu contra, te tienen que avisar con dos meses.",
         "Compara el coste total de un año según cómo vas a usar la cuenta.",
       ],
       questions: [
@@ -190,12 +190,12 @@ export const bancosTarjetasYPagos: Course = {
           id: "3.2-q2",
           prompt: "Tienes 15 años y quieres una cuenta. ¿Qué es lo normal?",
           options: [
-            "Que la abran y la gestionen tus padres o tutores, según las condiciones del banco.",
-            "Abrirla tú solo por internet con tu DNI.",
+            "Tenerla a tu nombre, abriéndola con tus padres o tutores presentes, según las condiciones del banco.",
+            "Abrirla tú solo, sin tus padres.",
             "No se puede tener cuenta hasta los 18.",
           ],
           correct: 0,
-          explanation: "Un menor puede tener cuenta, pero la abren y la gestionan sus padres o tutores.",
+          explanation: "Un menor puede tener una cuenta a su nombre, pero sus representantes legales tienen que estar presentes al abrirla y pueden operar en ella.",
           hint: "Piensa en quién firma por ti mientras eres menor.",
           facts: ["F-41"],
         },
@@ -208,9 +208,9 @@ export const bancosTarjetasYPagos: Course = {
             "Solo el color de la tarjeta.",
           ],
           correct: 0,
-          explanation: "Puede cobrar por la tarjeta, las transferencias o los cajeros. Lo que importa es el coste total.",
+          explanation: "Puede cobrar por la tarjeta, las transferencias o los cajeros. Pide la lista de comisiones: lo que importa es el coste total.",
           hint: "¿Una cuenta puede cobrar por más cosas que el mantenimiento?",
-          facts: ["F-43"],
+          facts: [],
         },
       ],
       challenge:
@@ -224,7 +224,7 @@ export const bancosTarjetasYPagos: Course = {
       status: "published",
       extends: `${C1}/dinero-digital`,
       objective: "Distinguir los tipos de tarjeta y saber qué hacer si pierdes una o ves un pago que no reconoces.",
-      facts: ["F-48", "F-30", "F-44"],
+      facts: ["F-41", "F-30", "F-44"],
       explanation: [
         { type: "p", text: "Todas las tarjetas se parecen por fuera, pero no funcionan igual por dentro." },
         { type: "h", text: "Tres tipos" },
@@ -238,12 +238,12 @@ export const bancosTarjetasYPagos: Course = {
         },
         {
           type: "p",
-          text: "Una tarjeta de crédito es un préstamo, y para contratarla hace falta poder obligarte por un préstamo. Un menor no emancipado no puede hacerlo por sí solo.",
+          text: "Una tarjeta de crédito es un préstamo. Siendo menor, tus cuentas y tus tarjetas las contratan tus padres o tutores.",
         },
         { type: "h", text: "Si la pierdes o te la roban" },
         {
           type: "p",
-          text: "Bloquéala enseguida desde la app o llamando al banco. Si ves un pago que no has hecho, comunícalo cuanto antes: hay un plazo para hacerlo, y si avisas sin demora tu responsabilidad por los pagos que no autorizaste tiene un límite, salvo fraude o negligencia grave por tu parte.",
+          text: "Bloquéala enseguida desde la app o llamando al banco, y avisa inmediatamente. Por los pagos que se hicieron antes de avisar respondes como máximo de 50 €, salvo fraude o negligencia grave por tu parte. Si ves en tu cuenta un pago que no has hecho, tienes como máximo 13 meses desde el cargo para comunicarlo, pero no esperes: cuanto antes, mejor.",
         },
         {
           type: "concept",
@@ -270,7 +270,7 @@ export const bancosTarjetasYPagos: Course = {
       keyFact: "Ante una tarjeta perdida o un pago raro: bloquea primero, avisa al banco después y no esperes.",
       keyIdeas: [
         "Débito: tu dinero. Prepago: lo que cargaste. Crédito: un préstamo.",
-        "Un menor no puede contratar por sí solo una tarjeta de crédito.",
+        "Siendo menor, tus cuentas y tarjetas las contratan tus padres o tutores.",
         "Si la pierdes o ves un pago extraño, bloquéala y avisa cuanto antes.",
       ],
       questions: [
@@ -294,7 +294,7 @@ export const bancosTarjetasYPagos: Course = {
           correct: 0,
           explanation: "La tarjeta de crédito es un préstamo. Si no lo devuelves a tiempo, puede tener intereses.",
           hint: "Piensa en de quién es el dinero en el momento de pagar.",
-          facts: ["F-48"],
+          facts: [],
         },
         {
           id: "3.3-q3",
@@ -305,7 +305,7 @@ export const bancosTarjetasYPagos: Course = {
             "Contestar al SMS que te ha llegado sobre ese pago.",
           ],
           correct: 0,
-          explanation: "Cuanto antes bloquees y avises, más protegido estás. Nunca uses los datos de contacto de un mensaje sospechoso.",
+          explanation: "Si avisas enseguida, por lo que se pagó antes de avisar respondes como máximo de 50 €, salvo fraude o negligencia grave. Nunca uses los datos de contacto de un mensaje sospechoso.",
           hint: "¿Qué opción frena el problema y deja constancia?",
           facts: ["F-30", "F-44"],
         },
@@ -332,7 +332,7 @@ export const bancosTarjetasYPagos: Course = {
         },
         {
           type: "p",
-          text: "Las transferencias inmediatas en euros deben estar disponibles en la UE, y antes de enviarla el banco debe comprobar que el nombre del beneficiario coincide con el IBAN. Si te avisa de que no coincide, para y revisa.",
+          text: "Los bancos que ofrecen transferencias en euros tienen que ofrecer también las inmediatas, sin cobrar más que por las ordinarias. Y deben comprobar gratis que el nombre del beneficiario coincide con el IBAN. Si tu banco te avisa de que no coincide, para y revisa.",
         },
         { type: "h", text: "Pagos entre amigos" },
         {
@@ -342,7 +342,15 @@ export const bancosTarjetasYPagos: Course = {
         { type: "h", text: "Compras por internet" },
         {
           type: "p",
-          text: "Al pagar en una web te pedirán confirmar con un código o en la app del banco. Es una protección: ese código solo lo usas tú, en ese momento, y nunca se lo das a nadie.",
+          text: "Al pagar en una web, el banco aplica una autenticación reforzada: te pide al menos dos de estos tres elementos.",
+        },
+        {
+          type: "list",
+          items: ["Algo que sabes: tu PIN o tu contraseña.", "Algo que tienes: tu móvil.", "Algo que eres: tu huella o tu cara."],
+        },
+        {
+          type: "p",
+          text: "Por ejemplo, tu contraseña más un código que llega a tu móvil. Es una protección: ese código solo lo usas tú, en ese momento, y nunca se lo das a nadie.",
         },
       ],
       example: {
@@ -427,15 +435,15 @@ export const bancosTarjetasYPagos: Course = {
         { type: "h", text: "Tu dinero en el banco está protegido" },
         {
           type: "p",
-          text: "El Fondo de Garantía de Depósitos protege el dinero que tienes depositado en un banco hasta un importe máximo por persona y por banco, aunque el banco quiebre.",
+          text: "El Fondo de Garantía de Depósitos protege el dinero que tienes depositado en un banco hasta 100.000 € por persona y por banco, aunque el banco quiebre.",
         },
         { type: "h", text: "Cómo reclamar" },
         {
           type: "list",
           ordered: true,
           items: [
-            "Reclama primero al servicio de atención al cliente del banco, por escrito, y guarda una copia.",
-            "Si no te responde o no estás de acuerdo con la respuesta, puedes acudir al Banco de España.",
+            "Reclama primero al servicio de atención al cliente del banco, por escrito, y guarda una copia. Este paso es obligatorio.",
+            "Si no contesta en el plazo que marca la norma o no estás de acuerdo con la respuesta, puedes acudir al Banco de España.",
           ],
         },
         {
@@ -461,7 +469,7 @@ export const bancosTarjetasYPagos: Course = {
       },
       keyFact: "Reclamar bien es escribir claro, con pruebas y en orden: primero al banco y, si hace falta, al Banco de España.",
       keyIdeas: [
-        "El Fondo de Garantía de Depósitos protege tus depósitos hasta un límite.",
+        "El Fondo de Garantía de Depósitos protege tus depósitos hasta 100.000 € por persona y banco.",
         "Reclama primero al servicio de atención al cliente del banco.",
         "Si no te responde o no te da la razón, acude al Banco de España.",
       ],
@@ -545,10 +553,10 @@ export const bancosTarjetasYPagos: Course = {
         id: "E3-04",
         lesson: "3.2",
         facts: ["F-43"],
-        prompt: "¿Cuándo tiene que informarte el banco de sus comisiones?",
-        correct: "Antes de que contrates, y con antelación si las cambia.",
-        distractors: ["Solo si se lo pides por escrito.", "Cuando te las cobra."],
-        explanation: "Tienes derecho a conocer las comisiones antes de firmar y a que te avisen de los cambios.",
+        prompt: "Tu banco quiere subir la comisión de mantenimiento de tu cuenta. ¿Qué tiene que hacer?",
+        correct: "Avisarte con al menos dos meses de antelación.",
+        distractors: ["Nada: puede subirla cuando quiera.", "Avisarte el mismo día que te la cobra."],
+        explanation: "Si el banco quiere cambiar las condiciones en tu contra, tiene que avisarte con al menos dos meses de antelación.",
       },
       {
         id: "E3-05",
@@ -566,16 +574,16 @@ export const bancosTarjetasYPagos: Course = {
         prompt: "Pierdes la tarjeta y al día siguiente ves pagos que no has hecho. ¿Qué es lo correcto?",
         correct: "Bloquearla y comunicarlo al banco cuanto antes.",
         distractors: ["Esperar a ver si se repiten.", "Pedir a un amigo que la bloquee cuando pueda."],
-        explanation: "Cuanto antes bloquees y avises, más protegido estás frente a los pagos no autorizados.",
+        explanation: "Hay que avisar inmediatamente. Por lo pagado antes de avisar respondes como máximo de 50 €, salvo fraude o negligencia grave.",
       },
       {
         id: "E3-07",
         lesson: "3.3",
-        facts: ["F-48"],
-        prompt: "Tienes 16 años y no estás emancipado. ¿Puedes contratar tú solo una tarjeta de crédito?",
-        correct: "No: es un préstamo y no puedes obligarte por él por tu cuenta.",
-        distractors: ["Sí, si tienes ingresos.", "Sí, si la pides por internet."],
-        explanation: "Una tarjeta de crédito es un préstamo. Un menor no emancipado no puede contratarla por sí solo.",
+        facts: ["F-41"],
+        prompt: "Tienes 16 años y quieres una cuenta con tarjeta. ¿Cómo se hace?",
+        correct: "La cuenta puede estar a tu nombre, pero tus padres o tutores tienen que estar presentes al abrirla.",
+        distractors: ["La abres tú solo, sin tus padres.", "No puedes tener cuenta hasta los 18."],
+        explanation: "Siendo menor, tus cuentas y tarjetas las contratan tus padres o tutores, y las condiciones dependen de cada banco.",
       },
       {
         id: "E3-08",
@@ -611,7 +619,7 @@ export const bancosTarjetasYPagos: Course = {
         prompt: "Tu dinero está en una cuenta y el banco quiebra. ¿Qué te protege?",
         correct: "El Fondo de Garantía de Depósitos, hasta un límite.",
         distractors: ["Nada: lo pierdes todo.", "Tu seguro del móvil."],
-        explanation: "El Fondo de Garantía de Depósitos protege los depósitos hasta un importe por persona y banco.",
+        explanation: "El Fondo de Garantía de Depósitos protege los depósitos hasta 100.000 € por persona y banco.",
       },
       {
         id: "E3-12",

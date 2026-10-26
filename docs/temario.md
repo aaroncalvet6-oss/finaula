@@ -877,14 +877,14 @@ Qué es una cuenta, cómo funcionan las tarjetas y los pagos con el móvil, y qu
 
 ### 3.3 · Tarjetas: débito, prepago y crédito
 
-**Duración:** 7 min · **Datos:** F-48, F-30, F-44
+**Duración:** 7 min · **Datos:** F-41, F-30, F-44
 
 **Objetivo:** Distinguir los tipos de tarjeta y saber qué hacer si la pierdes.
 
 **Ideas clave**
 
 1. Débito: pagas con el dinero que tienes en la cuenta. Prepago: solo lo que hayas cargado. Crédito: el banco te presta y luego lo devuelves.
-2. Una tarjeta de crédito es un préstamo, y un menor no puede contratarla por sí solo.
+2. Una tarjeta de crédito es un préstamo. Siendo menor, tus cuentas y tarjetas las contratan tus padres o tutores (F-41).
 3. Si la pierdes o ves un pago que no reconoces, avisa al banco y bloquéala cuanto antes: cuanto antes avises, más protegido estás.
 
 ### 3.4 · Pagar con el móvil, Bizum y transferencias
@@ -1387,7 +1387,7 @@ página exacta. Los datos que ya estaban registrados (F-30 a F-35) conservan su 
 | F-41 | 3.2 | Un menor puede tener una cuenta a su nombre, pero la abren y la gestionan sus padres o tutores hasta que tenga capacidad para contratar (en la práctica, cada banco fija sus condiciones) | no | Banco de España · Portal del Cliente Bancario: https://clientebancario.bde.es/ · BOE · Código Civil (capacidad del menor, arts. 162 y 322): https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 |
 | F-42 | 3.2 | Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite (la lección no da la cifra) | sí | BOE · Real Decreto-ley 19/2017 de cuentas de pago básicas (buscar en https://www.boe.es/) · Banco de España: https://clientebancario.bde.es/ |
 | F-43 | 3.2 | El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia | no | BOE · Orden EHA/2899/2011 de transparencia bancaria: https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804 · Banco de España: https://clientebancario.bde.es/ |
-| F-48 | 3.3 | Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 · Banco de España: https://clientebancario.bde.es/ |
+| F-48 (descartado: sin fuente oficial clara, la lección usa F-41) | 3.3 | Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 · Banco de España: https://clientebancario.bde.es/ |
 | F-30 (ya registrado) | 3.3 | Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora | no | BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España: https://clientebancario.bde.es/ |
 | F-44 | 3.3 | Tienes un plazo máximo para comunicar al banco una operación que no autorizaste (la lección explica que hay que hacerlo cuanto antes y enlaza el plazo) | no | BOE · Real Decreto-ley 19/2018, art. 43: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 |
 | F-45 | 3.4 | En los pagos por internet el banco debe aplicar una autenticación reforzada (por ejemplo, un código en el móvil además de la tarjeta) | no | BOE · Real Decreto-ley 19/2018, art. 68: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España: https://clientebancario.bde.es/ |

@@ -34,6 +34,9 @@ const officialHosts = [
   "clientebancario.bde.es",
   "www.cnmv.es",
   "www.interior.gob.es",
+  "www.bde.es",
+  "www.aepd.es",
+  "portal-cec.consumo.gob.es",
 ];
 
 describe("fact registry", () => {
@@ -82,7 +85,12 @@ describe("lessons only use verified facts", () => {
 
 describe("course rules", () => {
   it("publishes every course in the catalogue", () => {
-    expect(courses.map((c) => c.slug)).toEqual(["fundamentos-del-dinero", "tu-primer-sueldo", "que-no-te-estafen"]);
+    expect(courses.map((c) => c.slug)).toEqual([
+      "fundamentos-del-dinero",
+      "tu-primer-sueldo",
+      "bancos-tarjetas-y-pagos",
+      "que-no-te-estafen",
+    ]);
     expect(allCourses.every(isPublishable)).toBe(true);
   });
 

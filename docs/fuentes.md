@@ -48,22 +48,22 @@ y las fechas el 17/10/2026 (la de F-06, el 19/10/2026; las de la tanda 1 de los 
 
 | Estado | Datos |
 | --- | --- |
-| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-31, F-32, F-34, F-35, F-40, F-47, F-49, F-50, F-51 |
+| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-30, F-31, F-32, F-34, F-35, F-40, F-41 a F-47, F-49, F-50, F-51 |
 | Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11, F-52 |
 | Verificado (mutua colaboradora) | F-13 |
-| Pendiente (no se usan) | F-28, F-29, F-30, F-33, F-41 a F-46, F-48 y F-53 a F-81 (salvo F-79 y F-80) |
-| Descartado | F-79, F-80 |
+| Pendiente (no se usan) | F-28, F-29, F-33 y F-53 a F-81 (salvo F-79 y F-80) |
+| Descartado | F-48, F-79, F-80 |
 
 Consecuencias:
 
-- El **curso 1** («Fundamentos del dinero») no depende de ningún dato legal o fiscal. Los datos
-  F-30 y F-33 lo enriquecerían, pero no se usan hasta que estén verificados.
+- El **curso 1** («Fundamentos del dinero») no depende de ningún dato legal o fiscal. F-33 lo
+  enriquecería, pero no se usa hasta que esté verificado.
 - El **curso 2** («Tu primer sueldo») tiene verificados todos los datos que citan sus lecciones
   (F-01 a F-23). Se puede publicar.
 - El **curso 4** («Que no te estafen») tiene verificados todos sus datos (F-31, F-32, F-35, F-49
   a F-52). Se puede publicar.
-- El **curso 3** («Bancos, tarjetas y pagos digitales») tiene verificados F-34 y F-47, pero le
-  faltan F-30, F-41 a F-46 y F-48. Sigue en borrador.
+- El **curso 3** («Bancos, tarjetas y pagos digitales») tiene verificados todos sus datos (F-30,
+  F-34 y F-41 a F-47). Se puede publicar.
 
 Los enlaces con anclaje de artículo del BOE (`#a6`, `#a14`…) siguen el formato de los textos
 consolidados del BOE, pero no se han podido abrir.
@@ -118,20 +118,21 @@ Verificados por el propietario el 26/10/2026. Las fechas entre paréntesis son l
 | F-32 | 4.5 | Las «mulas de dinero» son, en muchos casos, responsables de un delito de blanqueo de capitales, y las captan con falsas ofertas de trabajo en redes sociales | no | Ministerio del Interior, acción global contra el blanqueo de capitales a través de mulas de dinero (05/12/2022): https://www.interior.gob.es/opencms/es/detalle/articulo/La-Policia-Nacional-detiene-a-52-personas-en-Espana-en-el-marco-de-una-accion-global-contra-el-blanqueo-de-capitales-a-traves-de-mulas-de-dinero/ | 26/10/2026 | Verificado (oficial) |
 | F-31 | 4.5 | El 017 de INCIBE es gratuito y confidencial (también por WhatsApp, en el 900 116 117) y te asesora, pero no sirve para denunciar. Las estafas se denuncian ante la policía: Policía Nacional, Guardia Civil o, en tu comunidad, Mossos d'Esquadra o Ertzaintza | no | La Moncloa, el teléfono 017 de ayuda en ciberseguridad (14/07/2026): https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/140726-telefono-017-ayuda-ciberseguridad.aspx | 26/10/2026 | Verificado (oficial) |
 
-## Datos del curso 3 · Bancos, tarjetas y pagos digitales (borrador)
+## Datos del curso 3 · Bancos, tarjetas y pagos digitales
 
-El curso está escrito en `src/content/drafts/` y no se publica hasta que todos sus datos estén verificados.
+Verificados por el propietario el 26/10/2026. F-48 se descartó: no hay fuente oficial clara y la
+lección usa F-41.
 
 | ID | Lección | Dato | Anual | Dónde comprobarlo (enlace) | Fecha de consulta | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
-| F-41 | 3.2 | Un menor puede tener una cuenta a su nombre, pero la abren y la gestionan sus padres o tutores hasta que tenga capacidad para contratar (en la práctica, cada banco fija sus condiciones) | no | Banco de España · Portal del Cliente Bancario: https://clientebancario.bde.es/ · BOE · Código Civil (capacidad del menor, arts. 162 y 322): https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-42 | 3.2 | Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite (la lección no da la cifra) | sí | BOE · Real Decreto-ley 19/2017 de cuentas de pago básicas (buscar en https://www.boe.es/) · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-43 | 3.2 | El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia | no | BOE · Orden EHA/2899/2011 de transparencia bancaria: https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804 · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-48 | 3.3 | Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-30 | 3.3 | Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora | no | BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España, Portal del Cliente Bancario: https://clientebancario.bde.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
-| F-44 | 3.3 | Tienes un plazo máximo para comunicar al banco una operación que no autorizaste (la lección explica que hay que hacerlo cuanto antes y enlaza el plazo) | no | BOE · Real Decreto-ley 19/2018, art. 43: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-45 | 3.4 | En los pagos por internet el banco debe aplicar una autenticación reforzada (por ejemplo, un código en el móvil además de la tarjeta) | no | BOE · Real Decreto-ley 19/2018, art. 68: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-46 | 3.4 | Las transferencias inmediatas en euros deben ofrecerse en la UE y el banco debe comprobar que el nombre del beneficiario coincide con el IBAN antes de enviarla | no | EUR-Lex · Reglamento (UE) 2024/886: https://eur-lex.europa.eu/eli/reg/2024/886/oj · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-41 | 3.2, 3.3 | Un menor puede tener una cuenta a su nombre y el dinero es suyo. Sus representantes legales, normalmente los padres, deben estar presentes al abrirla y pueden operar en ella. Algunas entidades permiten usar tarjeta a partir de cierta edad; las condiciones dependen de cada banco | no | Banco de España, cuentas antes de los 18: https://clientebancario.bde.es/pcb/es/blog/cuentas-antes-de-los-18.html | 26/10/2026 | Verificado (oficial) |
+| F-42 | 3.2 | La cuenta de pago básica es para cualquier persona que resida legalmente en la UE y tiene una comisión máxima limitada (la lección no da la cifra) | sí | Banco de España, tríptico de la cuenta de pago básica: https://www.bde.es/f/webbe/INF/MenuHorizontal/AreasActuacion/conducta/ficheros/Sesion2Tripticocuentadepagobasica.pdf | 26/10/2026 | Verificado (oficial) |
+| F-43 | 3.2 | Si el banco quiere cambiar las condiciones en tu contra, por ejemplo subir una comisión, tiene que avisarte con al menos dos meses de antelación. Pedir la lista de comisiones antes de contratar se plantea como consejo, no como obligación legal | no | Banco de España, ¿pueden las entidades financieras cambiar las condiciones de tu cuenta?: https://clientebancario.bde.es/pcb/es/blog/pueden-las-entidades-financieras-cambiar-las-condiciones-de-tu-cuenta.html | 26/10/2026 | Verificado (oficial) |
+| F-48 | 3.3 | Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo | no | Sin fuente oficial clara. La lección dice que las cuentas y tarjetas de un menor las contratan sus padres (F-41) | 26/10/2026 | Descartado (sin fuente oficial clara; se usa F-41) |
+| F-30 | 3.3 | Si pierdes la tarjeta o te la roban, por las operaciones hechas antes de avisar al banco respondes como máximo de 50 €, salvo fraude o negligencia grave. Hay que avisar al banco inmediatamente | no | Banco de España, uso fraudulento de tarjetas: https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/serviciospago/tarjetas/guia-textual/uso-fraudulento/ · Banco de España, Memoria de Reclamaciones 2018, uso no autorizado de tarjetas: https://clientebancario.bde.es/f/webcb/RCL/PodemosAyudarte/InformesActividad/Memoria2018usonoautorizadotarjeta.pdf | 26/10/2026 | Verificado (oficial) |
+| F-44 | 3.3 | Tienes como máximo 13 meses desde el cargo para comunicar al banco una operación que no autorizaste | no | Banco de España, Memoria de Reclamaciones 2018, uso no autorizado de tarjetas: https://clientebancario.bde.es/f/webcb/RCL/PodemosAyudarte/InformesActividad/Memoria2018usonoautorizadotarjeta.pdf | 26/10/2026 | Verificado (oficial) |
+| F-45 | 3.4 | En los pagos por internet, la autenticación reforzada usa al menos dos de estos tres elementos: algo que sabes (PIN o contraseña), algo que tienes (tu móvil) y algo que eres (huella o cara). Ejemplo: tu contraseña más un código que llega a tu móvil (la lección no pone la tarjeta ni el CVV como ejemplo) | no | AEPD, identificación en los servicios de pago online (29/12/2020): https://www.aepd.es/prensa-y-comunicacion/blog/identificacion-servicios-pago-online · Banco de España, Memoria de Reclamaciones 2018: https://clientebancario.bde.es/f/webcb/RCL/PodemosAyudarte/InformesActividad/Memoria2018usonoautorizadotarjeta.pdf | 26/10/2026 | Verificado (oficial) |
+| F-46 | 3.4 | Los bancos que ofrecen transferencias en euros deben ofrecer también las inmediatas, sin cobrar más que por las ordinarias, y verificar gratis que el nombre del beneficiario coincide con el IBAN | no | Ministerio de Consumo, nuevas normas para hacer transferencias inmediatas sin cargos extras (05/09/2024): https://portal-cec.consumo.gob.es/es/comunicacion/noticias/2024/nuevas-normas-para-hacer-transferencias-inmediatas-sin-cargos-extras | 26/10/2026 | Verificado (oficial) |
 | F-34 | 3.5 | El Fondo de Garantía de Depósitos protege el dinero depositado en un banco hasta 100.000 € por titular y entidad | no | Banco de España, ¿cuánto cubre el FGD?: https://clientebancario.bde.es/pcb/es/blog/cuanto-cubre-el-fgd-.html | 26/10/2026 | Verificado (oficial) |
 | F-47 | 3.5 | Para reclamar a un banco, primero es obligatorio reclamar a su servicio de atención al cliente; si no estás de acuerdo o no contesta en plazo (15 días hábiles en servicios de pago, un mes en el resto para consumidores), puedes acudir al Banco de España | no | Banco de España, cómo presentar una reclamación: https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/ | 26/10/2026 | Verificado (oficial) |
 

@@ -15,6 +15,7 @@ const NOTA_RENTA =
   "https://sede.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/NP_Inicio_Campana_renta_2025.pdf";
 
 const BDE = "https://clientebancario.bde.es/";
+const MEMORIA_2018 = "https://clientebancario.bde.es/f/webcb/RCL/PodemosAyudarte/InformesActividad/Memoria2018usonoautorizadotarjeta.pdf";
 const SPOOFING = `${BDE}pcb/es/blog/suplantacion-de-sms-y-del-identificador-de-llamadas.html`;
 
 const raw: Fact[] = [
@@ -292,6 +293,75 @@ const raw: Fact[] = [
     source: { label: "CNMV · Advertencias", url: "https://www.cnmv.es/portal/Advertencias" },
   },
   {
+    id: "F-30",
+    claim:
+      "Si pierdes la tarjeta o te la roban, por las operaciones hechas antes de avisar al banco respondes como máximo de 50 €, salvo fraude o negligencia grave. Hay que avisar al banco inmediatamente.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · Uso fraudulento de tarjetas", url: `${BDE}pcb/es/menu-horizontal/productosservici/serviciospago/tarjetas/guia-textual/uso-fraudulento/` },
+  },
+  {
+    id: "F-41",
+    claim:
+      "Un menor puede tener una cuenta a su nombre y el dinero es suyo. Sus representantes legales, normalmente los padres, deben estar presentes al abrirla y pueden operar en ella. Algunas entidades permiten usar tarjeta a partir de cierta edad; las condiciones dependen de cada banco.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · Cuentas antes de los 18", url: `${BDE}pcb/es/blog/cuentas-antes-de-los-18.html` },
+  },
+  {
+    id: "F-42",
+    claim: "La cuenta de pago básica es para cualquier persona que resida legalmente en la UE y tiene una comisión máxima limitada.",
+    status: "oficial",
+    annual: true,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Banco de España · Cuenta de pago básica",
+      url: "https://www.bde.es/f/webbe/INF/MenuHorizontal/AreasActuacion/conducta/ficheros/Sesion2Tripticocuentadepagobasica.pdf",
+    },
+  },
+  {
+    id: "F-43",
+    claim: "Si el banco quiere cambiar las condiciones en tu contra, por ejemplo subir una comisión, tiene que avisarte con al menos dos meses de antelación.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Banco de España · ¿Pueden las entidades cambiar las condiciones de tu cuenta?",
+      url: `${BDE}pcb/es/blog/pueden-las-entidades-financieras-cambiar-las-condiciones-de-tu-cuenta.html`,
+    },
+  },
+  {
+    id: "F-44",
+    claim: "Tienes como máximo 13 meses desde el cargo para comunicar al banco una operación que no autorizaste.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · Memoria de Reclamaciones 2018, uso no autorizado de tarjetas", url: MEMORIA_2018 },
+  },
+  {
+    id: "F-45",
+    claim:
+      "En los pagos por internet, la autenticación reforzada usa al menos dos de estos tres elementos: algo que sabes (PIN o contraseña), algo que tienes (tu móvil) y algo que eres (huella o cara).",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "AEPD · Identificación en los servicios de pago online (29/12/2020)", url: "https://www.aepd.es/prensa-y-comunicacion/blog/identificacion-servicios-pago-online" },
+  },
+  {
+    id: "F-46",
+    claim:
+      "Los bancos que ofrecen transferencias en euros deben ofrecer también las inmediatas, sin cobrar más que por las ordinarias, y verificar gratis que el nombre del beneficiario coincide con el IBAN.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Ministerio de Consumo · Nuevas normas para transferencias inmediatas (05/09/2024)",
+      url: "https://portal-cec.consumo.gob.es/es/comunicacion/noticias/2024/nuevas-normas-para-hacer-transferencias-inmediatas-sin-cargos-extras",
+    },
+  },
+  {
     id: "F-47",
     claim:
       "Para reclamar a un banco, primero es obligatorio reclamar a su servicio de atención al cliente; si no estás de acuerdo o no contesta en plazo (15 días hábiles en servicios de pago, un mes en el resto para consumidores), puedes acudir al Banco de España.",
@@ -343,27 +413,7 @@ const raw: Fact[] = [
  * Pending facts cited by draft courses (src/content/drafts/). Kept out of `facts`, so nothing
  * published can cite them. Once the owner verifies one, it moves to `raw` with its real status.
  */
-const PAGOS = "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036";
-const CC = "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763";
-const pendingFact = (id: string, claim: string, label: string, url: string, annual = false): Fact => ({
-  id,
-  claim,
-  status: "pendiente",
-  annual,
-  checkedAt: null,
-  source: { label, url },
-});
-
-const pending: Fact[] = [
-  pendingFact("F-30", "Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora.", "BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46", PAGOS),
-  pendingFact("F-41", "Un menor puede tener una cuenta a su nombre, pero la abren y la gestionan sus padres o tutores; cada banco fija sus condiciones.", "Banco de España · Portal del Cliente Bancario", BDE),
-  pendingFact("F-42", "Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite.", "Banco de España · Portal del Cliente Bancario", BDE, true),
-  pendingFact("F-43", "El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia.", "BOE · Orden EHA/2899/2011 de transparencia bancaria", "https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804"),
-  pendingFact("F-44", "Hay un plazo máximo para comunicar al banco una operación que no autorizaste.", "BOE · Real Decreto-ley 19/2018, art. 43", PAGOS),
-  pendingFact("F-45", "En los pagos por internet el banco debe aplicar una autenticación reforzada, por ejemplo un código en el móvil además de la tarjeta.", "BOE · Real Decreto-ley 19/2018, art. 68", PAGOS),
-  pendingFact("F-46", "Las transferencias inmediatas en euros deben ofrecerse en la UE y el banco debe comprobar que el nombre del beneficiario coincide con el IBAN antes de enviarla.", "EUR-Lex · Reglamento (UE) 2024/886", "https://eur-lex.europa.eu/eli/reg/2024/886/oj"),
-  pendingFact("F-48", "Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo.", "BOE · Código Civil, arts. 322 y 1263", CC),
-];
+const pending: Fact[] = [];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));
 

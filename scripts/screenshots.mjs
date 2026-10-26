@@ -43,6 +43,15 @@ const allDone = {
 };
 const allPassed = { ...allDone, assessments: passed.assessments };
 
+const C3 = "bancos-tarjetas-y-pagos";
+const c3Lessons = ["que-es-un-banco", "tu-primera-cuenta", "tarjetas", "pagos-con-el-movil", "si-algo-sale-mal"];
+const c3Done = {
+  version: 1,
+  lessons: Object.fromEntries(c3Lessons.map((l) => [`${C3}/${l}`, lesson(5, true)])),
+  assessments: {},
+  last: { course: C3, lesson: c3Lessons[4] },
+};
+
 const C4 = "que-no-te-estafen";
 const c4Lessons = ["como-piensa-un-estafador", "phishing-y-llamadas-falsas", "estafas-al-comprar-y-vender", "inversiones-milagro-y-piramides", "mulas-de-dinero-y-que-hacer"];
 const c4Done = {
@@ -70,6 +79,8 @@ const shots = [
   { name: "13-pagina-404", path: "/esta-pagina-no-existe/" },
   { name: "14-familias-y-centros", path: "/familias/" },
   { name: "15-cursos-por-areas", path: "/cursos/" },
+  { name: "16a-curso-3-leccion-3-3", path: "/cursos/bancos-tarjetas-y-pagos/tarjetas/", state: c3Done },
+  { name: "16b-curso-3-leccion-3-4", path: "/cursos/bancos-tarjetas-y-pagos/pagos-con-el-movil/", state: c3Done },
   { name: "16-curso-4-ficha", path: `/cursos/${C4}/` },
   { name: "17-curso-4-leccion-4-2", path: `/cursos/${C4}/phishing-y-llamadas-falsas/`, state: c4Done },
   { name: "18-curso-4-leccion-4-5", path: `/cursos/${C4}/mulas-de-dinero-y-que-hacer/`, state: c4Done },

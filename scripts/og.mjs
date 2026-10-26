@@ -24,6 +24,7 @@ const images = [
   { file: "finaula", eyebrow: "Formación financiera para jóvenes", title: "Entiende tu dinero antes de que otros decidan por ti.", meta: "Cursos cortos · Herramientas · Certificados", cover: "coins", band: "#1F5A55" },
   { file: "fundamentos-del-dinero", eyebrow: "Curso 1 · Tu dinero hoy", title: "Fundamentos del dinero", meta: "6 lecciones · 43 min · evaluación y certificado", cover: "coins", band: "#1F5A55" },
   { file: "tu-primer-sueldo", eyebrow: "Curso 2 · Trabajo e ingresos", title: "Tu primer sueldo", meta: "5 lecciones · 36 min · evaluación y certificado", cover: "bars", band: "#7A2A0E" },
+  { file: "bancos-tarjetas-y-pagos", eyebrow: "Curso 3 · Tu dinero hoy", title: "Bancos, tarjetas y pagos digitales", meta: "5 lecciones · 33 min · evaluación y certificado", cover: "tools", band: "#1F5A55" },
   { file: "que-no-te-estafen", eyebrow: "Curso 4 · Protégete y entiende el mundo", title: "Que no te estafen", meta: "5 lecciones · 34 min · evaluación y certificado", cover: "bars", band: "#7A2A0E" },
   { file: "herramientas", eyebrow: "Herramientas", title: "Practica con tus cifras", meta: "Horas de trabajo · Presupuesto · Meta de ahorro · Interés compuesto", cover: "tools", band: "#1F5A55" },
 ];

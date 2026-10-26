@@ -146,7 +146,7 @@ El curso 1 funciona sin ellos. Si se verifican, se pueden añadir como «dato cl
 
 | ID | Lección | Dato | Anual | Dónde comprobarlo (enlace exacto) | Fecha de consulta | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
-| F-33 | 1.6 | En España, la inflación se mide con el IPC, que elabora el INE | no | INE · Índice de Precios de Consumo: https://www.ine.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
+| F-33 | 1.6, 8.2 | En España, la inflación se mide con el IPC, que elabora el INE | no | INE · Índice de Precios de Consumo: https://www.ine.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
 
 ## Datos de los cursos 5 a 10
 

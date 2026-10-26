@@ -65,6 +65,16 @@ describe("draft courses", () => {
     }
   });
 
+  it("follow the content style rules", () => {
+    const all = JSON.stringify(draftCourses);
+    expect(/\p{Extended_Pictographic}/u.test(all)).toBe(false);
+    expect(/borrador/i.test(all)).toBe(false);
+    for (const l of draftCourses.flatMap((c) => c.lessons)) {
+      const text = JSON.stringify(l);
+      if (/rentabilidad/i.test(text)) expect(text, l.number).toMatch(/no está garantizada|ninguna rentabilidad está garantizada/i);
+    }
+  });
+
   it("use banks of 12, 8 per attempt, pass with 6", () => {
     for (const c of draftCourses) {
       expect(c.assessment, c.slug).toMatchObject({ count: 8, passMark: 6 });

@@ -548,6 +548,14 @@ const pendingFact = (id: string, claim: string, label: string, url: string): Fac
 
 const pending: Fact[] = [
   pendingFact("F-57", "«Compra ahora, paga después» y pagar a plazos son formas de crédito.", "BOE · Ley 16/2011 de contratos de crédito al consumo", CREDITO_CONSUMO),
+  pendingFact("F-65", "Antes de invertir en un fondo tienen que darte un documento con sus datos fundamentales, que incluye los costes y el nivel de riesgo.", "CNMV · Guías del inversor", "https://www.cnmv.es/"),
+  pendingFact("F-66", "Antes de venderte algunos productos de inversión, la entidad debe evaluar si son adecuados para ti (test de conveniencia o de idoneidad).", "CNMV · Guías del inversor", "https://www.cnmv.es/"),
+  pendingFact("F-67", "Los proveedores de servicios de criptoactivos en la UE necesitan autorización según el Reglamento MiCA.", "EUR-Lex · Reglamento (UE) 2023/1114 (MiCA)", "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"),
+  pendingFact("F-68", "La publicidad de criptoactivos en España debe incluir advertencias sobre sus riesgos.", "CNMV · Circular 1/2022 sobre publicidad de criptoactivos", "https://www.cnmv.es/"),
+  pendingFact("F-33", "En España, la inflación se mide con el IPC, que elabora el INE.", "INE · Índice de Precios de Consumo", "https://www.ine.es/"),
+  pendingFact("F-69", "El Banco Central Europeo decide los tipos de interés oficiales de la zona del euro y su objetivo es una inflación del 2 % a medio plazo.", "Banco Central Europeo", "https://www.ecb.europa.eu/"),
+  pendingFact("F-70", "El paro se mide con la Encuesta de Población Activa (EPA) del INE; una persona parada es la que no tiene trabajo, lo busca y está disponible para trabajar.", "INE · Encuesta de Población Activa", "https://www.ine.es/"),
+  pendingFact("F-71", "El PIB mide el valor de todo lo que produce un país en un periodo, y en España lo calcula el INE.", "INE · Contabilidad Nacional", "https://www.ine.es/"),
 ];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));

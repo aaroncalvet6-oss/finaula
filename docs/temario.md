@@ -1125,7 +1125,7 @@ Ahorrar no es invertir. Riesgo, plazo y diversificación, y por qué desconfiar 
 
 1. Ahorrar es apartar dinero; invertir es ponerlo a trabajar asumiendo que puede bajar.
 2. Primero, un colchón para imprevistos que puedas sacar en cualquier momento.
-3. Los depósitos en el banco están protegidos hasta un límite; las inversiones no están protegidas frente a pérdidas.
+3. Los depósitos en el banco están protegidos hasta 100.000 € (F-34); una inversión puede perder valor. (La lección no afirma qué excluye el FGD: no está verificado.)
 
 ### 7.2 · Riesgo, rentabilidad y plazo
 

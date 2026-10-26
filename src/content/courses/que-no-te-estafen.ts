@@ -165,7 +165,7 @@ export const queNoTeEstafen: Course = {
         { type: "h", text: "Lo que tu banco nunca te pide" },
         {
           type: "p",
-          text: "Tu banco nunca te pedirá por SMS, correo o teléfono tus claves completas ni los códigos que te envía para confirmar operaciones. Si alguien te los pide, es una estafa, diga lo que diga la pantalla.",
+          text: "Tu banco nunca te pedirá tus contraseñas o claves completas, ni por correo ni por SMS. Y no necesita ningún código tuyo para cancelar una operación: si te lo piden por teléfono, sospecha, diga lo que diga la pantalla.",
         },
       ],
       example: {
@@ -180,7 +180,7 @@ export const queNoTeEstafen: Course = {
             items: [
               "Autoridad: dice ser el banco y el número parece el suyo.",
               "Miedo y prisa: hay que cancelar el pago ya.",
-              "Lo que pide: un código de confirmación. El banco nunca lo pide.",
+              "Lo que pide: un código para «cancelar» el pago. El banco no necesita ningún código tuyo para eso.",
             ],
           },
           {
@@ -189,23 +189,23 @@ export const queNoTeEstafen: Course = {
           },
         ],
       },
-      keyFact: "Los códigos que te llegan del banco son solo para ti. Nadie de tu banco te los va a pedir nunca.",
+      keyFact: "Tu banco no necesita ningún código tuyo para cancelar una operación. Si te lo piden por teléfono, sospecha y cuelga.",
       keyIdeas: [
         "Phishing, smishing y vishing buscan tus claves o que pagues.",
         "El número o el nombre de una llamada o un SMS se pueden falsificar.",
-        "Tu banco nunca te pide tus claves completas ni los códigos de confirmación.",
+        "Tu banco nunca te pide tus claves completas por correo o SMS, ni un código para cancelar una operación.",
       ],
       questions: [
         {
           id: "4.2-q1",
-          prompt: "Te llama alguien desde un número que tu móvil muestra como el de tu banco y te pide el código del SMS. ¿Qué haces?",
+          prompt: "Te llama alguien desde un número que tu móvil muestra como el de tu banco y te pide el código del SMS para cancelar un pago. ¿Qué haces?",
           options: [
             "Colgar y llamar tú al teléfono que aparece en la app oficial.",
             "Dárselo, porque el número es el del banco.",
             "Darle solo la mitad del código.",
           ],
           correct: 0,
-          explanation: "El número se puede falsificar, y el banco nunca pide códigos. Comprueba siempre por tu propio canal.",
+          explanation: "El número se puede falsificar, y el banco no necesita ningún código tuyo para cancelar una operación. Comprueba siempre por tu propio canal.",
           hint: "¿Puedes fiarte del número que aparece en pantalla?",
           facts: ["F-49", "F-50"],
         },
@@ -272,7 +272,7 @@ export const queNoTeEstafen: Course = {
         { type: "h", text: "La solicitud de dinero" },
         {
           type: "p",
-          text: "En los pagos entre particulares con el móvil, alguien puede enviarte una «solicitud de dinero». No es un ingreso: si la aceptas, eres tú quien paga. Un truco habitual es que el «comprador» te pida que aceptes una solicitud para «recibir» el pago.",
+          text: "En los pagos entre particulares con el móvil, como Bizum, alguien puede enviarte una «solicitud de dinero». No es un ingreso: si la aceptas, eres tú quien envía el dinero. Un truco habitual es que el «comprador» te pida que aceptes una solicitud para «recibir» el pago.",
         },
       ],
       example: {
@@ -366,7 +366,7 @@ export const queNoTeEstafen: Course = {
         { type: "h", text: "Pirámides" },
         {
           type: "p",
-          text: "Si ganas dinero sobre todo por traer a más gente, y no por vender algo real, es una pirámide. Las ventas piramidales están prohibidas como práctica desleal. Funcionan mientras entra gente nueva; cuando deja de entrar, los últimos lo pierden todo.",
+          text: "Si ganas dinero sobre todo por traer a más gente, y no por vender algo real, es una pirámide. La ley considera que crear, dirigir o promocionar una venta piramidal es siempre una práctica desleal y engañosa. Funcionan mientras entra gente nueva; cuando deja de entrar, los últimos lo pierden todo.",
         },
       ],
       example: {
@@ -447,12 +447,12 @@ export const queNoTeEstafen: Course = {
         { type: "h", text: "Mulas de dinero" },
         {
           type: "p",
-          text: "Te ofrecen dinero fácil por «prestar» tu cuenta, o por recibir una transferencia y reenviarla quedándote una parte. Ese dinero suele venir de otras estafas, y tú eres quien lo mueve.",
+          text: "Te ofrecen dinero fácil por «prestar» tu cuenta, o por recibir una transferencia y reenviarla quedándote una parte. Suelen captar a la gente con falsas ofertas de trabajo en redes sociales. Ese dinero suele venir de otras estafas, y tú eres quien lo mueve.",
         },
         {
           type: "concept",
           term: "Mula de dinero",
-          text: "Una persona que deja que usen su cuenta para mover dinero de otros. Prestar tu cuenta así puede ser delito, aunque no supieras de dónde venía el dinero.",
+          text: "Una persona que deja que usen su cuenta para mover dinero de otros. En muchos casos, quien hace de mula es responsable de un delito de blanqueo de capitales.",
         },
         { type: "h", text: "Si te han estafado" },
         {
@@ -462,12 +462,12 @@ export const queNoTeEstafen: Course = {
             "Cuéntaselo a tus padres o a un adulto de confianza. No es culpa tuya: les pasa a personas de todas las edades.",
             "Avisa a tu banco enseguida y bloquea la tarjeta si hace falta.",
             "Guarda las pruebas: capturas de los mensajes, del perfil y de los pagos.",
-            "Denuncia ante la Policía Nacional o la Guardia Civil.",
+            "Denuncia ante la policía: Policía Nacional, Guardia Civil o, según tu comunidad, Mossos d'Esquadra o Ertzaintza.",
           ],
         },
         {
           type: "p",
-          text: "Si tienes dudas sobre un mensaje o te ha pasado algo en internet, puedes llamar al 017, la línea de ayuda en ciberseguridad de INCIBE. Es gratuita y confidencial.",
+          text: "Si tienes dudas sobre un mensaje o te ha pasado algo en internet, puedes llamar al 017, la línea de ayuda en ciberseguridad de INCIBE, o escribir por WhatsApp al 900 116 117. Es gratuita y confidencial y te asesora, pero no sirve para denunciar: la denuncia se pone ante la policía.",
         },
       ],
       example: {
@@ -485,9 +485,9 @@ export const queNoTeEstafen: Course = {
       },
       keyFact: "Tu cuenta es solo para tu dinero. Si alguien te paga por usarla, te está metiendo en su delito.",
       keyIdeas: [
-        "Prestar tu cuenta para mover dinero de otros puede ser delito.",
+        "Hacer de mula de dinero es, en muchos casos, un delito de blanqueo de capitales.",
         "Si te estafan: cuéntalo, avisa a tu banco, guarda las pruebas y denuncia.",
-        "El 017 de INCIBE ofrece ayuda gratuita y confidencial.",
+        "El 017 de INCIBE te asesora gratis y de forma confidencial, pero para denunciar hay que ir a la policía.",
       ],
       questions: [
         {
@@ -499,7 +499,7 @@ export const queNoTeEstafen: Course = {
             "Un trabajo normal.",
           ],
           correct: 0,
-          explanation: "Ese dinero suele venir de estafas. Al moverlo con tu cuenta, el problema pasa a ser tuyo.",
+          explanation: "Ese dinero suele venir de estafas. Quien hace de mula es, en muchos casos, responsable de un delito de blanqueo de capitales.",
           hint: "¿Por qué no lo hace con su propia cuenta?",
           facts: ["F-32"],
         },
@@ -525,7 +525,7 @@ export const queNoTeEstafen: Course = {
             "En el número que aparece en el mensaje.",
           ],
           correct: 0,
-          explanation: "El 017 de INCIBE es gratuito y confidencial. Nunca uses los datos de contacto del mensaje sospechoso.",
+          explanation: "El 017 de INCIBE es gratuito y confidencial, y te asesora. Si quieres denunciar, eso se hace ante la policía. Nunca uses los datos de contacto del mensaje sospechoso.",
           hint: "Busca una ayuda que no dependa de quien te escribe.",
           facts: ["F-31"],
         },
@@ -560,10 +560,10 @@ export const queNoTeEstafen: Course = {
         id: "E4-03",
         lesson: "4.2",
         facts: ["F-49"],
-        prompt: "Alguien que dice ser de tu banco te pide la clave de la app para «verificar tu identidad». ¿Qué es?",
-        correct: "Una estafa: el banco nunca pide tus claves.",
+        prompt: "Te llega un SMS de «tu banco» que te pide la clave de la app para «verificar tu identidad». ¿Qué es?",
+        correct: "Una estafa: el banco nunca pide tus claves por SMS.",
         distractors: ["Un trámite normal.", "Seguro, si sabe tu nombre."],
-        explanation: "Tu banco nunca te pedirá tus claves completas ni los códigos de confirmación.",
+        explanation: "Tu banco nunca te pedirá tus contraseñas o claves completas, ni por correo ni por SMS.",
       },
       {
         id: "E4-04",
@@ -644,7 +644,7 @@ export const queNoTeEstafen: Course = {
         prompt: "Has aceptado mover dinero por tu cuenta a cambio de una comisión y ahora sospechas. ¿Qué haces?",
         correct: "Parar, contárselo a un adulto y avisar al banco; puedes pedir ayuda en el 017.",
         distractors: ["Seguir hasta cobrar la comisión.", "Borrar los mensajes y no decir nada."],
-        explanation: "Ser mula de dinero puede ser delito. Cuanto antes pares y pidas ayuda, mejor.",
+        explanation: "Hacer de mula es, en muchos casos, un delito de blanqueo de capitales. Cuanto antes pares y pidas ayuda, mejor.",
       },
     ],
   },

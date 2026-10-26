@@ -14,6 +14,9 @@ const OBLIGADOS = `${AEAT_MANUAL}/manuales-practicos/irpf-2025/c01-campana-decla
 const NOTA_RENTA =
   "https://sede.agenciatributaria.gob.es/static_files/Sede/Actualidad/Notas_prensa/2026/NP_Inicio_Campana_renta_2025.pdf";
 
+const BDE = "https://clientebancario.bde.es/";
+const SPOOFING = `${BDE}pcb/es/blog/suplantacion-de-sms-y-del-identificador-de-llamadas.html`;
+
 const raw: Fact[] = [
   {
     id: "F-01",
@@ -247,6 +250,92 @@ const raw: Fact[] = [
       label: "INEE · Ministerio de Educación, PISA 2022 competencia financiera",
       url: "https://www.educacionfpydeportes.gob.es/inee/gl/dam/jcr:e66d3044-4c8b-42a5-9504-0a79975aa4c3/r2-1.pdf",
     },
+  },  {
+    id: "F-31",
+    claim:
+      "El 017 de INCIBE es gratuito y confidencial (también por WhatsApp, en el 900 116 117) y te asesora, pero no sirve para denunciar. Las estafas se denuncian ante la policía: Policía Nacional, Guardia Civil o, en tu comunidad, Mossos d'Esquadra o Ertzaintza.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "La Moncloa · El teléfono 017 de ayuda en ciberseguridad (14/07/2026)",
+      url: "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/140726-telefono-017-ayuda-ciberseguridad.aspx",
+    },
+  },
+  {
+    id: "F-32",
+    claim:
+      "Las «mulas de dinero» son, en muchos casos, responsables de un delito de blanqueo de capitales, y las captan con falsas ofertas de trabajo en redes sociales.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Ministerio del Interior · Acción contra el blanqueo a través de mulas de dinero (05/12/2022)",
+      url: "https://www.interior.gob.es/opencms/es/detalle/articulo/La-Policia-Nacional-detiene-a-52-personas-en-Espana-en-el-marco-de-una-accion-global-contra-el-blanqueo-de-capitales-a-traves-de-mulas-de-dinero/",
+    },
+  },
+  {
+    id: "F-34",
+    claim: "El Fondo de Garantía de Depósitos protege el dinero depositado en un banco hasta 100.000 € por titular y entidad.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · ¿Cuánto cubre el FGD?", url: `${BDE}pcb/es/blog/cuanto-cubre-el-fgd-.html` },
+  },
+  {
+    id: "F-35",
+    claim:
+      "La CNMV publica advertencias sobre entidades que ofrecen inversiones sin estar autorizadas, y registros oficiales para comprobar si una entidad lo está.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "CNMV · Advertencias", url: "https://www.cnmv.es/portal/Advertencias" },
+  },
+  {
+    id: "F-47",
+    claim:
+      "Para reclamar a un banco, primero es obligatorio reclamar a su servicio de atención al cliente; si no estás de acuerdo o no contesta en plazo (15 días hábiles en servicios de pago, un mes en el resto para consumidores), puedes acudir al Banco de España.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Banco de España · Cómo presentar una reclamación",
+      url: `${BDE}pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/`,
+    },
+  },
+  {
+    id: "F-49",
+    claim:
+      "Tu banco nunca te pedirá tus contraseñas o claves completas, ni por correo ni por SMS. Y no necesita ningún código tuyo para cancelar una operación: si te lo piden por teléfono, sospecha.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · Suplantación de SMS y del identificador de llamadas", url: SPOOFING },
+  },
+  {
+    id: "F-50",
+    claim: "Los SMS y las llamadas pueden mostrar un número o un nombre falsos, aunque parezcan los de tu banco («spoofing»).",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · Suplantación de SMS y del identificador de llamadas", url: SPOOFING },
+  },
+  {
+    id: "F-51",
+    claim: "Con el «Bizum inverso», al aceptar una solicitud de dinero estás enviando dinero, no recibiéndolo.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Banco de España · Estafas por Bizum", url: `${BDE}pcb/es/blog/estafas-por-bizum.html` },
+  },
+  {
+    id: "F-52",
+    claim: "Crear, dirigir o promocionar un plan de venta piramidal es desleal por engañoso en cualquier circunstancia.",
+    status: "texto legal",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "BOE · Ley 3/1991 de Competencia Desleal, art. 24", url: "https://www.boe.es/buscar/act.php?id=BOE-A-1991-628#a24" },
+    verifiedIn: "https://papelea.com/es/leyes/ley-de-competencia-desleal/capitulo-iii",
   },
 ];
 
@@ -254,8 +343,6 @@ const raw: Fact[] = [
  * Pending facts cited by draft courses (src/content/drafts/). Kept out of `facts`, so nothing
  * published can cite them. Once the owner verifies one, it moves to `raw` with its real status.
  */
-const BDE = "https://clientebancario.bde.es/";
-const OSI = "https://www.osi.es/";
 const PAGOS = "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036";
 const CC = "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763";
 const pendingFact = (id: string, claim: string, label: string, url: string, annual = false): Fact => ({
@@ -269,22 +356,13 @@ const pendingFact = (id: string, claim: string, label: string, url: string, annu
 
 const pending: Fact[] = [
   pendingFact("F-30", "Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora.", "BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46", PAGOS),
-  pendingFact("F-31", "INCIBE tiene una línea de ayuda gratuita y confidencial en ciberseguridad (017), y las estafas se denuncian ante la Policía Nacional o la Guardia Civil.", "INCIBE · Línea de ayuda en ciberseguridad 017", "https://www.incibe.es/"),
-  pendingFact("F-32", "Prestar tu cuenta para mover dinero de otra persona («mula de dinero») puede ser delito.", "BOE · Código Penal", "https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"),
-  pendingFact("F-34", "El Fondo de Garantía de Depósitos protege el dinero depositado en los bancos hasta un importe máximo por titular y entidad.", "Fondo de Garantía de Depósitos", "https://www.fgd.es/"),
-  pendingFact("F-35", "La CNMV publica advertencias sobre entidades que ofrecen inversiones sin estar autorizadas, y registros para comprobar si una entidad lo está.", "CNMV · advertencias y registros oficiales", "https://www.cnmv.es/"),
   pendingFact("F-41", "Un menor puede tener una cuenta a su nombre, pero la abren y la gestionan sus padres o tutores; cada banco fija sus condiciones.", "Banco de España · Portal del Cliente Bancario", BDE),
   pendingFact("F-42", "Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite.", "Banco de España · Portal del Cliente Bancario", BDE, true),
   pendingFact("F-43", "El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia.", "BOE · Orden EHA/2899/2011 de transparencia bancaria", "https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804"),
   pendingFact("F-44", "Hay un plazo máximo para comunicar al banco una operación que no autorizaste.", "BOE · Real Decreto-ley 19/2018, art. 43", PAGOS),
   pendingFact("F-45", "En los pagos por internet el banco debe aplicar una autenticación reforzada, por ejemplo un código en el móvil además de la tarjeta.", "BOE · Real Decreto-ley 19/2018, art. 68", PAGOS),
   pendingFact("F-46", "Las transferencias inmediatas en euros deben ofrecerse en la UE y el banco debe comprobar que el nombre del beneficiario coincide con el IBAN antes de enviarla.", "EUR-Lex · Reglamento (UE) 2024/886", "https://eur-lex.europa.eu/eli/reg/2024/886/oj"),
-  pendingFact("F-47", "Para reclamar a un banco, primero hay que dirigirse a su servicio de atención al cliente; si no responde o no estás de acuerdo, puedes acudir al Banco de España.", "Banco de España · Portal del Cliente Bancario, reclamaciones", BDE),
   pendingFact("F-48", "Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo.", "BOE · Código Civil, arts. 322 y 1263", CC),
-  pendingFact("F-49", "Tu banco nunca te pedirá por SMS, correo o teléfono tus claves completas ni los códigos que te envía para confirmar operaciones.", "INCIBE · Oficina de Seguridad del Internauta", OSI),
-  pendingFact("F-50", "Las llamadas y los SMS pueden mostrar un número o un nombre falsos, aunque parezcan los de tu banco («spoofing»).", "INCIBE · Oficina de Seguridad del Internauta", OSI),
-  pendingFact("F-51", "En los pagos entre particulares con el móvil, una «solicitud de dinero» no es un ingreso: si la aceptas, eres tú quien paga.", "INCIBE · Oficina de Seguridad del Internauta", OSI),
-  pendingFact("F-52", "Las ventas piramidales (ganar dinero sobre todo por captar a otras personas) están prohibidas como práctica desleal.", "BOE · Ley 3/1991 de Competencia Desleal, art. 24", "https://www.boe.es/buscar/act.php?id=BOE-A-1991-628"),
 ];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));

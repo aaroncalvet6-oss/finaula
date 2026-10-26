@@ -14,7 +14,8 @@ cita [`temario.md`](./temario.md) y, desde la fase 4, `src/content/facts.ts`.
 2. **Fuente oficial siempre que se pueda.** BOE, Agencia Tributaria, Seguridad Social, SEPE,
    Ministerio de Trabajo, INE, Banco de España (y su Portal del Cliente Bancario), CNMV, Finanzas
    para Todos, Fondo de Garantía de Depósitos, Ministerio de Consumo, CNMC, Ministerio de
-   Educación, BCE, INCIBE, AEPD, Policía Nacional y Guardia Civil. Por decisión del propietario
+   Educación, BCE, INCIBE, AEPD, Policía Nacional, Guardia Civil, Ministerio del Interior y La
+   Moncloa. Por decisión del propietario
    (17/10/2026) también valen dos excepciones: una reproducción literal del texto legal publicada
    en otra web, y la tabla de una mutua colaboradora con la Seguridad Social. En los dos casos la
    lección cita y enlaza la fuente oficial (el BOE o seg-social.es), nunca la web secundaria.
@@ -36,28 +37,33 @@ cita [`temario.md`](./temario.md) y, desde la fase 4, `src/content/facts.ts`.
   comprobarlo. No se usa.
 - **Descartado**: se comprobó y el dato no era correcto o no se puede afirmar así, o se decidió no usarlo.
 
-## Estado de la verificación (17/10/2026)
+## Estado de la verificación (26/10/2026)
 
 Desde el entorno de desarrollo **no se puede abrir ninguna de las fuentes**, ni las oficiales
 (boe.es, sede.agenciatributaria.gob.es, seg-social.es, bde.es, cnmv.es) ni las secundarias
 (loentiendo.com, elnotario.es, asepeyo.es): la política de red del entorno las bloquea. Las
 verificaciones de esta tabla las ha hecho **el propietario del proyecto**, que comunicó los enlaces
-y las fechas el 17/10/2026 (la de F-06, el 19/10/2026).
+y las fechas el 17/10/2026 (la de F-06, el 19/10/2026; las de la tanda 1 de los cursos 3 y 4, el
+26/10/2026).
 
 | Estado | Datos |
 | --- | --- |
-| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-40 |
-| Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11 |
+| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-31, F-32, F-34, F-35, F-40, F-47, F-49, F-50, F-51 |
+| Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11, F-52 |
 | Verificado (mutua colaboradora) | F-13 |
-| Pendiente (no se usan) | F-28 a F-35 y F-41 a F-81 (cursos 3 a 10), salvo F-79 y F-80 |
+| Pendiente (no se usan) | F-28, F-29, F-30, F-33, F-41 a F-46, F-48 y F-53 a F-81 (salvo F-79 y F-80) |
 | Descartado | F-79, F-80 |
 
 Consecuencias:
 
 - El **curso 1** («Fundamentos del dinero») no depende de ningún dato legal o fiscal. Los datos
-  F-30 a F-35 lo enriquecerían, pero no se usan hasta que estén verificados.
+  F-30 y F-33 lo enriquecerían, pero no se usan hasta que estén verificados.
 - El **curso 2** («Tu primer sueldo») tiene verificados todos los datos que citan sus lecciones
   (F-01 a F-23). Se puede publicar.
+- El **curso 4** («Que no te estafen») tiene verificados todos sus datos (F-31, F-32, F-35, F-49
+  a F-52). Se puede publicar.
+- El **curso 3** («Bancos, tarjetas y pagos digitales») tiene verificados F-34 y F-47, pero le
+  faltan F-30, F-41 a F-46 y F-48. Sigue en borrador.
 
 Los enlaces con anclaje de artículo del BOE (`#a6`, `#a14`…) siguen el formato de los textos
 consolidados del BOE, pero no se han podido abrir.
@@ -98,22 +104,23 @@ En la columna «Dónde comprobarlo», los datos verificados llevan la fuente usa
 | --- | --- | --- | --- | --- | --- | --- |
 | F-40 | Portada | PISA 2022, competencia financiera, alumnos de 15 años: en España el 17,1 % no alcanza el nivel básico (nivel 2) y solo el 4,7 % llega al nivel más alto, frente al 10,6 % de media de la OCDE | no | INEE (Ministerio de Educación, Formación Profesional y Deportes), informe PISA 2022 de competencia financiera: https://www.educacionfpydeportes.gob.es/inee/gl/dam/jcr:e66d3044-4c8b-42a5-9504-0a79975aa4c3/r2-1.pdf | 19/10/2026 | Verificado (oficial) |
 
-## Datos que enriquecerían el curso 1 (no se usan)
+## Datos del curso 4 · Que no te estafen
 
-El curso 1 funciona sin ellos. Si se verifican, se pueden añadir como «dato clave» o enlace.
+Verificados por el propietario el 26/10/2026. Las fechas entre paréntesis son las de publicación de la página.
 
 | ID | Lección | Dato | Anual | Dónde comprobarlo (enlace exacto) | Fecha de consulta | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
-| F-30 | 1.5 | Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora | no | BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España, Portal del Cliente Bancario: https://clientebancario.bde.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
-| F-31 | 1.5 | Dónde pedir ayuda ante una estafa digital (línea de ayuda de INCIBE) y dónde denunciar (Policía Nacional y Guardia Civil) | no | INCIBE: https://www.incibe.es/ · Policía Nacional: https://www.policia.es/ · Guardia Civil: https://www.guardiacivil.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
-| F-32 | 1.5 | Prestar tu cuenta para mover dinero de otra persona («mula de dinero») puede ser delito | no | BOE · Código Penal: https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444 · Policía Nacional: https://www.policia.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
-| F-33 | 1.6 | En España, la inflación se mide con el IPC, que elabora el INE | no | INE · Índice de Precios de Consumo: https://www.ine.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
-| F-34 | 1.6 | El Fondo de Garantía de Depósitos protege el dinero depositado en los bancos hasta un importe máximo por titular y entidad | no | BOE · RD 2606/1996: https://www.boe.es/buscar/act.php?id=BOE-A-1996-27971 · FGD: https://www.fgd.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
-| F-35 | 1.6 | Advertencias oficiales sobre entidades que ofrecen inversiones sin autorización | no | CNMV · advertencias sobre entidades no autorizadas: https://www.cnmv.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
+| F-49 | 4.2 | Tu banco nunca te pedirá tus contraseñas o claves completas, ni por correo ni por SMS. Y no necesita ningún código tuyo para cancelar una operación: si te lo piden por teléfono, sospecha | no | Banco de España, suplantación de SMS y del identificador de llamadas: https://clientebancario.bde.es/pcb/es/blog/suplantacion-de-sms-y-del-identificador-de-llamadas.html · Banco de España, guía de consejos para prevenir el fraude en operaciones bancarias: https://clientebancario.bde.es/f/webcb/RCL/ActualidadEducacionFinanciera/Iniciativas/GuiaConsejosprevenirfraudeoperacionesbancariasaccesible.pdf | 26/10/2026 | Verificado (oficial) |
+| F-50 | 4.2 | Los SMS y las llamadas pueden mostrar un número o un nombre falsos, aunque parezcan los de tu banco («spoofing») | no | Banco de España, suplantación de SMS y del identificador de llamadas: https://clientebancario.bde.es/pcb/es/blog/suplantacion-de-sms-y-del-identificador-de-llamadas.html | 26/10/2026 | Verificado (oficial) |
+| F-51 | 4.3 | Con el «Bizum inverso», al aceptar una solicitud de dinero estás enviando dinero, no recibiéndolo | no | Banco de España, estafas por Bizum: https://clientebancario.bde.es/pcb/es/blog/estafas-por-bizum.html | 26/10/2026 | Verificado (oficial) |
+| F-35 | 4.4 | La CNMV publica advertencias sobre entidades que ofrecen inversiones sin estar autorizadas, y registros oficiales para comprobar si una entidad lo está | no | CNMV, advertencias: https://www.cnmv.es/portal/Advertencias | 26/10/2026 | Verificado (oficial) |
+| F-52 | 4.4 | Crear, dirigir o promocionar un plan de venta piramidal es desleal por engañoso en cualquier circunstancia | no | BOE, Ley 3/1991 de Competencia Desleal, art. 24: https://www.boe.es/buscar/act.php?id=BOE-A-1991-628#a24 · Texto literal comprobado en: https://papelea.com/es/leyes/ley-de-competencia-desleal/capitulo-iii | 26/10/2026 | Verificado (texto legal) |
+| F-32 | 4.5 | Las «mulas de dinero» son, en muchos casos, responsables de un delito de blanqueo de capitales, y las captan con falsas ofertas de trabajo en redes sociales | no | Ministerio del Interior, acción global contra el blanqueo de capitales a través de mulas de dinero (05/12/2022): https://www.interior.gob.es/opencms/es/detalle/articulo/La-Policia-Nacional-detiene-a-52-personas-en-Espana-en-el-marco-de-una-accion-global-contra-el-blanqueo-de-capitales-a-traves-de-mulas-de-dinero/ | 26/10/2026 | Verificado (oficial) |
+| F-31 | 4.5 | El 017 de INCIBE es gratuito y confidencial (también por WhatsApp, en el 900 116 117) y te asesora, pero no sirve para denunciar. Las estafas se denuncian ante la policía: Policía Nacional, Guardia Civil o, en tu comunidad, Mossos d'Esquadra o Ertzaintza | no | La Moncloa, el teléfono 017 de ayuda en ciberseguridad (14/07/2026): https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/140726-telefono-017-ayuda-ciberseguridad.aspx | 26/10/2026 | Verificado (oficial) |
 
-## Datos de los cursos 3 a 10 (pendientes, no se usan)
+## Datos del curso 3 · Bancos, tarjetas y pagos digitales (borrador)
 
-Se listan por tandas en [`temario.md`](./temario.md). F-30 a F-35 ya estaban registrados más arriba y también se usarán en estos cursos.
+El curso está escrito en `src/content/drafts/` y no se publica hasta que todos sus datos estén verificados.
 
 | ID | Lección | Dato | Anual | Dónde comprobarlo (enlace) | Fecha de consulta | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -121,14 +128,27 @@ Se listan por tandas en [`temario.md`](./temario.md). F-30 a F-35 ya estaban reg
 | F-42 | 3.2 | Existe la cuenta de pago básica: cualquier persona que resida legalmente en la UE tiene derecho a ella y sus comisiones tienen un límite (la lección no da la cifra) | sí | BOE · Real Decreto-ley 19/2017 de cuentas de pago básicas (buscar en https://www.boe.es/) · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-43 | 3.2 | El banco tiene que informarte de las comisiones antes de contratar y avisarte con antelación si las cambia | no | BOE · Orden EHA/2899/2011 de transparencia bancaria: https://www.boe.es/buscar/act.php?id=BOE-A-2011-16804 · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-48 | 3.3 | Para contratar una tarjeta de crédito hace falta capacidad para obligarte por un préstamo; un menor no emancipado no puede hacerlo por sí solo | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-30 | 3.3 | Si pierdes la tarjeta o te la roban y hay pagos que no autorizaste, tu responsabilidad tiene un límite legal (salvo fraude o negligencia grave), siempre que avises a tu banco sin demora | no | BOE · Real Decreto-ley 19/2018 de servicios de pago, arts. 41 y 46: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España, Portal del Cliente Bancario: https://clientebancario.bde.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
 | F-44 | 3.3 | Tienes un plazo máximo para comunicar al banco una operación que no autorizaste (la lección explica que hay que hacerlo cuanto antes y enlaza el plazo) | no | BOE · Real Decreto-ley 19/2018, art. 43: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-45 | 3.4 | En los pagos por internet el banco debe aplicar una autenticación reforzada (por ejemplo, un código en el móvil además de la tarjeta) | no | BOE · Real Decreto-ley 19/2018, art. 68: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16036 · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-46 | 3.4 | Las transferencias inmediatas en euros deben ofrecerse en la UE y el banco debe comprobar que el nombre del beneficiario coincide con el IBAN antes de enviarla | no | EUR-Lex · Reglamento (UE) 2024/886: https://eur-lex.europa.eu/eli/reg/2024/886/oj · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-47 | 3.5 | Para reclamar a un banco, primero hay que dirigirse a su servicio de atención al cliente; si no responde o no estás de acuerdo, puedes acudir al Banco de España | no | Banco de España · Portal del Cliente Bancario, reclamaciones: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-49 | 4.2 | Tu banco nunca te pedirá por SMS, correo o teléfono tus claves completas ni los códigos que te envía para confirmar operaciones | no | INCIBE · Oficina de Seguridad del Internauta: https://www.osi.es/ · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-50 | 4.2 | Las llamadas y los SMS pueden mostrar un número o un nombre falsos, aunque parezcan los de tu banco («spoofing») | no | INCIBE · Oficina de Seguridad del Internauta: https://www.osi.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-51 | 4.3 | En los pagos entre particulares con el móvil, una «solicitud de dinero» no es un ingreso: si la aceptas, eres tú quien paga | no | INCIBE · Oficina de Seguridad del Internauta: https://www.osi.es/ · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-52 | 4.4 | Las ventas piramidales (ganar dinero sobre todo por captar a otras personas) están prohibidas como práctica desleal | no | BOE · Ley 3/1991 de Competencia Desleal, art. 24: https://www.boe.es/buscar/act.php?id=BOE-A-1991-628 | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-34 | 3.5 | El Fondo de Garantía de Depósitos protege el dinero depositado en un banco hasta 100.000 € por titular y entidad | no | Banco de España, ¿cuánto cubre el FGD?: https://clientebancario.bde.es/pcb/es/blog/cuanto-cubre-el-fgd-.html | 26/10/2026 | Verificado (oficial) |
+| F-47 | 3.5 | Para reclamar a un banco, primero es obligatorio reclamar a su servicio de atención al cliente; si no estás de acuerdo o no contesta en plazo (15 días hábiles en servicios de pago, un mes en el resto para consumidores), puedes acudir al Banco de España | no | Banco de España, cómo presentar una reclamación: https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/ | 26/10/2026 | Verificado (oficial) |
+
+## Datos que enriquecerían el curso 1 (no se usan)
+
+El curso 1 funciona sin ellos. Si se verifican, se pueden añadir como «dato clave» o enlace.
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo (enlace exacto) | Fecha de consulta | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| F-33 | 1.6 | En España, la inflación se mide con el IPC, que elabora el INE | no | INE · Índice de Precios de Consumo: https://www.ine.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
+
+## Datos de los cursos 5 a 10 (pendientes, no se usan)
+
+Se listan por tandas en [`temario.md`](./temario.md).
+
+| ID | Lección | Dato | Anual | Dónde comprobarlo (enlace) | Fecha de consulta | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
 | F-53 | 5.1 | Cuando una tienda anuncia una rebaja, el precio anterior que muestra debe ser el más bajo que aplicó en los 30 días previos | no | BOE · Ley 7/1996 de Ordenación del Comercio Minorista, art. 20: https://www.boe.es/buscar/act.php?id=BOE-A-1996-1072 · Ministerio de Consumo: https://www.consumo.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-28 | 5.2 | En las compras a distancia (internet, teléfono) tienes 14 días naturales para desistir sin dar explicaciones | no | BOE · Ley General de Consumidores (RDLeg 1/2007), arts. 102 a 104: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-54 | 5.2 | Hay excepciones al desistimiento: por ejemplo, productos personalizados o contenido digital que ya has empezado a descargar con tu consentimiento | no | BOE · Ley General de Consumidores, art. 103: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |

@@ -31,6 +31,9 @@ const officialHosts = [
   "www.seg-social.es",
   "www.lamoncloa.gob.es",
   "www.educacionfpydeportes.gob.es",
+  "clientebancario.bde.es",
+  "www.cnmv.es",
+  "www.interior.gob.es",
 ];
 
 describe("fact registry", () => {
@@ -78,8 +81,8 @@ describe("lessons only use verified facts", () => {
 });
 
 describe("course rules", () => {
-  it("publishes both courses", () => {
-    expect(courses.map((c) => c.slug)).toEqual(["fundamentos-del-dinero", "tu-primer-sueldo"]);
+  it("publishes every course in the catalogue", () => {
+    expect(courses.map((c) => c.slug)).toEqual(["fundamentos-del-dinero", "tu-primer-sueldo", "que-no-te-estafen"]);
     expect(allCourses.every(isPublishable)).toBe(true);
   });
 

@@ -43,6 +43,15 @@ const allDone = {
 };
 const allPassed = { ...allDone, assessments: passed.assessments };
 
+const C4 = "que-no-te-estafen";
+const c4Lessons = ["como-piensa-un-estafador", "phishing-y-llamadas-falsas", "estafas-al-comprar-y-vender", "inversiones-milagro-y-piramides", "mulas-de-dinero-y-que-hacer"];
+const c4Done = {
+  version: 1,
+  lessons: Object.fromEntries(c4Lessons.map((l) => [`${C4}/${l}`, lesson(5, true)])),
+  assessments: {},
+  last: { course: C4, lesson: c4Lessons[4] },
+};
+
 const shots = [
   { name: "01-portada", path: "/" },
   { name: "02-ficha-curso", path: `/cursos/${C1}/`, state: midProgress },
@@ -61,6 +70,9 @@ const shots = [
   { name: "13-pagina-404", path: "/esta-pagina-no-existe/" },
   { name: "14-familias-y-centros", path: "/familias/" },
   { name: "15-cursos-por-areas", path: "/cursos/" },
+  { name: "16-curso-4-ficha", path: `/cursos/${C4}/` },
+  { name: "17-curso-4-leccion-4-2", path: `/cursos/${C4}/phishing-y-llamadas-falsas/`, state: c4Done },
+  { name: "18-curso-4-leccion-4-5", path: `/cursos/${C4}/mulas-de-dinero-y-que-hacer/`, state: c4Done },
   { name: "11-portada-oscuro", path: "/", scheme: "dark" },
   { name: "12-leccion-oscuro", path: `/cursos/${C1}/coste-de-oportunidad/`, state: midProgress, scheme: "dark" },
 ];

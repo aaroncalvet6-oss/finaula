@@ -1,10 +1,11 @@
 import { factById, isVerified } from "../facts";
 import { courseSchema, type Course, type Lesson } from "../schema";
 import { fundamentosDelDinero } from "./fundamentos-del-dinero";
+import { queNoTeEstafen } from "./que-no-te-estafen";
 import { tuPrimerSueldo } from "./tu-primer-sueldo";
 
 /** All authored courses, validated at import time. */
-export const allCourses: ReadonlyArray<Course> = [fundamentosDelDinero, tuPrimerSueldo].map((c) => courseSchema.parse(c));
+export const allCourses: ReadonlyArray<Course> = [fundamentosDelDinero, tuPrimerSueldo, queNoTeEstafen].map((c) => courseSchema.parse(c));
 
 /** Facts cited anywhere in a lesson (declared list plus question citations). */
 export function lessonFacts(lesson: Lesson): string[] {
@@ -28,7 +29,6 @@ export const areas: ReadonlyArray<Area> = ["Tu dinero hoy", "Trabajo e ingresos"
 /** Courses of the approved syllabus not in the catalogue yet: drafts and unwritten (docs/temario.md). */
 const plannedCourses: ReadonlyArray<{ number: number; title: string; area: Area }> = [
   { number: 3, title: "Bancos, tarjetas y pagos digitales", area: "Tu dinero hoy" },
-  { number: 4, title: "Que no te estafen", area: "Protégete y entiende el mundo" },
   { number: 5, title: "Consumo inteligente", area: "Tu dinero hoy" },
   { number: 6, title: "Deudas y créditos", area: "Protégete y entiende el mundo" },
   { number: 7, title: "Ahorro e inversión: lo básico", area: "Hacer crecer tu dinero" },

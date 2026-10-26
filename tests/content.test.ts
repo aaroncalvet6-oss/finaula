@@ -38,6 +38,8 @@ const officialHosts = [
   "www.aepd.es",
   "portal-cec.consumo.gob.es",
   "www.comunidad.madrid",
+  "www.cnmc.es",
+  "www.dsca.gob.es",
 ];
 
 describe("fact registry", () => {
@@ -91,6 +93,7 @@ describe("course rules", () => {
       "tu-primer-sueldo",
       "bancos-tarjetas-y-pagos",
       "que-no-te-estafen",
+      "consumo-inteligente",
     ]);
     expect(allCourses.every(isPublishable)).toBe(true);
   });

@@ -48,10 +48,10 @@ y las fechas el 17/10/2026 (la de F-06, el 19/10/2026; las de la tanda 1 de los 
 
 | Estado | Datos |
 | --- | --- |
-| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-30, F-31, F-32, F-34, F-35, F-40, F-41 a F-47, F-49, F-50, F-51, F-59 a F-62, F-64 |
+| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-28, F-29, F-30, F-31, F-32, F-34, F-35, F-40, F-41 a F-47, F-49, F-50, F-51, F-53 a F-56, F-58 a F-62, F-64 |
 | Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11, F-52 |
 | Verificado (mutua colaboradora) | F-13 |
-| Pendiente (no se usan) | F-28, F-29, F-33, F-53 a F-58, F-63 y F-65 a F-81 (salvo F-79 y F-80) |
+| Pendiente (no se usan) | F-33, F-57, F-63 y F-65 a F-81 (salvo F-79 y F-80) |
 | Descartado | F-48, F-79, F-80 |
 
 Consecuencias:
@@ -64,8 +64,8 @@ Consecuencias:
   a F-52). Se puede publicar.
 - El **curso 3** («Bancos, tarjetas y pagos digitales») tiene verificados todos sus datos (F-30,
   F-34 y F-41 a F-47). Se puede publicar.
-- El **curso 5** («Consumo inteligente») tiene verificado F-59; le faltan F-28, F-29 y F-53 a
-  F-56 y F-58. Sigue en borrador.
+- El **curso 5** («Consumo inteligente») tiene verificados todos sus datos (F-28, F-29, F-53 a
+  F-56, F-58 y F-59). Se puede publicar.
 - El **curso 6** («Deudas y créditos») sigue en borrador hasta después del 20/11/2026 (ver la
   nota sobre la Directiva (UE) 2023/2225 más abajo).
 
@@ -151,7 +151,8 @@ El curso 1 funciona sin ellos. Si se verifican, se pueden añadir como «dato cl
 ## Datos de los cursos 5 a 10
 
 Se listan por tandas en [`temario.md`](./temario.md). Los cursos 5 y 6 están escritos en
-`src/content/drafts/`. F-59 a F-62 y F-64 los verificó el propietario el 26/10/2026.
+`src/content/drafts/` (el 5 ya está publicado). Los verificó el propietario el 26/10/2026, salvo F-57
+y F-63.
 
 > **Curso 6 · Deudas y créditos: en borrador hasta después del 20/11/2026.** Las normas de crédito
 > al consumo cambian por la Directiva (UE) 2023/2225, que se aplica desde el 20 de noviembre de
@@ -164,14 +165,14 @@ Se listan por tandas en [`temario.md`](./temario.md). Los cursos 5 y 6 están es
 
 | ID | Lección | Dato | Anual | Dónde comprobarlo (enlace) | Fecha de consulta | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
-| F-53 | 5.1 | Cuando una tienda anuncia una rebaja, el precio anterior que muestra debe ser el más bajo que aplicó en los 30 días previos | no | BOE · Ley 7/1996 de Ordenación del Comercio Minorista, art. 20: https://www.boe.es/buscar/act.php?id=BOE-A-1996-1072 · Ministerio de Consumo: https://www.consumo.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-28 | 5.2 | En las compras a distancia (internet, teléfono) tienes 14 días naturales para desistir sin dar explicaciones | no | BOE · Ley General de Consumidores (RDLeg 1/2007), arts. 102 a 104: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-54 | 5.2 | Hay excepciones al desistimiento: por ejemplo, productos personalizados o contenido digital que ya has empezado a descargar con tu consentimiento | no | BOE · Ley General de Consumidores, art. 103: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-29 | 5.3 | Los productos nuevos tienen una garantía legal de 3 años desde la entrega: si salen defectuosos, puedes pedir que los reparen o los sustituyan | no | BOE · Ley General de Consumidores, art. 120 y siguientes: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 · Ministerio de Consumo: https://www.consumo.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-55 | 5.3 | Una tienda física no está obligada a devolverte el dinero si el producto no tiene defectos, salvo que lo ofrezca en su política | no | Ministerio de Consumo: https://www.consumo.gob.es/ · BOE · Ley General de Consumidores: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-56 | 5.4 | Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio | no | BOE · Ley General de Consumidores, art. 62.3: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-53 | 5.1 | En las rebajas, el precio rebajado debe mostrarse junto al anterior, que es el más bajo de los últimos 30 días. Los productos rebajados no pueden estar deteriorados y mantienen la misma garantía | no | Ministerio de Consumo, nota informativa sobre rebajas (03/01/2025): https://portal-cec.consumo.gob.es/sites/default/files/documentos/NI_Rebajas_2025.pdf | 26/10/2026 | Verificado (oficial) |
+| F-28 | 5.2 | En las compras a distancia tienes 14 días naturales para desistir sin dar explicaciones | no | Ministerio de Consumo, folleto sobre el derecho de desistimiento (julio de 2026): https://portal-cec.consumo.gob.es/sites/default/files/documentos/FOLLETO_DERECHO_DESISTIMIENTO_JULIO_2026.pdf | 26/10/2026 | Verificado (oficial) |
+| F-54 | 5.2 | Hay excepciones al desistimiento, como los productos personalizados o el contenido digital sin soporte material cuando ya ha empezado a ejecutarse con tu consentimiento previo (la lección no dice «descargar») | no | Ministerio de Consumo, folleto sobre el derecho de desistimiento (julio de 2026): https://portal-cec.consumo.gob.es/sites/default/files/documentos/FOLLETO_DERECHO_DESISTIMIENTO_JULIO_2026.pdf | 26/10/2026 | Verificado (oficial) |
+| F-29 | 5.3 | Los productos nuevos tienen una garantía legal de 3 años (desde enero de 2022). Si salen defectuosos eliges reparación o sustitución; si no es posible o sigue fallando, rebaja del precio o devolución del dinero | no | Comunidad de Madrid, garantía y protección en tus compras: https://www.comunidad.madrid/servicios/consumo/garantia-proteccion-compras · Ministerio de Consumo, nota informativa sobre rebajas: https://portal-cec.consumo.gob.es/sites/default/files/documentos/NI_Rebajas_2025.pdf | 26/10/2026 | Verificado (oficial) |
+| F-55 | 5.3 | Las tiendas físicas no están obligadas a aceptar devoluciones de productos sin defecto; si las aceptan, deben informar de sus condiciones | no | Ministerio de Consumo, folleto sobre el derecho de desistimiento (julio de 2026): https://portal-cec.consumo.gob.es/sites/default/files/documentos/FOLLETO_DERECHO_DESISTIMIENTO_JULIO_2026.pdf | 26/10/2026 | Verificado (oficial) |
+| F-56 | 5.4 | Puedes darte de baja de un servicio de la misma forma en que lo contrataste, sin penalizaciones ni trabas desproporcionadas | no | TRLGDCU, art. 62.3, análisis del texto refundido del Ministerio de Consumo: https://www.dsca.gob.es/sites/default/files/consumo_masinfo/analisisTextoRefundido.pdf | 26/10/2026 | Verificado (oficial) |
 | F-57 | 6.4 (5.4 ya no lo usa) | «Compra ahora, paga después» y pagar a plazos son formas de crédito. Afectado por la Directiva (UE) 2023/2225: se revisa después del 20/11/2026 con la ley española en el BOE (la lección explica cuándo se aplican las normas de crédito al consumo) | no | Banco de España: https://clientebancario.bde.es/ · BOE · Ley 16/2011 de contratos de crédito al consumo: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-58 | 5.5 | La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad | no | BOE · Ley 13/2022 General de Comunicación Audiovisual y su desarrollo para usuarios de especial relevancia: https://www.boe.es/ · CNMC: https://www.cnmc.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-58 | 5.5 | Si un influencer te enseña algo porque una marca se lo pide, tiene que indicar dentro del propio vídeo que es publicidad, con palabras como «publicidad» o «publi». Un hashtag o una etiqueta fuera del vídeo no basta | no | CNMC, requerimientos a influencers (03/06/2026): https://www.cnmc.es/prensa/requerimientos-influencer-20260603 | 26/10/2026 | Verificado (oficial) |
 | F-59 | 5.5 | Puedes pedir la hoja de reclamaciones en el establecimiento y reclamar en la oficina de consumo de tu ayuntamiento o de tu comunidad, que intenta mediar con la empresa. Si la empresa está adherida, puedes ir al arbitraje de consumo, que es gratuito pero voluntario para la empresa. El procedimiento puede variar según tu comunidad | no | Comunidad de Madrid, reclamaciones de consumo (fuente oficial autonómica): https://www.comunidad.madrid/node/73694 | 26/10/2026 | Verificado (oficial) |
 | F-60 | 6.2 | La TAE se calcula con el tipo de interés más las comisiones y otros gastos, y sirve para comparar ofertas | no | Banco de España, cálculo de la TAE de un préstamo personal: https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/simuladores/calculo_tae_prestamo_personal.html | 26/10/2026 | Verificado (oficial) |
 | F-61 | 6.3 | Con una tarjeta revolving, al menos cada trimestre el banco debe indicarte la fecha estimada en la que terminarás de pagar con tu cuota actual y cuánto acabarás pagando en total | no | Banco de España, qué información puedes solicitar si dispones de una tarjeta revolving (02/06/2022): https://clientebancario.bde.es/pcb/es/blog/que-informacion-puedes-solicitar-si-dispones-de-una-tarjeta-revolving-.html | 26/10/2026 | Verificado (oficial) |

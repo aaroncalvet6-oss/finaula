@@ -16,6 +16,9 @@ const NOTA_RENTA =
 
 const BDE = "https://clientebancario.bde.es/";
 const MEMORIA_2018 = "https://clientebancario.bde.es/f/webcb/RCL/PodemosAyudarte/InformesActividad/Memoria2018usonoautorizadotarjeta.pdf";
+const CONSUMO_DOCS = "https://portal-cec.consumo.gob.es/sites/default/files/documentos";
+const NOTA_REBAJAS = `${CONSUMO_DOCS}/NI_Rebajas_2025.pdf`;
+const FOLLETO_DESISTIMIENTO = `${CONSUMO_DOCS}/FOLLETO_DERECHO_DESISTIMIENTO_JULIO_2026.pdf`;
 const SPOOFING = `${BDE}pcb/es/blog/suplantacion-de-sms-y-del-identificador-de-llamadas.html`;
 
 const raw: Fact[] = [
@@ -463,13 +466,76 @@ const raw: Fact[] = [
       url: "https://www.aepd.es/preguntas-frecuentes/7-solvencia-patrimonial/FAQ-0701-que-requisitos-son-necesarios-para-incluir-a-una-persona-fisica-en-un-tratamiento-de-solvencia-patrimonial-y-credito",
     },
   },
+  {
+    id: "F-53",
+    claim:
+      "En las rebajas, el precio rebajado debe mostrarse junto al anterior, que es el más bajo de los últimos 30 días. Los productos rebajados no pueden estar deteriorados y mantienen la misma garantía.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Ministerio de Consumo · Nota informativa sobre rebajas (03/01/2025)", url: NOTA_REBAJAS },
+  },
+  {
+    id: "F-28",
+    claim: "En las compras a distancia tienes 14 días naturales para desistir sin dar explicaciones.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Ministerio de Consumo · Folleto sobre el derecho de desistimiento (julio de 2026)", url: FOLLETO_DESISTIMIENTO },
+  },
+  {
+    id: "F-54",
+    claim:
+      "Hay excepciones al desistimiento, como los productos personalizados o el contenido digital sin soporte material cuando ya ha empezado a ejecutarse con tu consentimiento previo.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Ministerio de Consumo · Folleto sobre el derecho de desistimiento (julio de 2026)", url: FOLLETO_DESISTIMIENTO },
+  },
+  {
+    id: "F-29",
+    claim:
+      "Los productos nuevos tienen una garantía legal de 3 años (desde enero de 2022). Si salen defectuosos eliges reparación o sustitución; si no es posible o sigue fallando, rebaja del precio o devolución del dinero.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Comunidad de Madrid · Garantía y protección en tus compras", url: "https://www.comunidad.madrid/servicios/consumo/garantia-proteccion-compras" },
+  },
+  {
+    id: "F-55",
+    claim:
+      "Las tiendas físicas no están obligadas a aceptar devoluciones de productos sin defecto; si las aceptan, deben informar de sus condiciones.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Ministerio de Consumo · Folleto sobre el derecho de desistimiento (julio de 2026)", url: FOLLETO_DESISTIMIENTO },
+  },
+  {
+    id: "F-56",
+    claim: "Puedes darte de baja de un servicio de la misma forma en que lo contrataste, sin penalizaciones ni trabas desproporcionadas.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Ministerio de Consumo · Análisis del texto refundido de la ley de consumidores (art. 62.3)",
+      url: "https://www.dsca.gob.es/sites/default/files/consumo_masinfo/analisisTextoRefundido.pdf",
+    },
+  },
+  {
+    id: "F-58",
+    claim:
+      "Si un influencer te enseña algo porque una marca se lo pide, tiene que indicar dentro del propio vídeo que es publicidad, con palabras como «publicidad» o «publi». Un hashtag o una etiqueta fuera del vídeo no basta.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "CNMC · Requerimientos a influencers (03/06/2026)", url: "https://www.cnmc.es/prensa/requerimientos-influencer-20260603" },
+  },
 ];
 
 /**
  * Pending facts cited by draft courses (src/content/drafts/). Kept out of `facts`, so nothing
  * published can cite them. Once the owner verifies one, it moves to `raw` with its real status.
  */
-const LGDCU = "https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555";
 const CREDITO_CONSUMO = "https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032";
 const pendingFact = (id: string, claim: string, label: string, url: string): Fact => ({
   id,
@@ -481,14 +547,7 @@ const pendingFact = (id: string, claim: string, label: string, url: string): Fac
 });
 
 const pending: Fact[] = [
-  pendingFact("F-53", "Cuando una tienda anuncia una rebaja, el precio anterior que muestra debe ser el más bajo que aplicó en los 30 días previos.", "BOE · Ley 7/1996 de Ordenación del Comercio Minorista, art. 20", "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1072"),
-  pendingFact("F-28", "En las compras a distancia (internet, teléfono) tienes 14 días naturales para desistir sin dar explicaciones.", "BOE · Ley General para la Defensa de los Consumidores, arts. 102 a 104", LGDCU),
-  pendingFact("F-54", "Hay excepciones al desistimiento, como los productos personalizados o el contenido digital que ya has empezado a descargar con tu consentimiento.", "BOE · Ley General para la Defensa de los Consumidores, art. 103", LGDCU),
-  pendingFact("F-29", "Los productos nuevos tienen una garantía legal de 3 años desde la entrega: si salen defectuosos, puedes pedir que los reparen o los sustituyan.", "BOE · Ley General para la Defensa de los Consumidores, art. 120 y siguientes", LGDCU),
-  pendingFact("F-55", "Una tienda física no está obligada a devolverte el dinero si el producto no tiene defectos, salvo que lo ofrezca en su política.", "Ministerio de Consumo", "https://www.consumo.gob.es/"),
-  pendingFact("F-56", "Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio.", "BOE · Ley General para la Defensa de los Consumidores, art. 62.3", LGDCU),
   pendingFact("F-57", "«Compra ahora, paga después» y pagar a plazos son formas de crédito.", "BOE · Ley 16/2011 de contratos de crédito al consumo", CREDITO_CONSUMO),
-  pendingFact("F-58", "La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad.", "BOE · Ley 13/2022 General de Comunicación Audiovisual", "https://www.boe.es/"),
 ];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));

@@ -26,6 +26,7 @@ const images = [
   { file: "tu-primer-sueldo", eyebrow: "Curso 2 · Trabajo e ingresos", title: "Tu primer sueldo", meta: "5 lecciones · 36 min · evaluación y certificado", cover: "bars", band: "#7A2A0E" },
   { file: "bancos-tarjetas-y-pagos", eyebrow: "Curso 3 · Tu dinero hoy", title: "Bancos, tarjetas y pagos digitales", meta: "5 lecciones · 33 min · evaluación y certificado", cover: "tools", band: "#1F5A55" },
   { file: "que-no-te-estafen", eyebrow: "Curso 4 · Protégete y entiende el mundo", title: "Que no te estafen", meta: "5 lecciones · 34 min · evaluación y certificado", cover: "bars", band: "#7A2A0E" },
+  { file: "consumo-inteligente", eyebrow: "Curso 5 · Tu dinero hoy", title: "Consumo inteligente", meta: "5 lecciones · 33 min · evaluación y certificado", cover: "coins", band: "#7A2A0E" },
   { file: "herramientas", eyebrow: "Herramientas", title: "Practica con tus cifras", meta: "Horas de trabajo · Presupuesto · Meta de ahorro · Interés compuesto", cover: "tools", band: "#1F5A55" },
 ];
 

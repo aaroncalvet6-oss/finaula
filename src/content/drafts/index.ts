@@ -1,5 +1,4 @@
 import type { Course } from "../schema";
-import { consumoInteligente } from "./consumo-inteligente";
 import { deudasYCreditos } from "./deudas-y-creditos";
 
 /**
@@ -10,4 +9,4 @@ import { deudasYCreditos } from "./deudas-y-creditos";
  * Course 6 stays here until after 20/11/2026 even with all facts verified: consumer credit rules
  * change with Directive (EU) 2023/2225 (see CLAUDE.md and docs/fuentes.md).
  */
-export const draftCourses: ReadonlyArray<Course> = [consumoInteligente, deudasYCreditos];
+export const draftCourses: ReadonlyArray<Course> = [deudasYCreditos];

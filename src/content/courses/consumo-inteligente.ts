@@ -43,6 +43,10 @@ export const consumoInteligente: Course = {
           text: "Cuando una tienda anuncia una rebaja, el precio «de antes» que muestra tiene que ser el más bajo que aplicó en los 30 días anteriores. Así no pueden subir el precio unos días y luego «rebajarlo».",
         },
         {
+          type: "p",
+          text: "El precio rebajado tiene que aparecer junto al anterior. Y los productos rebajados no pueden estar deteriorados: tienen la misma garantía que si no estuvieran rebajados.",
+        },
+        {
           type: "concept",
           term: "Precio de referencia",
           text: "El precio «de antes» que aparece tachado en una rebaja. Sirve para calcular cuánto te ahorras de verdad.",
@@ -139,7 +143,7 @@ export const consumoInteligente: Course = {
         { type: "h", text: "Las excepciones" },
         {
           type: "p",
-          text: "Hay compras que no se pueden devolver así. Por ejemplo, los productos personalizados (con tu nombre o hechos a medida) o el contenido digital que ya has empezado a descargar con tu consentimiento.",
+          text: "Hay compras que no se pueden devolver así. Por ejemplo, los productos personalizados (con tu nombre o hechos a medida) o el contenido digital sin soporte material (un juego o una película que compras en línea) cuando ya ha empezado a ejecutarse con tu consentimiento previo.",
         },
         { type: "h", text: "Antes de pagar" },
         {
@@ -167,7 +171,7 @@ export const consumoInteligente: Course = {
       keyFact: "En las compras por internet tienes 14 días naturales para devolver sin explicaciones, salvo excepciones.",
       keyIdeas: [
         "En una compra a distancia tienes 14 días naturales para desistir sin explicaciones.",
-        "Hay excepciones, como los productos personalizados o el contenido digital ya descargado.",
+        "Hay excepciones, como los productos personalizados o el contenido digital que ya ha empezado con tu consentimiento.",
         "Antes de comprar, mira quién vende, cómo se devuelve y quién paga el envío de vuelta.",
       ],
       questions: [
@@ -223,17 +227,17 @@ export const consumoInteligente: Course = {
         { type: "h", text: "La garantía: cuando algo falla" },
         {
           type: "p",
-          text: "Los productos nuevos tienen una garantía legal de 3 años desde que te los entregan. Si sale defectuoso en ese tiempo, puedes exigir que lo reparen o lo cambien.",
+          text: "Los productos nuevos tienen una garantía legal de 3 años. Si sale defectuoso en ese tiempo, eliges entre que lo reparen o que te lo cambien. Si no es posible o sigue fallando, puedes pedir una rebaja del precio o que te devuelvan el dinero.",
         },
         {
           type: "concept",
           term: "Garantía legal",
-          text: "El derecho a que arreglen o cambien un producto que sale defectuoso. No depende de lo que quiera la tienda.",
+          text: "El derecho a que reparen o cambien un producto que sale defectuoso, o a una rebaja o la devolución del dinero si eso no funciona. No depende de lo que quiera la tienda.",
         },
         { type: "h", text: "La devolución: cuando cambias de idea" },
         {
           type: "p",
-          text: "En una tienda física, si el producto no tiene ningún defecto, la tienda no está obligada a devolverte el dinero, salvo que lo ofrezca en su política. Muchas lo hacen, pero conviene preguntar antes de pagar.",
+          text: "Las tiendas físicas no están obligadas a aceptar devoluciones de productos sin defecto. Si las aceptan, tienen que informarte de sus condiciones. Muchas lo hacen, pero conviene preguntar antes de pagar.",
         },
         { type: "h", text: "Guarda el tique" },
         { type: "p", text: "El tique o la factura es tu prueba de compra. Sin él, reclamar es mucho más difícil. Hazle una foto." },
@@ -280,7 +284,7 @@ export const consumoInteligente: Course = {
             "Sí, porque es tu derecho.",
           ],
           correct: 0,
-          explanation: "Sin defecto, la tienda física no está obligada, salvo que lo ofrezca en su política.",
+          explanation: "La tienda física no está obligada a aceptar devoluciones sin defecto. Si las acepta, debe informarte de sus condiciones.",
           hint: "¿El pantalón tiene algún defecto?",
           facts: ["F-55"],
         },
@@ -321,7 +325,7 @@ export const consumoInteligente: Course = {
         },
         {
           type: "p",
-          text: "Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio. Si te diste de alta en la app, tienes que poder darte de baja en la app.",
+          text: "Puedes darte de baja de un servicio de la misma forma en que lo contrataste, sin penalizaciones ni trabas desproporcionadas. Si te diste de alta en la app, tienes que poder darte de baja en la app.",
         },
         { type: "h", text: "«Compra ahora, paga después»" },
         {
@@ -358,7 +362,7 @@ export const consumoInteligente: Course = {
       keyFact: "Multiplica cada suscripción por 12. Lo que pagas al año es lo que de verdad cuesta.",
       keyIdeas: [
         "Las suscripciones se renuevan solas: apunta cuánto pagas al mes por todas juntas.",
-        "Darte de baja debe ser tan fácil como darte de alta.",
+        "Puedes darte de baja de la misma forma en que te diste de alta, sin trabas desproporcionadas.",
         "«Compra ahora, paga después» funciona como un préstamo: sigue siendo dinero que debes.",
       ],
       questions: [
@@ -375,7 +379,7 @@ export const consumoInteligente: Course = {
           id: "5.4-q2",
           prompt: "Te diste de alta en un servicio desde su app, pero para darte de baja te piden llamar por teléfono. ¿Qué dice la norma?",
           options: [
-            "Darte de baja debe ser tan fácil como darte de alta, y por el mismo medio.",
+            "Puedes darte de baja de la misma forma en que lo contrataste, sin trabas desproporcionadas.",
             "Pueden pedirte lo que quieran para darte de baja.",
             "Solo puedes darte de baja al final del año.",
           ],
@@ -410,7 +414,7 @@ export const consumoInteligente: Course = {
         { type: "h", text: "La publicidad tiene que decir que lo es" },
         {
           type: "p",
-          text: "La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad. Si alguien recomienda un producto porque le pagan, debe decirlo.",
+          text: "Si un influencer te enseña algo porque una marca se lo pide, tiene que indicar dentro del propio vídeo que es publicidad, con palabras como «publicidad» o «publi». Un hashtag o una etiqueta fuera del vídeo no basta.",
         },
         {
           type: "concept",
@@ -439,13 +443,13 @@ export const consumoInteligente: Course = {
         blocks: [
           {
             type: "p",
-            text: "Laia ve a una creadora que dice que un sérum «le cambió la piel». En la publicación no pone que sea publicidad, pero en el perfil hay un código de descuento de la marca.",
+            text: "Laia ve un vídeo de una creadora que dice que un sérum «le cambió la piel». En el vídeo no dice que sea publicidad: solo hay un hashtag en la descripción y un código de descuento de la marca en su perfil.",
           },
           {
             type: "list",
             items: [
               "El código de descuento indica que probablemente hay un acuerdo con la marca.",
-              "Si es publicidad, debería decirlo claramente.",
+              "Si una marca se lo ha pedido, tendría que decir dentro del vídeo que es publicidad. El hashtag de la descripción no basta.",
               "Laia busca opiniones en otros sitios antes de decidir, y decide no comprarlo.",
             ],
           },
@@ -453,7 +457,7 @@ export const consumoInteligente: Course = {
       },
       keyFact: "Si una recomendación lleva código de descuento o enlace de compra, piensa que puede ser publicidad.",
       keyIdeas: [
-        "La publicidad, también la de influencers, debe identificarse como tal. Si no lo dice, desconfía.",
+        "Si un influencer anuncia algo por encargo de una marca, debe decir dentro del vídeo que es publicidad.",
         "Que alguien lo use no significa que sea bueno para ti: le pueden estar pagando.",
         "Puedes pedir la hoja de reclamaciones, reclamar en la oficina de consumo o, si la empresa está adherida, ir al arbitraje.",
       ],
@@ -462,12 +466,12 @@ export const consumoInteligente: Course = {
           id: "5.5-q1",
           prompt: "Un influencer recomienda unas zapatillas y la marca le paga por ello. ¿Qué tiene que hacer?",
           options: [
-            "Identificar claramente la publicación como publicidad.",
+            "Decir dentro del propio vídeo que es publicidad, con palabras como «publicidad» o «publi».",
             "Nada, si de verdad le gustan.",
             "Solo decirlo si se lo preguntan.",
           ],
           correct: 0,
-          explanation: "La publicidad en redes, también la de influencers, debe identificarse como tal.",
+          explanation: "Tiene que indicarlo dentro del propio vídeo. Un hashtag o una etiqueta fuera del vídeo no basta.",
           hint: "¿Es una opinión o un anuncio?",
           facts: ["F-58"],
         },
@@ -541,8 +545,8 @@ export const consumoInteligente: Course = {
         id: "E5-05",
         lesson: "5.2",
         facts: ["F-54"],
-        prompt: "Empiezas a descargar un juego que compraste online, aceptando que empiece ya. ¿Puedes desistir después?",
-        correct: "No: el contenido digital ya descargado con tu consentimiento es una excepción.",
+        prompt: "Compras un juego digital en línea, aceptas que empiece ya y empiezas a jugar. ¿Puedes desistir después?",
+        correct: "No: el contenido digital que ya ha empezado con tu consentimiento previo es una excepción.",
         distractors: ["Sí, en 14 días como cualquier compra.", "Sí, si no te gusta."],
         explanation: "Es una de las excepciones al derecho de desistimiento.",
       },
@@ -562,7 +566,7 @@ export const consumoInteligente: Course = {
         prompt: "En una tienda física compras un juego que está perfecto y ya no lo quieres. ¿Qué es cierto?",
         correct: "Te devuelven el dinero solo si su política lo ofrece.",
         distractors: ["Siempre tienen que devolvértelo.", "Nunca se puede devolver nada."],
-        explanation: "Sin defecto, la tienda física no está obligada, salvo que lo ofrezca en su política.",
+        explanation: "No está obligada a aceptar devoluciones sin defecto; si las acepta, debe informarte de sus condiciones.",
       },
       {
         id: "E5-08",
@@ -587,9 +591,9 @@ export const consumoInteligente: Course = {
         lesson: "5.4",
         facts: ["F-56"],
         prompt: "Te diste de alta en una web en dos clics. ¿Cómo debe ser darte de baja?",
-        correct: "Al menos tan fácil como darte de alta, y por el mismo medio.",
+        correct: "De la misma forma en que te diste de alta, sin penalizaciones ni trabas desproporcionadas.",
         distractors: ["Por carta certificada.", "Solo en persona."],
-        explanation: "Darte de baja no puede ser más difícil que darte de alta.",
+        explanation: "Puedes darte de baja de la misma forma en que contrataste el servicio.",
       },
       {
         id: "E5-11",
@@ -605,9 +609,9 @@ export const consumoInteligente: Course = {
         lesson: "5.5",
         facts: ["F-58", "F-59"],
         prompt: "Una creadora anuncia un producto sin decir que le pagan, y el producto te llega roto. ¿Qué es correcto?",
-        correct: "Debía identificarlo como publicidad, y puedes reclamar a la empresa y en la oficina de consumo.",
+        correct: "Debía decir en el vídeo que era publicidad, y puedes reclamar a la empresa y en la oficina de consumo.",
         distractors: ["No pasa nada en ninguno de los dos casos.", "Solo puedes quejarte en los comentarios."],
-        explanation: "La publicidad debe identificarse. Para reclamar tienes la hoja de reclamaciones, la oficina de consumo y, si la empresa está adherida, el arbitraje.",
+        explanation: "La publicidad debe indicarse dentro del vídeo. Para reclamar tienes la hoja de reclamaciones, la oficina de consumo y, si la empresa está adherida, el arbitraje.",
       },
     ],
   },

@@ -81,6 +81,11 @@ tests/                Vitest; e2e/ Playwright
   facts from `pendingFacts` in `facts.ts`. `tests/drafts.test.ts` checks they only cite registered
   facts and that nothing on the site imports them. Once every fact is verified, the course moves
   to `src/content/courses/` and the strict `tests/content.test.ts` checks it. Never relax that test.
+- Course 6 («Deudas y créditos») stays in drafts until after 20/11/2026, even if all its facts are
+  verified: consumer credit rules change with Directive (EU) 2023/2225 (applies from 20/11/2026;
+  «buy now, pay later» may count as credit without interest, caps on credit cost). Then review
+  lessons 6.2–6.5 and F-57, F-60, F-61, F-62 against the final Spanish law in the BOE. Source and
+  details in `docs/fuentes.md`.
 - Any mention of returns states that they are not guaranteed and investments can lose value.
 - Never recommend specific products, banks, apps, brokers or investments. Brand names may appear
   only as everyday context (e.g. Bizum) and never as a recommendation.

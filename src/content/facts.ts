@@ -407,6 +407,62 @@ const raw: Fact[] = [
     source: { label: "BOE · Ley 3/1991 de Competencia Desleal, art. 24", url: "https://www.boe.es/buscar/act.php?id=BOE-A-1991-628#a24" },
     verifiedIn: "https://papelea.com/es/leyes/ley-de-competencia-desleal/capitulo-iii",
   },
+  {
+    id: "F-59",
+    claim:
+      "Puedes pedir la hoja de reclamaciones en el establecimiento y reclamar en la oficina de consumo de tu ayuntamiento o de tu comunidad, que intenta mediar con la empresa. Si la empresa está adherida, puedes ir al arbitraje de consumo, que es gratuito pero voluntario para la empresa. El procedimiento puede variar según tu comunidad.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: { label: "Comunidad de Madrid · Reclamaciones de consumo", url: "https://www.comunidad.madrid/node/73694" },
+  },
+  {
+    id: "F-60",
+    claim: "La TAE se calcula con el tipo de interés más las comisiones y otros gastos, y sirve para comparar ofertas.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Banco de España · Cálculo de la TAE de un préstamo personal",
+      url: `${BDE}pcb/es/menu-horizontal/podemosayudarte/simuladores/calculo_tae_prestamo_personal.html`,
+    },
+  },
+  {
+    id: "F-61",
+    claim:
+      "Con una tarjeta revolving, al menos cada trimestre el banco debe indicarte la fecha estimada en la que terminarás de pagar con tu cuota actual y cuánto acabarás pagando en total.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Banco de España · Qué información puedes solicitar si tienes una tarjeta revolving (02/06/2022)",
+      url: `${BDE}pcb/es/blog/que-informacion-puedes-solicitar-si-dispones-de-una-tarjeta-revolving-.html`,
+    },
+  },
+  {
+    id: "F-62",
+    claim:
+      "Tienes 14 días naturales para desistir de un préstamo al consumo, sin dar explicaciones y sin penalización; devuelves el capital y los intereses de los días que lo tuviste.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "Banco de España · El derecho de desistimiento de los préstamos al consumo (15/04/2021)",
+      url: `${BDE}pcb/es/blog/el-derecho-de-desistimiento-de-los-prestamos-al-consumo.html`,
+    },
+  },
+  {
+    id: "F-64",
+    claim:
+      "Para incluirte en un fichero de morosos, la deuda debe ser cierta, vencida, exigible e impagada y de más de 50 €; antes deben informarte y requerirte el pago, y puedes estar en él como máximo 5 años.",
+    status: "oficial",
+    annual: false,
+    checkedAt: "26/10/2026",
+    source: {
+      label: "AEPD · Requisitos para incluir a una persona en un fichero de solvencia",
+      url: "https://www.aepd.es/preguntas-frecuentes/7-solvencia-patrimonial/FAQ-0701-que-requisitos-son-necesarios-para-incluir-a-una-persona-fisica-en-un-tratamiento-de-solvencia-patrimonial-y-credito",
+    },
+  },
 ];
 
 /**
@@ -433,11 +489,6 @@ const pending: Fact[] = [
   pendingFact("F-56", "Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio.", "BOE · Ley General para la Defensa de los Consumidores, art. 62.3", LGDCU),
   pendingFact("F-57", "«Compra ahora, paga después» y pagar a plazos son formas de crédito.", "BOE · Ley 16/2011 de contratos de crédito al consumo", CREDITO_CONSUMO),
   pendingFact("F-58", "La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad.", "BOE · Ley 13/2022 General de Comunicación Audiovisual", "https://www.boe.es/"),
-  pendingFact("F-59", "Puedes reclamar con una hoja de reclamaciones en la tienda, ante los servicios de consumo de tu comunidad autónoma y, si la empresa está adherida, en el arbitraje de consumo.", "Ministerio de Consumo · reclamaciones y arbitraje de consumo", "https://www.consumo.gob.es/"),
-  pendingFact("F-60", "La TAE incluye el tipo de interés y los gastos y comisiones del préstamo, y sirve para comparar ofertas.", "BOE · Ley 16/2011, art. 32", CREDITO_CONSUMO),
-  pendingFact("F-61", "Las tarjetas revolving tienen obligaciones de información reforzadas: el banco debe explicar cuánto tardarías en pagar la deuda con el pago mínimo.", "BOE · Orden ETD/699/2020 de crédito revolvente", "https://www.boe.es/"),
-  pendingFact("F-62", "En un crédito al consumo tienes 14 días naturales para desistir sin dar explicaciones.", "BOE · Ley 16/2011, art. 28", CREDITO_CONSUMO),
-  pendingFact("F-64", "Para incluirte en un fichero de morosos la deuda debe ser cierta, vencida y exigible, y antes deben avisarte; hay un importe mínimo y un plazo máximo de permanencia.", "BOE · Ley Orgánica 3/2018 de Protección de Datos, art. 20", "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"),
 ];
 
 export const facts: ReadonlyArray<Fact> = raw.map((f) => factSchema.parse(f));

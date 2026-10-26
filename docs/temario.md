@@ -1021,7 +1021,7 @@ Comprar con cabeza: comparar, conocer tus derechos, controlar suscripciones y de
 
 ### 5.4 · Suscripciones, compras en apps y «paga después»
 
-**Duración:** 7 min · **Datos:** F-56, F-57
+**Duración:** 7 min · **Datos:** F-56 (F-57 ya no se usa aquí: la lección explica el concepto sin afirmar su naturaleza legal)
 
 **Objetivo:** Controlar los pagos que se repiten y entender el «compra ahora, paga después».
 

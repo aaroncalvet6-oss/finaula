@@ -37,6 +37,7 @@ const officialHosts = [
   "www.bde.es",
   "www.aepd.es",
   "portal-cec.consumo.gob.es",
+  "www.comunidad.madrid",
 ];
 
 describe("fact registry", () => {

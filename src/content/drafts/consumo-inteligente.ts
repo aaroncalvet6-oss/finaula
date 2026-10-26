@@ -308,7 +308,7 @@ export const consumoInteligente: Course = {
       status: "published",
       extends: `${C1}/tu-presupuesto`,
       objective: "Controlar los pagos que se repiten y entender el «compra ahora, paga después».",
-      facts: ["F-56", "F-57"],
+      facts: ["F-56"],
       explanation: [
         {
           type: "p",
@@ -326,12 +326,12 @@ export const consumoInteligente: Course = {
         { type: "h", text: "«Compra ahora, paga después»" },
         {
           type: "p",
-          text: "Muchas tiendas ofrecen pagar en varios plazos o más adelante. Es cómodo, pero es una forma de crédito: sigue siendo dinero que debes, y si te retrasas puede tener costes.",
+          text: "Muchas tiendas ofrecen pagar en varios plazos o más adelante. Es cómodo, pero funciona como un préstamo: te llevas algo que todavía no has pagado, así que es dinero que debes. Lee las condiciones: qué pasa si te retrasas y si tiene algún coste.",
         },
         {
           type: "concept",
           term: "Pago aplazado",
-          text: "Pagar una compra más tarde o en varios plazos. Es un crédito, aunque no lo parezca.",
+          text: "Pagar una compra más tarde o en varios plazos. Aunque no lo parezca, es dinero que debes.",
         },
       ],
       example: {
@@ -359,7 +359,7 @@ export const consumoInteligente: Course = {
       keyIdeas: [
         "Las suscripciones se renuevan solas: apunta cuánto pagas al mes por todas juntas.",
         "Darte de baja debe ser tan fácil como darte de alta.",
-        "«Compra ahora, paga después» es una forma de crédito: sigue siendo dinero que debes.",
+        "«Compra ahora, paga después» funciona como un préstamo: sigue siendo dinero que debes.",
       ],
       questions: [
         {
@@ -387,11 +387,11 @@ export const consumoInteligente: Course = {
         {
           id: "5.4-q3",
           prompt: "Una tienda te ofrece pagar unas zapatillas «en 3 plazos sin complicaciones». ¿Qué es en realidad?",
-          options: ["Una forma de crédito: dinero que debes.", "Un descuento.", "Un regalo de la tienda."],
+          options: ["Dinero que debes: funciona como un préstamo.", "Un descuento.", "Un regalo de la tienda."],
           correct: 0,
-          explanation: "Pagar a plazos o más tarde es un crédito. Si te retrasas, puede tener costes.",
+          explanation: "Te llevas algo que aún no has pagado. Lee qué pasa si te retrasas y si tiene algún coste.",
           hint: "¿Has pagado ya las zapatillas cuando te las llevas?",
-          facts: ["F-57"],
+          facts: [],
         },
       ],
       challenge: "Con tus padres, haced la lista de suscripciones de casa, con lo que cuesta cada una al año. ¿Hay alguna que no uséis?",
@@ -427,11 +427,12 @@ export const consumoInteligente: Course = {
           ordered: true,
           items: [
             "Habla primero con la tienda o la empresa, y guarda por escrito lo que pidas.",
-            "En la tienda puedes pedir una hoja de reclamaciones.",
-            "Puedes reclamar ante los servicios de consumo de tu comunidad autónoma.",
-            "Si la empresa está adherida, puedes acudir al arbitraje de consumo.",
+            "En el establecimiento puedes pedir la hoja de reclamaciones.",
+            "Puedes reclamar en la oficina de consumo de tu ayuntamiento o de tu comunidad, que intenta mediar con la empresa.",
+            "Si la empresa está adherida, puedes ir al arbitraje de consumo. Es gratuito, pero voluntario para la empresa.",
           ],
         },
+        { type: "p", text: "El procedimiento puede variar según tu comunidad: mira la web de consumo de la tuya." },
       ],
       example: {
         title: "El sérum de Laia",
@@ -454,7 +455,7 @@ export const consumoInteligente: Course = {
       keyIdeas: [
         "La publicidad, también la de influencers, debe identificarse como tal. Si no lo dice, desconfía.",
         "Que alguien lo use no significa que sea bueno para ti: le pueden estar pagando.",
-        "Puedes reclamar con una hoja de reclamaciones, ante consumo de tu comunidad o en el arbitraje de consumo.",
+        "Puedes pedir la hoja de reclamaciones, reclamar en la oficina de consumo o, si la empresa está adherida, ir al arbitraje.",
       ],
       questions: [
         {
@@ -475,7 +476,7 @@ export const consumoInteligente: Course = {
           prompt: "Una tienda no te quiere reparar un producto en garantía. ¿Qué puedes pedir allí mismo?",
           options: ["Una hoja de reclamaciones.", "Que te devuelvan el doble.", "Nada: solo puedes ir a juicio."],
           correct: 0,
-          explanation: "La hoja de reclamaciones deja constancia por escrito. Después puedes acudir a consumo de tu comunidad.",
+          explanation: "La hoja de reclamaciones deja constancia por escrito. Después puedes reclamar en la oficina de consumo de tu ayuntamiento o de tu comunidad.",
           hint: "¿Cómo dejas constancia por escrito en la tienda?",
           facts: ["F-59"],
         },
@@ -593,20 +594,20 @@ export const consumoInteligente: Course = {
       {
         id: "E5-11",
         lesson: "5.4",
-        facts: ["F-57"],
+        facts: [],
         prompt: "¿Qué es «compra ahora, paga después»?",
-        correct: "Una forma de crédito: dinero que debes.",
+        correct: "Dinero que debes: te llevas algo que aún no has pagado.",
         distractors: ["Un descuento por pagar tarde.", "Un pago que no hay que devolver."],
-        explanation: "Pagar más tarde o a plazos es un crédito, y retrasarse puede tener costes.",
+        explanation: "Funciona como un préstamo. Lee qué pasa si te retrasas y si tiene algún coste.",
       },
       {
         id: "E5-12",
         lesson: "5.5",
         facts: ["F-58", "F-59"],
         prompt: "Una creadora anuncia un producto sin decir que le pagan, y el producto te llega roto. ¿Qué es correcto?",
-        correct: "Debía identificarlo como publicidad, y puedes reclamar a la empresa y ante consumo.",
+        correct: "Debía identificarlo como publicidad, y puedes reclamar a la empresa y en la oficina de consumo.",
         distractors: ["No pasa nada en ninguno de los dos casos.", "Solo puedes quejarte en los comentarios."],
-        explanation: "La publicidad debe identificarse, y para reclamar tienes la hoja de reclamaciones, consumo de tu comunidad y el arbitraje.",
+        explanation: "La publicidad debe identificarse. Para reclamar tienes la hoja de reclamaciones, la oficina de consumo y, si la empresa está adherida, el arbitraje.",
       },
     ],
   },

@@ -138,7 +138,7 @@ export const deudasYCreditos: Course = {
         {
           type: "concept",
           term: "TAE (tasa anual equivalente)",
-          text: "Una cifra que incluye el tipo de interés y los gastos y comisiones del préstamo. Es la que sirve para comparar ofertas.",
+          text: "Una cifra que se calcula con el tipo de interés más las comisiones y otros gastos del préstamo. Es la que sirve para comparar ofertas.",
         },
         {
           type: "p",
@@ -230,7 +230,7 @@ export const deudasYCreditos: Course = {
         },
         {
           type: "p",
-          text: "Por eso estas tarjetas tienen obligaciones de información reforzadas: el banco debe explicarte cuánto tardarías en pagar la deuda si solo pagas el mínimo.",
+          text: "Por eso, al menos cada trimestre, el banco debe indicarte la fecha estimada en la que terminarás de pagar con tu cuota actual y cuánto acabarás pagando en total. Léelo: es la cifra que de verdad importa.",
         },
         { type: "h", text: "La regla" },
         { type: "p", text: "Si usas una tarjeta de crédito, paga el total cada mes. Si no puedes, es señal de que gastas más de lo que tienes." },
@@ -259,7 +259,7 @@ export const deudasYCreditos: Course = {
       keyFact: "Con una tarjeta de crédito, paga el total cada mes. El pago mínimo alarga la deuda durante años.",
       keyIdeas: [
         "Con una tarjeta revolving, pagar la cuota mínima puede hacer que la deuda casi no baje.",
-        "El banco debe explicarte cuánto tardarías en pagarla con el pago mínimo.",
+        "Al menos cada trimestre, el banco debe decirte cuándo terminarás de pagar y cuánto pagarás en total.",
         "Si usas crédito, págalo entero cada mes.",
       ],
       questions: [
@@ -278,14 +278,14 @@ export const deudasYCreditos: Course = {
         },
         {
           id: "6.3-q2",
-          prompt: "Te ofrecen una tarjeta revolving. ¿Qué debe explicarte el banco?",
+          prompt: "Tienes una deuda en una tarjeta revolving. ¿Qué debe indicarte el banco al menos cada trimestre?",
           options: [
-            "Cuánto tardarías en pagar la deuda si solo pagas el mínimo.",
+            "Cuándo terminarás de pagar con tu cuota actual y cuánto pagarás en total.",
             "Nada en especial.",
             "Qué cosas te conviene comprar con ella.",
           ],
           correct: 0,
-          explanation: "Estas tarjetas tienen obligaciones de información reforzadas, precisamente por ese riesgo.",
+          explanation: "Así puedes ver cuánto te va a costar de verdad seguir pagando solo la cuota.",
           hint: "¿Cuál es el gran riesgo de estas tarjetas?",
           facts: ["F-61"],
         },
@@ -328,7 +328,7 @@ export const deudasYCreditos: Course = {
         { type: "h", text: "14 días para echarte atrás" },
         {
           type: "p",
-          text: "En un crédito al consumo tienes 14 días naturales para desistir sin dar explicaciones. Si te arrepientes, no esperes.",
+          text: "En un préstamo al consumo tienes 14 días naturales para desistir, sin dar explicaciones y sin penalización. Devuelves el dinero que te prestaron y los intereses de los días que lo tuviste. Si te arrepientes, no esperes.",
         },
         {
           type: "concept",
@@ -372,7 +372,7 @@ export const deudasYCreditos: Course = {
             "Esperar un año para cancelarlo.",
           ],
           correct: 0,
-          explanation: "En un crédito al consumo tienes 14 días naturales para desistir.",
+          explanation: "Tienes 14 días naturales para desistir, sin penalización: devuelves lo prestado y los intereses de esos días.",
           hint: "¿Cuántos días tienes para echarte atrás?",
           facts: ["F-62"],
         },
@@ -420,7 +420,7 @@ export const deudasYCreditos: Course = {
         { type: "h", text: "No es automático" },
         {
           type: "p",
-          text: "Para incluirte en un fichero de morosos, la deuda tiene que ser cierta, estar vencida y poder exigirse, y antes deben avisarte. Además hay un importe mínimo y un tiempo máximo que puedes estar en el fichero.",
+          text: "Para incluirte en un fichero de morosos, la deuda tiene que ser cierta, estar vencida, poder exigirse, estar sin pagar y ser de más de 50 €. Antes deben informarte y pedirte que pagues. Y como máximo puedes estar en el fichero 5 años.",
         },
         { type: "h", text: "Actúa pronto" },
         {
@@ -471,7 +471,7 @@ export const deudasYCreditos: Course = {
           id: "6.5-q2",
           prompt: "¿Te pueden meter en un fichero de morosos sin avisarte antes?",
           options: [
-            "No: deben avisarte antes, y la deuda tiene que ser cierta, vencida y exigible.",
+            "No: antes deben informarte y pedirte que pagues, y la deuda tiene que ser de más de 50 €.",
             "Sí, en cualquier momento.",
             "Sí, aunque no debas nada.",
           ],
@@ -559,10 +559,10 @@ export const deudasYCreditos: Course = {
         id: "E6-07",
         lesson: "6.3",
         facts: ["F-61"],
-        prompt: "¿Qué tiene que explicarte el banco al darte una tarjeta revolving?",
-        correct: "Cuánto tardarías en pagar la deuda con el pago mínimo.",
+        prompt: "Con una tarjeta revolving, ¿qué debe indicarte el banco al menos cada trimestre?",
+        correct: "La fecha estimada en que terminarás de pagar y cuánto pagarás en total.",
         distractors: ["Qué tiendas tienen ofertas.", "Nada más que el PIN."],
-        explanation: "Estas tarjetas tienen obligaciones de información reforzadas.",
+        explanation: "Con esa información ves el coste real de seguir pagando solo la cuota.",
       },
       {
         id: "E6-08",
@@ -605,7 +605,7 @@ export const deudasYCreditos: Course = {
         lesson: "6.5",
         facts: ["F-64"],
         prompt: "¿Qué hace falta para incluir a alguien en un fichero de morosos?",
-        correct: "Una deuda cierta, vencida y exigible, y haberle avisado antes.",
+        correct: "Una deuda cierta, vencida, exigible e impagada de más de 50 €, y haberle pedido antes que pague.",
         distractors: ["Solo que lo pida la empresa.", "Nada: es automático."],
         explanation: "No es automático: hay requisitos, como el aviso previo.",
       },

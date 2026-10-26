@@ -48,10 +48,10 @@ y las fechas el 17/10/2026 (la de F-06, el 19/10/2026; las de la tanda 1 de los 
 
 | Estado | Datos |
 | --- | --- |
-| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-30, F-31, F-32, F-34, F-35, F-40, F-41 a F-47, F-49, F-50, F-51 |
+| Verificado (oficial) | F-06, F-08, F-12, F-14, F-15, F-16, F-17, F-18, F-19, F-20, F-21, F-22, F-23, F-30, F-31, F-32, F-34, F-35, F-40, F-41 a F-47, F-49, F-50, F-51, F-59 a F-62, F-64 |
 | Verificado (texto legal) | F-01, F-02, F-03, F-04, F-05, F-07, F-09, F-10, F-11, F-52 |
 | Verificado (mutua colaboradora) | F-13 |
-| Pendiente (no se usan) | F-28, F-29, F-33 y F-53 a F-81 (salvo F-79 y F-80) |
+| Pendiente (no se usan) | F-28, F-29, F-33, F-53 a F-58, F-63 y F-65 a F-81 (salvo F-79 y F-80) |
 | Descartado | F-48, F-79, F-80 |
 
 Consecuencias:
@@ -64,6 +64,10 @@ Consecuencias:
   a F-52). Se puede publicar.
 - El **curso 3** («Bancos, tarjetas y pagos digitales») tiene verificados todos sus datos (F-30,
   F-34 y F-41 a F-47). Se puede publicar.
+- El **curso 5** («Consumo inteligente») tiene verificado F-59; le faltan F-28, F-29 y F-53 a
+  F-56 y F-58. Sigue en borrador.
+- El **curso 6** («Deudas y créditos») sigue en borrador hasta después del 20/11/2026 (ver la
+  nota sobre la Directiva (UE) 2023/2225 más abajo).
 
 Los enlaces con anclaje de artículo del BOE (`#a6`, `#a14`…) siguen el formato de los textos
 consolidados del BOE, pero no se han podido abrir.
@@ -144,9 +148,19 @@ El curso 1 funciona sin ellos. Si se verifican, se pueden añadir como «dato cl
 | --- | --- | --- | --- | --- | --- | --- |
 | F-33 | 1.6 | En España, la inflación se mide con el IPC, que elabora el INE | no | INE · Índice de Precios de Consumo: https://www.ine.es/ | 16/10/2026 (no se pudo abrir) | Pendiente |
 
-## Datos de los cursos 5 a 10 (pendientes, no se usan)
+## Datos de los cursos 5 a 10
 
-Se listan por tandas en [`temario.md`](./temario.md).
+Se listan por tandas en [`temario.md`](./temario.md). Los cursos 5 y 6 están escritos en
+`src/content/drafts/`. F-59 a F-62 y F-64 los verificó el propietario el 26/10/2026.
+
+> **Curso 6 · Deudas y créditos: en borrador hasta después del 20/11/2026.** Las normas de crédito
+> al consumo cambian por la Directiva (UE) 2023/2225, que se aplica desde el 20 de noviembre de
+> 2026. Entre otras cosas, los «compra ahora, paga después» pueden contar como crédito aunque no
+> tengan intereses, y habrá límites al coste del crédito. Fuente: Ministerio de Consumo, folleto de
+> mayo de 2026: https://portal-cec.consumo.gob.es/sites/default/files/documentos/FOLLETO_CREDITO_CONSUMO_MAYO_2026.pdf
+> Después de esa fecha se revisan las lecciones 6.2 a 6.5 y F-57, F-60, F-61 y F-62 con la ley
+> española definitiva publicada en el BOE, aunque estén verificados. Hasta entonces el curso 6 no se
+> publica. La lección 5.4 ya no afirma la naturaleza legal del «paga después» (F-57).
 
 | ID | Lección | Dato | Anual | Dónde comprobarlo (enlace) | Fecha de consulta | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -156,14 +170,14 @@ Se listan por tandas en [`temario.md`](./temario.md).
 | F-29 | 5.3 | Los productos nuevos tienen una garantía legal de 3 años desde la entrega: si salen defectuosos, puedes pedir que los reparen o los sustituyan | no | BOE · Ley General de Consumidores, art. 120 y siguientes: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 · Ministerio de Consumo: https://www.consumo.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-55 | 5.3 | Una tienda física no está obligada a devolverte el dinero si el producto no tiene defectos, salvo que lo ofrezca en su política | no | Ministerio de Consumo: https://www.consumo.gob.es/ · BOE · Ley General de Consumidores: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-56 | 5.4 | Darte de baja de un servicio debe ser al menos tan fácil como darte de alta, y por el mismo medio | no | BOE · Ley General de Consumidores, art. 62.3: https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-57 | 5.4 | «Compra ahora, paga después» y pagar a plazos son formas de crédito (la lección explica cuándo se aplican las normas de crédito al consumo) | no | Banco de España: https://clientebancario.bde.es/ · BOE · Ley 16/2011 de contratos de crédito al consumo: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-57 | 6.4 (5.4 ya no lo usa) | «Compra ahora, paga después» y pagar a plazos son formas de crédito. Afectado por la Directiva (UE) 2023/2225: se revisa después del 20/11/2026 con la ley española en el BOE (la lección explica cuándo se aplican las normas de crédito al consumo) | no | Banco de España: https://clientebancario.bde.es/ · BOE · Ley 16/2011 de contratos de crédito al consumo: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-58 | 5.5 | La publicidad en redes, también la de influencers, tiene que identificarse claramente como publicidad | no | BOE · Ley 13/2022 General de Comunicación Audiovisual y su desarrollo para usuarios de especial relevancia: https://www.boe.es/ · CNMC: https://www.cnmc.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-59 | 5.5 | Puedes reclamar con una hoja de reclamaciones en la tienda, ante los servicios de consumo de tu comunidad autónoma y, si la empresa está adherida, en el arbitraje de consumo | no | Ministerio de Consumo · reclamaciones y arbitraje de consumo: https://www.consumo.gob.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-60 | 6.2 | La TAE incluye el tipo de interés y los gastos y comisiones del préstamo, y sirve para comparar ofertas | no | Banco de España · Portal del Cliente Bancario: https://clientebancario.bde.es/ · BOE · Ley 16/2011, art. 32: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-61 | 6.3 | Las tarjetas revolving tienen obligaciones de información reforzadas: el banco debe explicar cuánto tardarías en pagar la deuda con el pago mínimo | no | BOE · Orden ETD/699/2020 de crédito revolvente: https://www.boe.es/ · Banco de España: https://clientebancario.bde.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-62 | 6.4 | En un crédito al consumo tienes 14 días naturales para desistir sin dar explicaciones | no | BOE · Ley 16/2011 de contratos de crédito al consumo, art. 28: https://www.boe.es/buscar/act.php?id=BOE-A-2011-11032 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-63 | 6.4 | Un menor no emancipado no puede pedir un préstamo a su nombre | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 | 20/10/2026 (no se pudo abrir) | Pendiente |
-| F-64 | 6.5 | Para incluirte en un fichero de morosos la deuda debe ser cierta, vencida y exigible, y antes deben avisarte; hay un importe mínimo y un plazo máximo de permanencia | no | BOE · Ley Orgánica 3/2018 de Protección de Datos, art. 20: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673 · AEPD: https://www.aepd.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-59 | 5.5 | Puedes pedir la hoja de reclamaciones en el establecimiento y reclamar en la oficina de consumo de tu ayuntamiento o de tu comunidad, que intenta mediar con la empresa. Si la empresa está adherida, puedes ir al arbitraje de consumo, que es gratuito pero voluntario para la empresa. El procedimiento puede variar según tu comunidad | no | Comunidad de Madrid, reclamaciones de consumo (fuente oficial autonómica): https://www.comunidad.madrid/node/73694 | 26/10/2026 | Verificado (oficial) |
+| F-60 | 6.2 | La TAE se calcula con el tipo de interés más las comisiones y otros gastos, y sirve para comparar ofertas | no | Banco de España, cálculo de la TAE de un préstamo personal: https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/simuladores/calculo_tae_prestamo_personal.html | 26/10/2026 | Verificado (oficial) |
+| F-61 | 6.3 | Con una tarjeta revolving, al menos cada trimestre el banco debe indicarte la fecha estimada en la que terminarás de pagar con tu cuota actual y cuánto acabarás pagando en total | no | Banco de España, qué información puedes solicitar si dispones de una tarjeta revolving (02/06/2022): https://clientebancario.bde.es/pcb/es/blog/que-informacion-puedes-solicitar-si-dispones-de-una-tarjeta-revolving-.html | 26/10/2026 | Verificado (oficial) |
+| F-62 | 6.4 | Tienes 14 días naturales para desistir de un préstamo al consumo, sin dar explicaciones y sin penalización; devuelves el capital y los intereses de los días que lo tuviste (la lección no menciona importes mínimos ni máximos) | no | Banco de España, el derecho de desistimiento de los préstamos al consumo (15/04/2021): https://clientebancario.bde.es/pcb/es/blog/el-derecho-de-desistimiento-de-los-prestamos-al-consumo.html | 26/10/2026 | Verificado (oficial) |
+| F-63 | 6.4 | Un menor no emancipado no puede pedir un préstamo a su nombre. No se usa: la lección 6.4 no lo afirma (mismo caso que F-48) | no | BOE · Código Civil, arts. 322 y 1263: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763 | 20/10/2026 (no se pudo abrir) | Pendiente |
+| F-64 | 6.5 | Para incluirte en un fichero de morosos, la deuda debe ser cierta, vencida, exigible e impagada y de más de 50 €; antes deben informarte y requerirte el pago; puedes estar en él como máximo 5 años | no | AEPD, requisitos para incluir a una persona en un fichero de solvencia patrimonial y crédito: https://www.aepd.es/preguntas-frecuentes/7-solvencia-patrimonial/FAQ-0701-que-requisitos-son-necesarios-para-incluir-a-una-persona-fisica-en-un-tratamiento-de-solvencia-patrimonial-y-credito | 26/10/2026 | Verificado (oficial) |
 | F-65 | 7.3 | Antes de invertir en un fondo tienen que darte un documento con sus datos fundamentales, que incluye los costes y el nivel de riesgo | no | CNMV · guías del inversor: https://www.cnmv.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-66 | 7.3 | Antes de venderte algunos productos de inversión, la entidad debe evaluar si son adecuados para ti (test de conveniencia o de idoneidad) | no | CNMV · guías del inversor: https://www.cnmv.es/ · BOE · Ley 6/2023 de los Mercados de Valores: https://www.boe.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
 | F-67 | 7.5 | Los proveedores de servicios de criptoactivos en la UE necesitan autorización según el Reglamento MiCA | no | EUR-Lex · Reglamento (UE) 2023/1114 (MiCA): https://eur-lex.europa.eu/eli/reg/2023/1114/oj · CNMV: https://www.cnmv.es/ | 20/10/2026 (no se pudo abrir) | Pendiente |
